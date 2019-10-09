@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ck-eR-Vqi">
+                    <rect key="frame" x="0.0" y="181.5" width="480" height="117"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5r6-qI-KwZ">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="32"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campaign" translatesAutoresizingMaskIntoConstraints="NO" id="I5O-g9-Hji">
+                            <rect key="frame" x="0.0" y="48" width="480" height="32"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acoustic Campaign Mobile Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-0Y-HhN">
+                            <rect key="frame" x="0.0" y="96" width="480" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="uTJ-0Y-HhN" firstAttribute="top" secondItem="I5O-g9-Hji" secondAttribute="bottom" constant="16" id="4KG-FI-A6U"/>
+                        <constraint firstItem="I5O-g9-Hji" firstAttribute="leading" secondItem="6ck-eR-Vqi" secondAttribute="leading" id="EQl-xF-kwy"/>
+                        <constraint firstItem="5r6-qI-KwZ" firstAttribute="leading" secondItem="6ck-eR-Vqi" secondAttribute="leading" id="FVC-xD-T6S"/>
+                        <constraint firstAttribute="bottom" secondItem="uTJ-0Y-HhN" secondAttribute="bottom" id="HSK-8j-vIP"/>
+                        <constraint firstItem="5r6-qI-KwZ" firstAttribute="top" secondItem="6ck-eR-Vqi" secondAttribute="top" id="Lkd-AM-F6Q"/>
+                        <constraint firstAttribute="trailing" secondItem="uTJ-0Y-HhN" secondAttribute="trailing" id="QyG-3z-08w"/>
+                        <constraint firstItem="uTJ-0Y-HhN" firstAttribute="leading" secondItem="6ck-eR-Vqi" secondAttribute="leading" id="T2c-OZ-q5h"/>
+                        <constraint firstAttribute="trailing" secondItem="I5O-g9-Hji" secondAttribute="trailing" id="erP-xC-BtC"/>
+                        <constraint firstAttribute="trailing" secondItem="5r6-qI-KwZ" secondAttribute="trailing" id="hxg-Gx-fTO"/>
+                        <constraint firstItem="I5O-g9-Hji" firstAttribute="top" secondItem="5r6-qI-KwZ" secondAttribute="bottom" constant="16" id="oQT-tn-WZE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2019 Acoustic. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="425" width="441" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6VK-o0-qgk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6ck-eR-Vqi" secondAttribute="trailing" id="Bt6-EG-O37"/>
+                <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" constant="19" id="IXI-43-r9p"/>
+                <constraint firstItem="6ck-eR-Vqi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J7x-3m-hIT"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ltb-8B-WGa"/>
+                <constraint firstItem="6ck-eR-Vqi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PXl-By-nSz"/>
+                <constraint firstAttribute="bottomMargin" secondItem="8ie-xW-0ye" secondAttribute="bottom" id="pAw-N3-jS4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="campaign" width="148" height="32"/>
+        <image name="logo" width="168.5" height="32"/>
+    </resources>
+</document>
