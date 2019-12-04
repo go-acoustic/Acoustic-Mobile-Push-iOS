@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://developer.ibm.com/push/"
   s.license          = 'Acoustic'
   s.author           = { "Jeremy Buchman" => "buchmanj@us.ibm.com" }
-  s.source           = { :git => "git@github.com:Acoustic-Mobile-Push/iOS.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Acoustic-Mobile-Push/iOS.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.vendored_frameworks = 'AcousticMobilePush.xcframework'
