@@ -18,7 +18,7 @@
 #import <AcousticMobilePush/AcousticMobilePush.h>
 #endif
 
-@interface MCEInboxDefaultTemplateDisplay : UIViewController <MCETemplateDisplay, WKUIDelegate, WKNavigationDelegate>
+@interface MCEInboxDefaultTemplateDisplay : UIViewController <MCETemplateDisplay, WKUIDelegate, WKNavigationDelegate, UIViewControllerRestoration>
 @property IBOutlet NSLayoutConstraint * topConstraint;
 @property IBOutlet NSLayoutConstraint * toolbarHeightConstraint;
 @property WKWebView * webView;

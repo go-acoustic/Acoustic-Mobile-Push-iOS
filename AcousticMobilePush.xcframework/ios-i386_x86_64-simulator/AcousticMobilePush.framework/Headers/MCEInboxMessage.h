@@ -16,7 +16,7 @@
 #endif
 
 /** The MCEInboxMessage class represents an inbox message that is sent to the user. */
-@interface MCEInboxMessage : NSObject
+@interface MCEInboxMessage : NSObject <NSItemProviderWriting>
 
 /** inboxMessageId is a unique identifier for the inbox message. */
 @property NSString * inboxMessageId;

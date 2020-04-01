@@ -18,7 +18,7 @@
 
 @interface MCEInboxPostTemplate : NSObject <MCETemplate>
 @property(class, nonatomic, readonly) MCEInboxPostTemplate * sharedInstance NS_SWIFT_NAME(shared);
-@property NSCache * contentSizeCache;
-@property NSCache * postHeightCache;
+@property NSMutableDictionary * contentSizeCache;
+@property NSMutableDictionary * postHeightCache;
 +(void)registerTemplate;
 @end

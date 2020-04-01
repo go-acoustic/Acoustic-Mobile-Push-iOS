@@ -49,7 +49,7 @@
  @param attribution A string representing the campaign name or attribution of the push message associated with the view event.
  @param mailingId A string representing the mailing id of the push message associated with the view event.
  */
--(void)recordViewForInboxMessage:(MCEInboxMessage*)inboxMessage attribution: (NSString*)attribution mailingId: (NSString*)mailingId;
+-(void)recordViewForInboxMessage:(MCEInboxMessage*)inboxMessage attribution: (NSString*)attribution mailingId: (NSNumber*)mailingId;
 
 #if TARGET_OS_WATCH == 0
 /** Record if push is enabled or disabled */

@@ -18,7 +18,7 @@
 
 #import "MCEInboxPostTemplateView.h"
 
-@interface MCEInboxPostTemplateDisplay : UIViewController <MCETemplateDisplay>
+@interface MCEInboxPostTemplateDisplay : UIViewController <MCETemplateDisplay, UIViewControllerRestoration>
 @property IBOutlet NSLayoutConstraint * topConstraint;
 @property IBOutlet NSLayoutConstraint * toolbarHeightConstraint;
 @property IBOutlet UIToolbar * toolbar;

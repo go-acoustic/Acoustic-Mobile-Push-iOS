@@ -16,11 +16,15 @@
 #import <AcousticMobilePush/AcousticMobilePush.h>
 #endif
 
-@interface MCEInboxTableViewController ()
+@interface MCEInboxTableViewController () {
+    NSData * _interfaceState;
+}
+@property CGPoint startingOffset;
 @property NSMutableArray * inboxMessages;
 @property NSMutableDictionary * richContents;
 @property UIViewController * alternateDisplayViewController;
 @property (nonatomic, strong) NSIndexPath *previewingIndexPath;
+@property UIBarButtonItem * refreshButton;
 @end
 
 @interface NSObject (AssociatedObject)
@@ -107,6 +111,11 @@
             [self.tableView insertRowsAtIndexPaths: @[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }
+    
+    if(self.startingOffset.y != 0) {
+        self.tableView.contentOffset = self.startingOffset;
+        self.startingOffset = CGPointZero;
+    }
 }
 
 -(void)syncDatabase:(NSNotification*)notification
@@ -124,15 +133,6 @@
         [self smartUpdateMessages:inboxMessages];
     });
 }
-
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[MCEInboxQueueManager sharedInstance] syncInbox];
-    });
-}
-
 
 -(void)setContentViewController: (NSNotification *) note {
     self.alternateDisplayViewController = note.object;
@@ -198,17 +198,23 @@
     MCEInboxMessage * inboxMessage = self.inboxMessages[indexPath.item];
     id<MCETemplate> template = [[MCETemplateRegistry sharedInstance] handlerForTemplate:inboxMessage.templateName];
     UITableViewCell* cell = [template cellForTableView: tableView inboxMessage:inboxMessage indexPath: indexPath];
+    cell.associatedObject = indexPath;
     
     if(!cell)
     {
         NSLog(@"Couldn't get a blank cell for template %@, perhaps it wasn't registered?", template);
         cell = [tableView dequeueReusableCellWithIdentifier:@"oops"];
-        if(!cell)
-        {
+        if(!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"oops"];
         }
     }
     
+    // Enable drag to create new window on iPadOS ≥ 13
+    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
+        cell.userInteractionEnabled = true;
+        [cell addInteraction: [[UIDragInteraction alloc] initWithDelegate: self]];
+    }
+
     return cell;
 }
 
@@ -243,7 +249,26 @@
 -(UIViewController*)viewControllerForIndexPath:(NSIndexPath*)indexPath
 {
     MCEInboxMessage * inboxMessage = self.inboxMessages[indexPath.row];
-    
+    return [self viewControllerForInboxMessage: inboxMessage];
+}
+
+-(MCEInboxMessage*) previousMessage: (MCEInboxMessage *) inboxMessage {
+    NSUInteger index = [self.inboxMessages indexOfObject:inboxMessage];
+    if(index > 0) {
+        return self.inboxMessages[index-1];
+    }
+    return nil;
+}
+
+-(MCEInboxMessage*) nextMessage: (MCEInboxMessage *) inboxMessage {
+    NSUInteger index = [self.inboxMessages indexOfObject:inboxMessage];
+    if(self.inboxMessages.count > index + 1) {
+        return self.inboxMessages[index+1];
+    }
+    return nil;
+}
+
+-(UIViewController*)viewControllerForInboxMessage: (MCEInboxMessage *) inboxMessage {
     NSString * template = inboxMessage.templateName;
     id <MCETemplate> templateHandler = [[MCETemplateRegistry sharedInstance] handlerForTemplate: template];
     id <MCETemplateDisplay> displayViewController = [templateHandler displayViewController];
@@ -268,24 +293,32 @@
     UIViewController * vc = (UIViewController *)displayViewController;
     
     UIBarButtonItem * spaceButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    UIBarButtonItem * previousButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"chevron-up"] style:UIBarButtonItemStylePlain target:self action:@selector(previousMessage:)];
-    previousButton.associatedObject = indexPath;
-    if(indexPath.item == 0)
-        previousButton.enabled=FALSE;
-    else
+    UIBarButtonItem * previousButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"chevron-up"] style:UIBarButtonItemStylePlain target:self action:@selector(openMessage:)];
+    previousButton.accessibilityLabel = @"prev";
+    MCEInboxMessage * previousInboxMessage = [self previousMessage: inboxMessage];
+    if(previousInboxMessage) {
+        previousButton.associatedObject = previousInboxMessage;
         previousButton.enabled=TRUE;
+    } else {
+        previousButton.enabled=FALSE;
+    }
+        
+    UIBarButtonItem * nextButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"chevron-down"] style:UIBarButtonItemStylePlain target:self action:@selector(openMessage:)];
+    nextButton.accessibilityLabel = @"next";
     
-    UIBarButtonItem * nextButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"chevron-down"] style:UIBarButtonItemStylePlain target:self action:@selector(nextMessage:)];
-    nextButton.associatedObject = indexPath;
-    if(indexPath.item == [self.inboxMessages count]-1)
-        nextButton.enabled=FALSE;
-    else
+    MCEInboxMessage * nextInboxMessage = [self nextMessage: inboxMessage];
+    if(nextInboxMessage) {
+        nextButton.associatedObject = nextInboxMessage;
         nextButton.enabled=TRUE;
-    
+    } else {
+        nextButton.enabled=FALSE;
+    }
+
     UIBarButtonItem * deleteButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(delete:)];
+    deleteButton.accessibilityLabel = @"trash";
     deleteButton.associatedObject = displayViewController;
     vc.navigationItem.rightBarButtonItems = @[deleteButton, spaceButton, nextButton, previousButton];
-    
+
     return vc;
 }
 
@@ -322,31 +355,16 @@
     }
 }
 
--(IBAction)previousMessage:(UIBarButtonItem*)sender
+-(IBAction)openMessage:(UIBarButtonItem*)sender
 {
     if(sender.associatedObject)
     {
-        NSIndexPath * indexPath = (NSIndexPath *) sender.associatedObject;
-        if(indexPath)
+        MCEInboxMessage * inboxMessage = (MCEInboxMessage *) sender.associatedObject;
+        if(inboxMessage)
         {
             [self.navigationController popViewControllerAnimated:TRUE];
-            NSIndexPath * newIndexPath = [NSIndexPath indexPathForItem:indexPath.item - 1 inSection:indexPath.section];
-            [self tableView: self.tableView didSelectRowAtIndexPath: newIndexPath];
-        }
-    }
-    
-}
-
--(IBAction)nextMessage:(UIBarButtonItem*)sender
-{
-    if(sender.associatedObject)
-    {
-        NSIndexPath * indexPath = (NSIndexPath *) sender.associatedObject;
-        if(indexPath)
-        {
-            [self.navigationController popViewControllerAnimated:TRUE];
-            NSIndexPath * newIndexPath = [NSIndexPath indexPathForItem:indexPath.item + 1 inSection:indexPath.section];
-            [self tableView: self.tableView didSelectRowAtIndexPath: newIndexPath];
+            UIViewController * controller = [self viewControllerForInboxMessage: inboxMessage];
+            [self.navigationController pushViewController: controller animated:true];
         }
     }
     
@@ -367,6 +385,90 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *) tableView
 {
     return 1;
+}
+
+// Generic State Restoration
+-(void)setInterfaceState: (NSData*) interfaceState {
+    _interfaceState = interfaceState;
+}
+
+// Generic State Restoration
+-(NSData*)interfaceState {
+    NSDictionary * userInfo = @{@"scroll": NSStringFromCGPoint(self.tableView.contentOffset)};
+    NSError * error = nil;
+    NSData * data = [NSPropertyListSerialization dataWithPropertyList:userInfo format: NSPropertyListXMLFormat_v1_0 options:0 error:&error];
+    if(error) {
+        NSLog(@"Can't encode interface state as data");
+        return nil;
+    }
+    return data;
+}
+
+-(void)restoreInterfaceStateIfAvailable {
+    if(!_interfaceState) {
+        return;
+    }
+    
+    NSError * error = nil;
+    NSDictionary * interfaceState = [NSPropertyListSerialization propertyListWithData:_interfaceState options:0 format:nil error:&error];
+    if(error) {
+        NSLog(@"can't decode interface state %@", error.localizedDescription);
+        return;
+    }
+    
+    self.startingOffset = CGPointFromString(interfaceState[@"scroll"]);
+    
+    _interfaceState = nil;
+}
+
+// State restoration iOS ≤12
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super encodeRestorableStateWithCoder:coder];
+    [coder encodeObject: self.interfaceState forKey: @"interfaceState"];
+}
+
+// State restoration iOS ≤12
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super decodeRestorableStateWithCoder:coder];
+    self.interfaceState = [coder decodeObjectForKey:@"interfaceState"];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[MCEInboxQueueManager sharedInstance] syncInbox];
+    });
+
+    // State Restoration and Multiple Window Support iOS ≥13
+    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
+        NSUserActivity * userActivity = self.view.window.windowScene.userActivity;
+        if(userActivity && [userActivity respondsToSelector:@selector(initWithActivityType:)]) {
+            self.userActivity = userActivity;
+        } else {
+            self.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+            self.view.window.windowScene.userActivity = self.userActivity;
+        }
+        
+        self.userActivity.title = NSStringFromClass(self.class);
+    }
+    
+    [self restoreInterfaceStateIfAvailable];
+}
+
+// State Restoration and Multiple Window Support iOS ≥13
+-(void)updateUserActivityState:(NSUserActivity *)activity {
+    [super updateUserActivityState:activity];
+    [activity addUserInfoEntriesFromDictionary: @{@"interfaceState": self.interfaceState}];
+}
+
+// State Restoration and Multiple Window Support iOS ≥13
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear: animated];
+    
+    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
+        self.view.window.windowScene.userActivity = nil;
+    }
 }
 
 @end

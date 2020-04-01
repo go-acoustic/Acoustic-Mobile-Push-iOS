@@ -22,9 +22,6 @@
 
 @interface MCESdk : NSObject
 
-/** This property sets the current alert view class, it can be customized by the developer of the application. */
-@property Class customAlertViewClass;
-
 /** This property sets the current alert view controller class, it can be customized by the developer of the application. */
 @property Class customAlertControllerClass;
 
@@ -86,13 +83,6 @@
 - (void)processDynamicCategoryNotification:(NSDictionary *)userInfo identifier:(NSString*)identifier userText: (NSString*)userText;
 
 
-/** Present notification to user 
- 
- @param userInfo push payload from APNS
-
- */
--(void)presentNotification: (NSDictionary*)userInfo;
-
  /** Process specified dynamic category notification for remote notifications, integration point of the application delegate application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
  
  @param userInfo notification.userInfo of the forLocalNotification parameter of the caller
@@ -100,12 +90,6 @@
  
  */
 - (void)processCategoryNotification:(NSDictionary *)userInfo identifier:(NSString*)identifier;
-
-/** Present or perform action in payload depending on the activation state of the application. If it is running before the message arrives, present the notification. If it starts as a result of a notification, execute the notification-action part of the payload.
-
- @param userInfo push payload from APNS
- */
--(void)presentOrPerformNotification:(NSDictionary*)userInfo;
 
 /** Extract the message string from the APS dictionary, including string vs dictionary structure and localization and format arguments.
  
@@ -121,9 +105,6 @@
 
 /** This method walks through the view controller stack for the top view controller. */
 -(UIViewController*)findCurrentViewController;
-
-/** This property returns the current alert view class, it can be customized by the developer of the application. */
--(Class) alertViewClass;
 
 /** This property returns the current alert view controller class, it can be customized by the developer of the application. */
 -(Class) alertControllerClass;

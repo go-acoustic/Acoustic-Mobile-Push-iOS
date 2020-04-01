@@ -92,7 +92,7 @@
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         
         UIWindow * window = UIApplication.sharedApplication.keyWindow;
-        if (@available(iOS 11.0, *)) {
+        if (@available(macCatalyst 13.0, iOS 11.0, *)) {
             if(window.safeAreaInsets.top > statusBarHeight) {
                 self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
             } else {
@@ -115,6 +115,47 @@
 
 -(void)setLoading
 {
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.restorationIdentifier = @"PostInboxMesssage";
+    self.restorationClass = [MCEInboxPostTemplateDisplay class];
+}
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super encodeRestorableStateWithCoder:coder];
+    [coder encodeObject: self.inboxMessage.inboxMessageId forKey: @"inboxMessageId"];
+    
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super decodeRestorableStateWithCoder:coder];
+    NSString * inboxMessageId = [coder decodeObjectForKey: @"inboxMessageId"];
+    self.inboxMessage = [MCEInboxDatabase.sharedInstance inboxMessageWithInboxMessageId:inboxMessageId];
+}
+
++ (UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *)identifierComponents coder:(NSCoder *)coder {
+    return [[MCEInboxPostTemplateDisplay alloc] initWithNibName: @"MCEInboxPostTemplateDisplay" bundle:nil];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // iOS 13 Multiple Window Support
+    if (@available(macCatalyst 13.0, iOS 13, *)) {
+        self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+        self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
+        self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (@available(macCatalyst 13.0, iOS 13, *)) {
+        self.view.window.windowScene.userActivity = nil;
+    }
 }
 
 @end

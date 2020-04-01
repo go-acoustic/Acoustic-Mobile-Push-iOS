@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <imageView alignment="left" image="Logo" id="Riv-IU-fB8"/>
+                        <imageView alignment="left" image="Campaign" id="2Xu-Bu-gVJ"/>
+                        <label alignment="center" text="Version" id="hSL-Uw-JEU">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <button width="1" alignment="left" title="Registration" id="Xdx-iv-FrH">
+                            <connections>
+                                <segue destination="1Bd-I3-8gG" kind="push" id="2H7-To-6oh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Attributes" id="wPJ-wk-zAG">
+                            <connections>
+                                <segue destination="qVO-1b-O23" kind="push" id="vVH-jO-AGz"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Events" id="IOD-oP-7qf">
+                            <connections>
+                                <segue destination="oPK-hn-z6d" kind="push" id="QcB-XF-pTL"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="versionLabel" destination="hSL-Uw-JEU" id="VWa-qq-wns"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-109" y="35"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="tnu-w5-YVI">
+            <objects>
+                <controller title="Registration" id="1Bd-I3-8gG" customClass="RegistrationController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <label alignment="left" text="User Id" id="DW8-ef-ahR"/>
+                        <label alignment="left" text="Unknown" id="Ixd-fO-SIj">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                        <separator alignment="left" id="EAQ-s7-nkY"/>
+                        <label alignment="left" text="Channel Id" id="Aye-We-zqU"/>
+                        <label alignment="left" text="Unknown" id="TDQ-QO-0QW">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                        <separator alignment="left" id="JQs-Jf-moz"/>
+                        <label alignment="left" text="App Key" id="i2V-du-nvR"/>
+                        <label alignment="left" text="Unknown" id="Mup-BM-t03">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="appKeyLabel" destination="Mup-BM-t03" id="LJO-2A-ceS"/>
+                        <outlet property="channelIdLabel" destination="TDQ-QO-0QW" id="F5v-yq-kSs"/>
+                        <outlet property="userIdLabel" destination="Ixd-fO-SIj" id="W0O-kE-IqE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-117"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <imageView width="1" height="82" alignment="center" hidden="YES" contentMode="scaleAspectFill" id="KTb-3I-hv3"/>
+                        <group width="1" alignment="left" contentMode="top" layout="vertical" id="J0u-Qq-a44">
+                            <items>
+                                <label width="136" alignment="left" hidden="YES" text="Label" textAlignment="left" numberOfLines="4" id="xB4-QP-PJG">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="136" alignment="left" hidden="YES" text="body" textAlignment="left" numberOfLines="5" id="iwD-vY-de7">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <map height="100" alignment="left" hidden="YES" id="eeF-fG-HM1"/>
+                            </items>
+                            <edgeInsets key="margins" left="3" right="3" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="587" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <imageView width="1" height="82" alignment="center" hidden="YES" contentMode="scaleAspectFill" id="cDj-lJ-Kqc"/>
+                        <group width="1" alignment="left" contentMode="top" layout="vertical" id="wdS-s3-5b3">
+                            <items>
+                                <label width="136" alignment="left" hidden="YES" text="Label" textAlignment="left" numberOfLines="4" id="r0N-ns-Zvb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="136" alignment="left" hidden="YES" text="body" textAlignment="left" numberOfLines="5" id="BEp-Tl-5Dj">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <map height="100" alignment="left" hidden="YES" id="dip-T4-wAA"/>
+                            </items>
+                            <edgeInsets key="margins" left="3" right="3" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="587" y="1069"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="OQ7-zb-Gyu">
+            <objects>
+                <controller title="Events" id="oPK-hn-z6d" customClass="EventsController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Send Event" id="O7a-Fi-PJ7">
+                            <connections>
+                                <action selector="sendEvent" destination="oPK-hn-z6d" id="NgC-oL-787"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Idle" id="kX3-qw-SkT">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                        <separator alignment="left" id="W1V-HB-Xyz"/>
+                        <button width="1" alignment="left" title="Queue Event" id="8yv-7h-LO8">
+                            <connections>
+                                <action selector="queueEvent" destination="oPK-hn-z6d" id="SeE-Ye-SKK"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Idle" id="fKY-VW-cfo">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                        <separator alignment="left" id="48S-7L-Mwc"/>
+                        <button width="1" alignment="left" title="Send Queue" id="7N1-wr-M13">
+                            <connections>
+                                <action selector="sendQueue" destination="oPK-hn-z6d" id="HIB-KC-Rn7"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Idle" id="He3-73-ABR">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="queueEventStatus" destination="fKY-VW-cfo" id="A7X-9M-XeG"/>
+                        <outlet property="sendEventStatus" destination="kX3-qw-SkT" id="PLM-qx-Azt"/>
+                        <outlet property="sendQueueStatus" destination="He3-73-ABR" id="ATI-EI-ATQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-109" y="455"/>
+        </scene>
+        <!--Attributes-->
+        <scene sceneID="ooF-bW-Cbl">
+            <objects>
+                <controller title="Attributes" id="qVO-1b-O23" customClass="AttributesController" customModule="Manual_Watch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Update Attribute" id="78s-m2-XRT">
+                            <connections>
+                                <action selector="updateAttribute" destination="qVO-1b-O23" id="ed9-pZ-koo"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Idle" id="ARD-oN-F7H">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                        <separator alignment="left" id="ahT-Mb-UKI"/>
+                        <button width="1" alignment="left" title="Delete Attribute" id="4Ph-YW-073">
+                            <connections>
+                                <action selector="deleteAttribute" destination="qVO-1b-O23" id="7Q1-Eg-rmE"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Idle" id="sNO-rz-KhK">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="deleteAttributeStatus" destination="sNO-rz-KhK" id="pKe-mU-Czc"/>
+                        <outlet property="updateAttributeStatus" destination="ARD-oN-F7H" id="dJF-fH-hTA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="187"/>
+        </scene>
+        <!--HandOff-->
+        <scene sceneID="7GN-0c-FBV">
+            <objects>
+                <controller identifier="handoff" title="HandOff" id="1aK-Rz-SDN" customClass="HandOffController">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Afo-6K-awQ">
+                            <items>
+                                <label width="1" height="0.59999999999999998" alignment="left" text="Please continue on your iPhone or Mac with handoff" textAlignment="center" numberOfLines="0" id="wLr-5r-g7d"/>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Dismiss" id="hTS-Ef-n9Q">
+                                    <connections>
+                                        <action selector="dismiss:" destination="1aK-Rz-SDN" id="hso-mQ-7OU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="1069"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Campaign" width="170" height="36.5"/>
+        <image name="Logo" width="170" height="32.5"/>
+    </resources>
+</document>

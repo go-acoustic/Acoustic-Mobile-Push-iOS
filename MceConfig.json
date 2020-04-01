@@ -2,8 +2,9 @@
     "Please note: if you are using a Swift based Application Delegate you must include the product name and class name in AppDelegateClass, for example": "SwiftSample.AppDelegate",
     "appDelegateClass": "AppDelegate",
     
-    "Please note: if you are in Europe, you may need to change the value in 'baseUrl' below to": "https://sdk6.ibm.xtify.com",
-    "baseUrl": "https://sdk.ibm.xtify.com",
+    "Please note": "you will need to update your baseUrl to the one supplied to you",
+    "baseUrl": "https://mobile-sdk-lib-XX-Y.brilliantcollector.com",
+
     "appKey": {
         "dev": "INSERT YOUR DEV APPKEY HERE",
         "prod": "INSERT YOUR PROD APPKEY HERE"

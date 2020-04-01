@@ -211,6 +211,10 @@ const int MARGIN = 8;
 
 -(void)updateContent
 {
+    if(![NSThread isMainThread]) {
+        [self performSelectorOnMainThread:@selector(updateContent) withObject:nil waitUntilDone:false];
+        return;
+    }
     [self updateContentText];
     
     [self resizeViewConstraints: self.videoPlay size: CGSizeZero];
@@ -434,9 +438,12 @@ const int MARGIN = 8;
             return;
         }
         
-        NSURL * url = [NSURL URLWithString:self.message.content[@"contentVideo"]];
-        self.resizeCallback(videoSize, url, self.reload);
-        [self resizeViewConstraints:self.contentVideo contentUrl: url];
+        if(self.resizeCallback) {
+            NSURL * url = [NSURL URLWithString:self.message.content[@"contentVideo"]];
+            self.resizeCallback(videoSize, url, self.reload);
+            [self resizeViewConstraints:self.contentVideo contentUrl: url];
+            self.resizeCallback = nil;
+        }
     }
 }
 
@@ -446,10 +453,10 @@ const int MARGIN = 8;
 -(void) resizeViewConstraints: (UIView*)view contentUrl:(NSURL*)url
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSCache * contentSizeCache = [MCEInboxPostTemplate sharedInstance].contentSizeCache;
+        NSMutableDictionary * contentSizeCache = [MCEInboxPostTemplate sharedInstance].contentSizeCache;
         CGFloat width = self.container.frame.size.width;
         CGFloat height = 0;
-        NSString * contentSizeString = [contentSizeCache objectForKey: url];
+        NSString * contentSizeString = contentSizeCache[url];
         if(contentSizeString)
         {
             self.reload = FALSE;

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright © 2015, 2020 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -53,26 +53,41 @@
 -(void)performAction:(NSDictionary*)action
 {
     NSURL * url = [NSURL URLWithString: action[@"value"]];
-    [self.client getPassFrom:url withCompletion:^(PKPass * pass, NSError * error){
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if(error)
-            {
-                NSLog(@"Pass error %@", [error localizedDescription]);
-                [[[MCESdk.sharedInstance.alertViewClass alloc] initWithTitle:@"Pass Verifcation Failed" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil] show];
-                return;
-            }
-        
-            NSLog(@"Pass downloaded");
-            PKAddPassesViewController * passVC = [[PKAddPassesViewController alloc] initWithPass:pass];
-            passVC.delegate=self;
+    if([PKAddPassesViewController canAddPasses]) {
+        [self.client getPassFrom:url withCompletion:^(PKPass * pass, NSError * error){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if(error)
+                {
+                    NSLog(@"Pass error %@", [error localizedDescription]);
+
+                    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Pass Verifcation Failed" message:[error localizedDescription] preferredStyle: UIAlertControllerStyleAlert];
+                    [alert addAction: [UIAlertAction actionWithTitle:@"Ok" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    }]];
+                    
+                    UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
+                    [controller presentViewController:alert animated:TRUE completion:^{}];
+                    return;
+                }
             
-            UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
-            [controller presentViewController:passVC animated:TRUE completion:^(void){
-                NSLog(@"Pass presented to user");
+                NSLog(@"Pass downloaded");
+                PKAddPassesViewController * passVC = [[PKAddPassesViewController alloc] initWithPass:pass];
+                passVC.delegate=self;
+                
+                UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
+                [controller presentViewController:passVC animated:TRUE completion:^(void){
+                    NSLog(@"Pass presented to user");
+                }];
+            });
+        }];
+    } else if(url) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIApplication.sharedApplication openURL:url options:@{} completionHandler:^(BOOL success) {
+                NSLog(@"Pass presented to user via OpenURL");
             }];
         });
-    }];
+    }
 }
+
 
 +(void)registerPlugin
 {

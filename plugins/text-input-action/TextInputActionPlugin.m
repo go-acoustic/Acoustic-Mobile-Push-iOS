@@ -31,7 +31,12 @@
 
 -(void)performAction:(NSDictionary*)action withPayload:(NSDictionary*)payload textInput:(NSString*)textInput
 {
-    [[[MCESdk.sharedInstance.alertViewClass alloc]initWithTitle:[NSString stringWithFormat: @"User entered text %@", textInput] message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle: [NSString stringWithFormat: @"User entered text %@", textInput] message:nil preferredStyle: UIAlertControllerStyleAlert];
+    [alert addAction: [UIAlertAction actionWithTitle:@"Ok" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    
+    UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
+    [controller presentViewController:alert animated:TRUE completion:^{}];
 }
 
 +(void)registerPlugin

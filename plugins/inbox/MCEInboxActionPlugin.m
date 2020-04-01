@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright © 2015, 2020 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -20,7 +20,7 @@
 
 @interface MCEInboxActionPlugin  ()
 @property NSString * attribution;
-@property NSString * mailingId;
+@property NSNumber * mailingId;
 @property UIViewController <MCETemplateDisplay> * displayViewController;
 @end
 
@@ -52,7 +52,13 @@
     if(payload[@"mce"])
     {
         self.attribution = payload[@"mce"][@"attribution"];
-        self.mailingId = payload[@"mce"][@"mailingId"];
+        if([payload[@"mce"][@"mailingId"] respondsToSelector:@selector(isEqualToNumber:)]) {
+            self.mailingId = payload[@"mce"][@"mailingId"];
+        } else if ([payload[@"mce"][@"mailingId"] respondsToSelector:@selector(isEqualToString:)]) {
+            NSString * string = payload[@"mce"][@"mailingId"];
+            double value = [string doubleValue];
+            self.mailingId = @(value);
+        }
     }
     
     if(!action[@"inboxMessageId"])

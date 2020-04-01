@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/MCEEventService.h</key>
 		<data>
-		KlMN2tYY9C/cgT2JyU2rj/GBouc=
+		pMhHPQSt5EonIYHgOCBzeX4Guko=
 		</data>
 		<key>Headers/MCENotificationDelegate.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/MCEWatchSdk.h</key>
 		<data>
-		ngxb25cNNNKJ1aGVgqg7HKG3x6g=
+		Zva4s5X+yZBBQPek2bUGBZTgjjI=
 		</data>
 		<key>Headers/UIColor+Hex.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kvD+OmMnlPTIYd7tTnEAGoxGxv8=
+		Ab0AbZ/dtuG6XGsiKvv0QOUh9hM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,6 +65,10 @@
 	<dict>
 		<key>Headers/AcousticMobilePushWatch.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oOMCORGGRP1wXVzNjonORkgz5NE=
+			</data>
 			<key>hash2</key>
 			<data>
 			EClqaxLFRQRdYvmB/w8XTmRIhm4YEPujld/UCYUQLx4=
@@ -72,6 +76,10 @@
 		</dict>
 		<key>Headers/MCEAttributesQueueManager.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+hBjr7kHPxkchqnCUQwoeW6H428=
+			</data>
 			<key>hash2</key>
 			<data>
 			chXfeOgUIy0/GeadYYqXePeKU7AouLsumw4//EmYgnM=
@@ -79,6 +87,10 @@
 		</dict>
 		<key>Headers/MCEConfig.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1RlGIn7T9TngoeMoSv6+LdPKyq8=
+			</data>
 			<key>hash2</key>
 			<data>
 			OvcPK6QTxOHI78zFrPVHODv7TIJjXx+WiH2c1LNR2Oo=
@@ -86,6 +98,10 @@
 		</dict>
 		<key>Headers/MCEConstants.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/4uN6ZgjDJxgX0zWeXFqezy2j8k=
+			</data>
 			<key>hash2</key>
 			<data>
 			KL9FYgSt23bzJR9p+GrdMTxMkcW9lj2QQ73BC9G2lyo=
@@ -93,6 +109,10 @@
 		</dict>
 		<key>Headers/MCEEvent.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vbTTs9AenGyZg57ywEKPpRyxoAY=
+			</data>
 			<key>hash2</key>
 			<data>
 			u2/tBxjwY+e8fZiiIQIIfztv78NSQaIJ2JgYbHlg52o=
@@ -100,13 +120,21 @@
 		</dict>
 		<key>Headers/MCEEventService.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pMhHPQSt5EonIYHgOCBzeX4Guko=
+			</data>
 			<key>hash2</key>
 			<data>
-			ahFG/wz9k7g8hqR11yFClZVyu+Ko116FEH0OWwoQO4A=
+			tq2Uxp+wBlZNXrWlH2un0nFywaal35qeuGTDdpm3zFs=
 			</data>
 		</dict>
 		<key>Headers/MCENotificationDelegate.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Q77thwkOYiHeTdeXC5andvUNMEI=
+			</data>
 			<key>hash2</key>
 			<data>
 			K8SqCyPua/PhxXt9R5rL59Sb0X8WdE5Wqo1UiVAsqns=
@@ -114,6 +142,10 @@
 		</dict>
 		<key>Headers/MCENotificationInterfaceController.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			lKdsLdmejT1gqOyr1m+IaTTZHCk=
+			</data>
 			<key>hash2</key>
 			<data>
 			5vWodByRH+E2Nq03P71+O7ic/OXxLzmyKfrR4Lo8v14=
@@ -121,6 +153,10 @@
 		</dict>
 		<key>Headers/MCERegistrationDetails.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sSQ7DX4z0m/yEO6aElW/C16tJCk=
+			</data>
 			<key>hash2</key>
 			<data>
 			kpCnkijg8SLu7QV3qJJN9ZE8Xlr3Zrippi3gJ8R8uJ4=
@@ -128,6 +164,10 @@
 		</dict>
 		<key>Headers/MCEWatchActionRegistry.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			95QMJkGtvg2PnfLURDazyZnlW8s=
+			</data>
 			<key>hash2</key>
 			<data>
 			l+u8uavQJtbT4FpmaiTwug0fpIsMJq8cBwD/mlzhkMI=
@@ -135,13 +175,21 @@
 		</dict>
 		<key>Headers/MCEWatchSdk.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Zva4s5X+yZBBQPek2bUGBZTgjjI=
+			</data>
 			<key>hash2</key>
 			<data>
-			c9HM098GFl8MvNXluH1xdO+yPXYz9PbHPWC8BL6tysE=
+			UQ9z4orc9AvFo6resmqBXZschK01+Ffibql7+nCIR4E=
 			</data>
 		</dict>
 		<key>Headers/UIColor+Hex.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bgkaz4/OkrL7phhm7LDUDH7yJkc=
+			</data>
 			<key>hash2</key>
 			<data>
 			/gTaUCISmw7cOyqXUU4oUcg2sOAziq/V233oPTXFEuc=
@@ -149,6 +197,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uBJ8e2Lnp2W53bvgK7tD1h1z6cQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			ewyEncZJ8KJVvLzQRel+jk9W5mjtL0gKoxsBUVBqO84=

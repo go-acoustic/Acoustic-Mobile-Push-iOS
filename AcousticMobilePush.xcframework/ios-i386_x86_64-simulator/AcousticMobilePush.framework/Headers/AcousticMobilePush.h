@@ -39,5 +39,4 @@ FOUNDATION_EXPORT const unsigned char AcousticMobilePushVersionString[];
 #import <AcousticMobilePush/MCESdk.h>
 #import <AcousticMobilePush/MCETemplate.h>
 #import <AcousticMobilePush/MCETemplateRegistry.h>
-#import <AcousticMobilePush/MCEWebViewActionDelegate.h>
 #import <AcousticMobilePush/UIColor+Hex.h>

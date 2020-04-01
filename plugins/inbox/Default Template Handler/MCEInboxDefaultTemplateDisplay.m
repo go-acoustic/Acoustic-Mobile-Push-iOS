@@ -111,7 +111,7 @@
     [self updateContent];
     
     self.boxView.layer.borderWidth=1;
-    if (@available(iOS 13.0, *)) {
+    if (@available(macCatalyst 13.0, iOS 13.0, *)) {
         self.boxView.layer.borderColor = UIColor.separatorColor.CGColor;
     } else {
         self.boxView.layer.borderColor = [UIColor colorWithHexString:@"e0e0e0"].CGColor;
@@ -128,7 +128,7 @@
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         
         UIWindow * window = UIApplication.sharedApplication.keyWindow;
-        if (@available(iOS 11.0, *)) {
+        if (@available(macCatalyst 13.0, iOS 11.0, *)) {
             if(window.safeAreaInsets.top > statusBarHeight) {
                 self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
             } else {
@@ -204,13 +204,26 @@
     [self.progressView setHidden:true];
 }
 
+-(BOOL)errorIsAboutUrl: (NSError*) error {
+    NSURL * url = error.userInfo[@"NSErrorFailingURLKey"];
+    return url && [url respondsToSelector: @selector(absoluteURL)] && [url.scheme isEqual:@"about"];
+}
+
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error {
     [self.progressView setHidden:true];
+    if([self errorIsAboutUrl:error]) {
+        return;
+    }
+    
     [self presentLoadingError:error];
 }
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
     [self.progressView setHidden:true];
+    if([self errorIsAboutUrl:error]) {
+        return;
+    }
+
     [self presentLoadingError:error];
 }
 
@@ -263,8 +276,48 @@
     } else {
         self.date.textColor = [UIColor lightThemeColor:[UIColor colorWithHexString:@"005CFF"] darkThemeColor:[UIColor colorWithHexString:@"7FADFF"]];
     }
-    if (@available(iOS 13.0, *)) {
+    if (@available(macCatalyst 13.0, iOS 13.0, *)) {
         self.boxView.backgroundColor = [UIColor systemBackgroundColor];
+    }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.restorationIdentifier = @"DefaultInboxMesssage";
+    self.restorationClass = [MCEInboxDefaultTemplateDisplay class];
+}
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super encodeRestorableStateWithCoder:coder];
+    [coder encodeObject: self.inboxMessage.inboxMessageId forKey: @"inboxMessageId"];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    [super decodeRestorableStateWithCoder:coder];
+    NSString * inboxMessageId = [coder decodeObjectForKey: @"inboxMessageId"];
+    self.inboxMessage = [MCEInboxDatabase.sharedInstance inboxMessageWithInboxMessageId:inboxMessageId];
+}
+
++ (UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray<NSString *> *)identifierComponents coder:(NSCoder *)coder {
+    return [[MCEInboxDefaultTemplateDisplay alloc] initWithNibName:@"MCEInboxDefaultTemplateDisplay" bundle:nil];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    // iOS 13 Multiple Window Support
+    if (@available(macCatalyst 13.0, iOS 13, *)) {
+        self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+        self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
+        self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (@available(macCatalyst 13.0, iOS 13, *)) {
+        self.view.window.windowScene.userActivity = nil;
     }
 }
 

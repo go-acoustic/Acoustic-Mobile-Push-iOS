@@ -44,5 +44,8 @@
 
 /** This method will execute the notification action in the userInfo dictionary */
 -(void) performNotificationAction: (NSDictionary*) userInfo;
+
+- (void)applicationDidFinishLaunchingWithConfig:(NSDictionary*)config;
+
 @end
 

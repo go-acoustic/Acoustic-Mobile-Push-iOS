@@ -39,8 +39,12 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
 {
     if(self=[super init])
     {
-        self.contentSizeCache = [[NSCache alloc] init];
-        self.postHeightCache = [[NSCache alloc] init];
+        if([NSFileManager.defaultManager fileExistsAtPath:self.sizeCachePath]) {
+            self.contentSizeCache = [NSMutableDictionary dictionaryWithContentsOfFile:self.sizeCachePath];
+        } else {
+            self.contentSizeCache = [[NSMutableDictionary alloc] init];
+        }
+        self.postHeightCache = [[NSMutableDictionary alloc] init];
         self.fakeContentView = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.fakeContentView setFont:[UIFont systemFontOfSize:17]];
         self.fakeContentView.lineBreakMode = NSLineBreakByWordWrapping;
@@ -63,6 +67,13 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
     return [[MCEInboxPostTemplateDisplay alloc] init];
 }
 
+-(NSString*) sizeCachePath {
+    NSString * libraryPath = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0];
+    NSString * privateDirectory = [libraryPath stringByAppendingPathComponent:@"co.acoustic.mobile-push"];
+    NSString * privatePath = [privateDirectory stringByAppendingPathComponent:@"inboxImageSize.plist"];
+    return privatePath;
+}
+
 /* This method provides a blank table view cell that can later be customized to preview the message */
 -(UITableViewCell *) cellForTableView: (UITableView*)tableView inboxMessage:(MCEInboxMessage *)inboxMessage indexPath:(NSIndexPath*)indexPath
 {
@@ -76,9 +87,10 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
     }
     
     [cell.container setInboxMessage: inboxMessage resizeCallback: ^(CGSize size, NSURL * url, BOOL reload) {
-        [self.contentSizeCache setObject:NSStringFromCGSize(size) forKey:url];
-        if(reload && [tableView cellForRowAtIndexPath: indexPath])
-        {
+        self.contentSizeCache[url] = NSStringFromCGSize(size);
+        
+        [self.contentSizeCache writeToURL:[NSURL fileURLWithPath:self.sizeCachePath isDirectory:false] atomically:true];
+        if(reload && [tableView cellForRowAtIndexPath: indexPath]) {
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
     }];
@@ -107,12 +119,14 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
         
         if(videoUrlString)
         {
-            cachedContentSize = [self.contentSizeCache objectForKey: [NSURL URLWithString: videoUrlString]];
+            NSURL * url = [NSURL URLWithString:videoUrlString];
+            cachedContentSize = self.contentSizeCache[url];
         }
         
         if(imageUrlString)
         {
-            cachedContentSize = [self.contentSizeCache objectForKey: [NSURL URLWithString: imageUrlString]];
+            NSURL * url = [NSURL URLWithString:imageUrlString];
+            cachedContentSize =  self.contentSizeCache[url];
         }
         
         if(cachedContentSize)

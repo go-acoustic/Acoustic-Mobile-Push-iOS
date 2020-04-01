@@ -22,7 +22,7 @@
 #import <CoreLocation/CoreLocation.h>
 #endif
 
-#if TARGET_OS_UIKITFORMAC
+#if TARGET_OS_MACCATALYST
 #define MCE_FF_MAC @"desktop"
 #else
 #if TARGET_OS_WATCH
@@ -48,7 +48,7 @@
 /** The osVersion method returns the version of the OS that is running. */
 + (NSString *)osVersion;
 
-#if !TARGET_OS_WATCH && !TARGET_OS_UIKITFORMAC
+#if !TARGET_OS_WATCH && !TARGET_OS_MACCATALYST
 /** The carrierName method returns the name of the carrier that the device is connected to. */
 + (NSString *)carrierName;
 #endif

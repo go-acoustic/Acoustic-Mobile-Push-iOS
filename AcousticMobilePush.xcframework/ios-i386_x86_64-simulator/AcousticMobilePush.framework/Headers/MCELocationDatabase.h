@@ -27,7 +27,7 @@
 /** This method returns the nearby sycned geofences from the server. */
 -(NSMutableSet*)geofencesNearCoordinate: (CLLocationCoordinate2D)coordinate radius: (double)radius;
 
-#if !TARGET_OS_UIKITFORMAC
+#if !TARGET_OS_MACCATALYST
 /** This method returns the beacon regions synced from the server. */
 -(NSMutableSet*)beaconRegions;
 #endif
