@@ -1,0 +1,1 @@
+Additional documentation is available [online](https://developer.ibm.com/customer-engagement/mobile-app-messaging/) including the [Getting Started Guide](https://developer.ibm.com/customer-engagement/tutorials/getting-started-mobile-app-messaging-ios-apps/)
