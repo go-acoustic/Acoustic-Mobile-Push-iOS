@@ -22,22 +22,23 @@
     return sharedInstance;
 }
 
--(void)showActionsMenu:(NSDictionary*)actionMenuAction withPayload:(NSDictionary*)userInfo
+-(void)showActionsMenu:(NSDictionary*)actionMenuAction withPayload:(NSDictionary*)payload
 {
-    if(!userInfo[@"category-actions"] || ![userInfo[@"category-actions"] isKindOfClass:[NSArray class]])
+    if(!payload[@"category-actions"] || ![payload[@"category-actions"] isKindOfClass:[NSArray class]])
     {
         NSLog(@"Did not get the expected data from payload.");
         return;
     }
     
-    NSString * alert = [[MCESdk sharedInstance] extractAlert:userInfo[@"aps"]];
+    MCENotificationPayload * notificationPayload = [[MCENotificationPayload alloc] initWithPayload: payload];
+    NSString * alert = [notificationPayload extractAlertString];
     NSString * appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle: appName message: alert preferredStyle: UIAlertControllerStyleAlert];
     
     int index=0;
-    for (NSDictionary * action in userInfo[@"category-actions"]) {
+    for (NSDictionary * action in payload[@"category-actions"]) {
         [alertController addAction: [UIAlertAction actionWithTitle:action[@"name"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction) {
-            [MCEActionRegistry.sharedInstance performAction:action forPayload:userInfo source:SimpleNotificationSource attributes:nil userText:nil];
+            [MCEActionRegistry.sharedInstance performAction:action forPayload:payload source:SimpleNotificationSource attributes:nil userText:nil];
         }]];
         index++;
     }

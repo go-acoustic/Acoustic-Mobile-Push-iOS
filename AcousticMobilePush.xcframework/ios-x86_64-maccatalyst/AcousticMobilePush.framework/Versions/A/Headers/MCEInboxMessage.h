@@ -39,6 +39,7 @@
 /** attribution is an identifier that specifies a campaign. */
 @property NSString * attribution;
 
+/** mailingId is an identifier that specifies a mailing. */
 @property id mailingId;
 
 /** isRead is TRUE when the message has been read and FALSE by default. */

@@ -75,6 +75,6 @@
  @param download TRUE if the resource should be downloaded if it's not cached, FALSE otherwise
  @returns Cached NSData object.
  */
-+(NSData*)cachedDataForUrl:(NSURL*)url downloadIfRequired: (BOOL)download;
++(NSData*)cachedDataForUrl:(NSURL*)url downloadIfRequired: (BOOL) download;
 
 @end

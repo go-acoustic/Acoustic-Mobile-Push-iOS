@@ -54,12 +54,10 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
-      launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "WatchSample Extension/PushNotificationPayload.apns">
+      launchAutomaticallySubstyle = "8">
       <RemoteRunnable
-         runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SwiftSample">
+         runnableDebuggingMode = "2">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C35A58D323479FA500C3E859"
@@ -74,21 +72,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES"
-      launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "WatchSample Extension/PushNotificationPayload.apns">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SwiftSample">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C35A58D323479FA500C3E859"
-            BuildableName = "Watch.app"
-            BlueprintName = "Watch"
-            ReferencedContainer = "container:SwiftSample.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
+      debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"

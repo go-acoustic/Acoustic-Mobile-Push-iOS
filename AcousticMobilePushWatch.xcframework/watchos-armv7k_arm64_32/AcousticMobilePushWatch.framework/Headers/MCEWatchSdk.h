@@ -22,10 +22,10 @@
 @interface MCEWatchSdk: NSObject <WCSessionDelegate>
 
 /** This method returns the singleton object of this class. */
-@property(class, nonatomic, readonly) MCEWatchSdk * sharedInstance NS_SWIFT_NAME(shared);
+@property(class, nonatomic, readonly) MCEWatchSdk * _Nonnull sharedInstance NS_SWIFT_NAME(shared);
 
 /** Get the current SDK Version number as a string. */
--(NSString*)sdkVersion;
+- (NSString * _Nonnull) sdkVersion;
 
 /** This method should be called from the watch extension delegate's applicationWillResignActive method */
 - (void)applicationWillResignActive;
@@ -37,15 +37,15 @@
 - (void)applicationDidFinishLaunching;
 
 /** This property can be used to override if a notification is delivered to the device when the app is running. */
-@property (nonatomic, assign) BOOL (^presentNotification)(NSDictionary * userInfo);
+@property (nonatomic, assign) BOOL (^ _Nullable presentNotification)(NSDictionary * _Nonnull userInfo);
 
 /** This method will execute the category action referenced by the identified notification action. */
--(void) performNotificationAction: (NSDictionary*) userInfo identifier: (NSString*) identifier;
+-(void) performNotificationAction: (NSDictionary * _Nonnull) userInfo identifier: (NSString * _Nonnull) identifier;
 
 /** This method will execute the notification action in the userInfo dictionary */
--(void) performNotificationAction: (NSDictionary*) userInfo;
+-(void) performNotificationAction: (NSDictionary * _Nonnull) userInfo;
 
-- (void)applicationDidFinishLaunchingWithConfig:(NSDictionary*)config;
+- (void)applicationDidFinishLaunchingWithConfig: (NSDictionary * _Nullable) config;
 
 @end
 

@@ -11,6 +11,12 @@
 import UIKit
 
 class CustomActionVC: UIViewController, MCEActionProtocol {
+    enum UserDefaultKeys: String {
+        case customActions
+        case customActionType
+        case customActionValue
+    }
+
     var _interfaceState: Data? = nil
     
     @IBOutlet weak var typeField: UITextField!
@@ -38,9 +44,9 @@ class CustomActionVC: UIViewController, MCEActionProtocol {
     
     func registerCustomAction(string: String) {
         registeredTypes.append(string)
-        var customActions = Set( UserDefaults.standard.stringArray(forKey: "customActions") ?? [String]() )
+        var customActions = Set( UserDefaults.standard.stringArray(forKey: UserDefaultKeys.customActions.rawValue) ?? [String]() )
         customActions.insert(string)
-        UserDefaults.standard.set(Array(customActions), forKey: "customActions")
+        UserDefaults.standard.set(Array(customActions), forKey: UserDefaultKeys.customActions.rawValue)
         
         statusLabel.text = "Registering Custom Action: \(string)"
         statusLabel.textColor = colors.success
@@ -118,14 +124,6 @@ class CustomActionVC: UIViewController, MCEActionProtocol {
             }
         }
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        for type in registeredTypes {
-            MCEActionRegistry.shared.unregisterAction(type)
-        }
-        registeredTypes.removeAll()
-    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -141,8 +139,14 @@ class CustomActionVC: UIViewController, MCEActionProtocol {
     // This method simulates how custom actions receive push actions
     @objc func receiveCustomAction(action: NSDictionary) {
         DispatchQueue.main.async {
-            self.statusLabel.text = "Received Custom Action: \(action)"
-            self.statusLabel.textColor = self.colors.success
+            if let type = action["type"] as? String, self.registeredTypes.contains(type) {
+                self.statusLabel.text = "Received Custom Action: \(action)"
+                self.statusLabel.textColor = self.colors.success
+            } else {
+                self.statusLabel.textColor = self.colors.warning
+                self.statusLabel.text = "Previously Registered Custom Action Received: \(action)"
+
+            }
         }
     }
     
@@ -155,6 +159,19 @@ class CustomActionVC: UIViewController, MCEActionProtocol {
         super.traitCollectionDidChange(previousTraitCollection)
         updateTheme()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let customActions = UserDefaults.standard.stringArray(forKey: UserDefaultKeys.customActions.rawValue) {
+            for type in customActions {
+                MCEActionRegistry.shared.registerTarget(self, with: #selector(receiveCustomAction(action:)), forAction: type)
+            }
+        }
+        
+        typeField.text = UserDefaults.standard.string(forKey: UserDefaultKeys.customActionType.rawValue)
+        valueField.text = UserDefaults.standard.string(forKey: UserDefaultKeys.customActionValue.rawValue)
+    }
 }
 
 extension CustomActionVC: UITextFieldDelegate {
@@ -163,6 +180,8 @@ extension CustomActionVC: UITextFieldDelegate {
             return
         }
         UserDefaults.standard.set(["interfaceState": interfaceState], forKey: String(describing: type(of: self)))
+        UserDefaults.standard.set(typeField.text, forKey: UserDefaultKeys.customActionType.rawValue)
+        UserDefaults.standard.set(valueField.text, forKey: UserDefaultKeys.customActionValue.rawValue)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

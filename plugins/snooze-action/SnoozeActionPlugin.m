@@ -10,6 +10,11 @@
 
 #import "SnoozeActionPlugin.h"
 @import UserNotifications;
+@import AcousticMobilePush;
+
+@interface SnoozeActionPlugin ()
+@property MCENotificationPayload * notificationPayload;
+@end
 
 @implementation SnoozeActionPlugin
 
@@ -23,92 +28,29 @@
     return sharedInstance;
 }
 
--(void)performAction:(NSDictionary*)action payload:(NSDictionary*)payload
-{
-    if(![action respondsToSelector:@selector(isEqualToDictionary:)]) {
-        NSLog(@"Action is not a dictionary");
+-(void)performAction:(NSDictionary*)action payload:(NSDictionary*)payload {
+    NSNumber * value = action[@"value"];
+    if(![value respondsToSelector:@selector(isEqualToNumber:)]) {
+        NSLog(@"Snooze value is not numeric");
         return;
     }
-    
-    id value = action[@"value"];
-    double minutes;
-    if(value && [value respondsToSelector:@selector(intValue)]) {
-        minutes = [value doubleValue];
-    } else {
-        NSLog(@"Invalid value in action payload");
-        return;
-    }
-    
-    NSLog(@"Snooze for %f minutes", minutes);
-    
-    NSString * alertAction = nil;
-    if([payload[@"aps"][@"alert"] respondsToSelector:@selector(isEqualToDictionary:)] && payload[@"aps"][@"alert"][@"action-loc-key"]) {
-        alertAction = payload[@"aps"][@"alert"][@"action-loc-key"];
-    }
-    
-    NSString * category = payload[@"aps"][@"category"];
-    
-    NSNumber * badge = payload[@"aps"][@"badge"];
-    NSString * sound = payload[@"aps"][@"sound"];
-    
-    NSDictionary * alertDictionary = payload[@"aps"][@"alert"];
-    NSString * title = nil;
-    NSString * subtitle = nil;
-    NSString * body = nil;
-    if([alertDictionary respondsToSelector:@selector(isEqualToDictionary:)]) {
-        title = alertDictionary[@"title"];
-        subtitle = alertDictionary[@"subtitle"];
-        body = alertDictionary[@"body"];
-    } else {
-        NSString * alertString = payload[@"aps"][@"alert"];
-        if([alertString respondsToSelector:@selector(isEqualToString:)]) {
-            body = alertString;
-        }
-    }
+            
+    NSLog(@"Snooze for %f minutes", [value doubleValue]);
 
-    UNTimeIntervalNotificationTrigger * trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:minutes*60 repeats:false];
-    UNMutableNotificationContent * content = [[UNMutableNotificationContent alloc] init];
-    
-    if(payload && [payload respondsToSelector:@selector(isEqualToDictionary:)] ) {
-        content.userInfo = payload;
-    }
-                   
-    if(category && [category respondsToSelector:@selector(isEqualToString:)]) {
-        content.categoryIdentifier = category;
-    }
-    
-    if(sound && [sound respondsToSelector:@selector(isEqualToString:)]) {
-        if([sound isEqual: @"default"]) {
-            content.sound = [UNNotificationSound defaultSound];
-        } else {
-            content.sound = [UNNotificationSound soundNamed: sound];
-        }
-    }
-    
-    if(badge && [badge respondsToSelector:@selector(isEqualToNumber:)]) {
-        content.badge = badge;
-    }
-    
-    if(body && [body respondsToSelector:@selector(isEqualToString:)] ) {
-        content.body = body;
-    }
+    self.notificationPayload = [[MCENotificationPayload alloc] initWithPayload: payload];
+    [self.notificationPayload addNotificationCategoryWithCompletionHandler:^{
+        UNMutableNotificationContent * content = SnoozeActionPlugin.sharedInstance.notificationPayload.notificationContent;
+        UNTimeIntervalNotificationTrigger * trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:[value doubleValue] * 60 repeats:false];
+        UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:[[NSUUID UUID] UUIDString] content:content trigger:trigger];
+        [UNUserNotificationCenter.currentNotificationCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+            
+            if(error) {
+                NSLog(@"Could not add notification request");
+            } else {
+                NSLog(@"Will resend notification %@ with content %@ at %@", request, content, [trigger nextTriggerDate]);
+            }
+        }];
 
-    if(title && [title respondsToSelector:@selector(isEqualToString:)] ) {
-        content.title = title;
-    }
-
-    if(subtitle && [subtitle respondsToSelector:@selector(isEqualToString:)] ) {
-        content.subtitle = subtitle;
-    }
-
-    UNNotificationRequest * request = [UNNotificationRequest requestWithIdentifier:[[NSUUID UUID] UUIDString] content:content trigger:trigger];
-    [UNUserNotificationCenter.currentNotificationCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
-        
-        if(error) {
-            NSLog(@"Could not add notification request");
-        } else {
-            NSLog(@"Will resend notification %@ with content %@ at %@", request, content, [trigger nextTriggerDate]);
-        }
     }];
 }
 

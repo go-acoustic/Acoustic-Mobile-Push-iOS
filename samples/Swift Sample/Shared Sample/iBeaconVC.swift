@@ -56,7 +56,10 @@ class iBeaconVC: UITableViewController, CLLocationManagerDelegate {
         NotificationCenter.default.addObserver(forName: MCENotificationName.LocationDatabaseUpdated.rawValue, object: nil, queue: OperationQueue.main)
         {
             notification in
-            self.beaconRegions = MCELocationDatabase.shared.beaconRegions().sortedArray(using: [ NSSortDescriptor(key: "major", ascending: true) ]) as! [CLBeaconRegion]
+            
+            if let beaconRegions = MCELocationDatabase.shared.beaconRegions() {
+                self.beaconRegions = beaconRegions.sortedArray(using: [ NSSortDescriptor(key: "major", ascending: true) ]) as! [CLBeaconRegion]
+            }
             self.tableView.reloadData()
         }
         
@@ -79,7 +82,7 @@ class iBeaconVC: UITableViewController, CLLocationManagerDelegate {
             if(indexPath.item==0)
             {
                 vertical.textLabel!.text = "UUID"
-                if let uuid = config?.beaconUUID
+                if let uuid = config.beaconUUID
                 {
                     vertical.detailTextLabel!.text = uuid.uuidString
                     vertical.detailTextLabel!.textColor = .success
@@ -93,7 +96,7 @@ class iBeaconVC: UITableViewController, CLLocationManagerDelegate {
             else
             {
                 vertical.textLabel!.text = "Status"
-                if(config!.beaconEnabled)
+                if(config.beaconEnabled)
                 {
                     switch(CLLocationManager.authorizationStatus())
                     {

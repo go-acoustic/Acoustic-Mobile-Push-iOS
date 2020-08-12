@@ -21,6 +21,7 @@
 @interface MCEInboxActionPlugin  ()
 @property NSString * attribution;
 @property NSNumber * mailingId;
+@property NSUUID * messageId;
 @property UIViewController <MCETemplateDisplay> * displayViewController;
 @end
 
@@ -36,8 +37,7 @@
     return sharedInstance;
 }
 
--(void)displayRichContent: (MCEInboxMessage*)inboxMessage
-{
+-(void)displayRichContent: (MCEInboxMessage*)inboxMessage {
     inboxMessage.isRead = TRUE;
     [[MCEEventService sharedInstance] recordViewForInboxMessage:inboxMessage attribution: self.attribution mailingId: self.mailingId];
     
@@ -45,12 +45,11 @@
     [self.displayViewController setContent];
 }
 
--(void)showInboxMessage:(NSDictionary*)action payload:(NSDictionary*)payload
-{
-    self.attribution=nil;
-    self.mailingId=nil;
-    if(payload[@"mce"])
-    {
+-(void)showInboxMessage:(NSDictionary*)action payload:(NSDictionary*)payload {
+    self.attribution = nil;
+    self.mailingId = nil;
+    self.messageId = nil;
+    if(payload[@"mce"]) {
         self.attribution = payload[@"mce"][@"attribution"];
         if([payload[@"mce"][@"mailingId"] respondsToSelector:@selector(isEqualToNumber:)]) {
             self.mailingId = payload[@"mce"][@"mailingId"];
@@ -96,8 +95,21 @@
     }
     
     [self.displayViewController setLoading];
+    
     UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
-    [controller presentViewController:(UIViewController*)self.displayViewController animated:TRUE completion:nil];
+    
+    if([controller respondsToSelector: @selector(viewControllers)]) {
+        UISplitViewController * splitController = (UISplitViewController *) controller;
+        controller = [[splitController viewControllers] lastObject];
+    }
+    
+    if([controller respondsToSelector:@selector(pushViewController:animated:)]) {
+        UINavigationController * navController = (UINavigationController*) controller;
+        [navController pushViewController: self.displayViewController animated: true];
+    } else {
+        [controller presentViewController:(UIViewController*)self.displayViewController animated:TRUE completion:nil];
+    }
+    
     [self displayRichContent: inboxMessage];
 }
 

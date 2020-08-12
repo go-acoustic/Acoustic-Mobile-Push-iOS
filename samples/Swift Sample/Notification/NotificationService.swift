@@ -10,7 +10,7 @@
 
 import UserNotifications
 import AcousticMobilePushNotification
+import os.log
 
 class NotificationService: MCENotificationService {
-
 }

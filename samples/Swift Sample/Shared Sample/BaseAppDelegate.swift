@@ -47,20 +47,31 @@ import AcousticMobilePush
         TextInputActionPlugin.register()
     }
         
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if let data = try? JSONSerialization.data(withJSONObject: userInfo, options: .prettyPrinted), let string = String(data: data, encoding: .utf8) {
+            print("Silent notification incoming: \(string)\n\n")
+        } else {
+            print("Silent notification incoming: <unknown format>")
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        
         registerPlugins()
 
         // Notificaiton Settings Support
         if #available(iOS 12.0, *) {
             MCESdk.shared.openSettingsForNotification = { notification in
-                let alert = UIAlertController(title: "Should show app settings for notifications", message: nil, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    
-                }))
-                MCESdk.shared.findCurrentViewController().present(alert, animated: true, completion: {
-                    
-                })
+                if let vc = MCESdk.shared.findCurrentViewController() {
+                    let alert = UIAlertController(title: "Should show app settings for notifications", message: nil, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                        
+                    }))
+                    vc.present(alert, animated: true, completion: {
+                        
+                    })
+                } else {
+                    print("Should show app settings for notifications")
+                }
             }
         }
         
@@ -75,9 +86,10 @@ import AcousticMobilePush
         
         UserDefaults.standard.register(defaults: ["action":"update", "standardType":"dial",  "standardDialValue":"\"8774266006\"",  "standardUrlValue":"\"http://acoustic.co\"",  "customType":"sendEmail",  "customValue":"{\"subject\":\"Hello from Sample App\",  \"body\": \"This is an example email body\",  \"recipient\":\"fake-email@fake-site.com\"}",  "categoryId":"example", "button1":"Accept", "button2":"Reject"])
 
+        // Request APNS registration to send push messages
         application.registerForRemoteNotifications()
         
-        // iOS 10+ Push Message Registration
+        // iOS 10+ Push Message Registration, some versions of iOS have different options available
         let options: UNAuthorizationOptions = {
             if #available(iOS 12.0, *) {
                 return [.alert, .sound, .carPlay, .badge, .providesAppNotificationSettings]
@@ -85,12 +97,21 @@ import AcousticMobilePush
             return [.alert, .sound, .carPlay, .badge]
         }()
 
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: options, completionHandler: { (granted, error) in
+        // Request User Authentication to show notifications
+        UNUserNotificationCenter.current().requestAuthorization(options: options, completionHandler: { (granted, error) in
+            
             if let error = error {
-                print("Could not request authorization from APNS \(error.localizedDescription)")
+                print("Couldn't request user authentication \(error.localizedDescription)")
+                return
             }
-            center.setNotificationCategories( self.notificationCategories() )
+            if granted {
+                print("User provided authorization to show notifications")
+            } else {
+                print("User did not provide authorization to show notifications")
+            }
+
+            // Setup any app specific hardcoded notification categories, Acoustic push messages will create their own notification categores as needed to support the push message sent
+            UNUserNotificationCenter.current().setNotificationCategories( self.notificationCategories() )
         })
 
         window = UIWindow(frame: UIScreen.main.bounds)

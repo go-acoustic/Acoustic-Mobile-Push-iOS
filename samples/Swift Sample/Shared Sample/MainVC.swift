@@ -21,9 +21,12 @@ class MainVC : UITableViewController
     
     // Hide iBeacons when on Mac
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if NSClassFromString("SwiftSample.iBeaconVC") == nil && NSClassFromString("Manual_Sample.iBeaconVC") == nil && indexPath.item == 7 {
+        #if targetEnvironment(macCatalyst)
+        if indexPath.item == 7 {
             return 0
         }
+        #endif
+
         return 44
     }
     
@@ -39,7 +42,7 @@ class MainVC : UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        version!.text = "Native SDK v\(MCESdk.shared.sdkVersion() ?? "")"
+        version!.text = "Native SDK v\(MCESdk.shared.sdkVersion())"
         
         // Show Inbox counts on main page
         NotificationCenter.default.addObserver(self, selector: #selector(MainVC.inboxUpdate), name: MCENotificationName.InboxCountUpdate.rawValue, object: nil)
@@ -94,6 +97,7 @@ class MainVC : UITableViewController
         if UIDevice.current.userInterfaceIdiom == .pad {
             let navigationController = UINavigationController(rootViewController: viewController)
             viewController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+            viewController.navigationItem.leftItemsSupplementBackButton = true
             splitViewController?.showDetailViewController(navigationController, sender: self)
         } else {
             navigationController?.pushViewController(viewController, animated: true)

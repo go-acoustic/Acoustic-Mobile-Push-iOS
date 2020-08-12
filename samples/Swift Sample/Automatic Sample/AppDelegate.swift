@@ -12,5 +12,4 @@ import UIKit
 
 // See BaseAppDelegate
 class AppDelegate: BaseAppDelegate {
-
 }

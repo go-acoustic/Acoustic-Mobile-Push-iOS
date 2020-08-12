@@ -53,11 +53,7 @@
 		C311C08923FF1A9600C456C4 /* MCEInboxPostTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C35F70A61C654EB000070DB6 /* MCEInboxPostTemplateView.m */; };
 		C311C08A23FF1A9600C456C4 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D40231BE01521006D06C0 /* RegistrationVC.swift */; };
 		C311C08B23FF1A9600C456C4 /* MCEInboxDefaultTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35F70921C654EB000070DB6 /* MCEInboxDefaultTemplateCell.m */; };
-		C311C08D23FF1A9600C456C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CC41D70B1D00099BA1E /* CoreLocation.framework */; };
-		C311C08E23FF1A9600C456C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CC21D70B1B20099BA1E /* MapKit.framework */; };
-		C311C08F23FF1A9600C456C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD91BA3687300EE45ED /* CoreData.framework */; };
 		C311C09023FF1A9600C456C4 /* AcousticMobilePush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34975E222F2121A0048C956 /* AcousticMobilePush.xcframework */; };
-		C311C09123FF1A9600C456C4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD71BA3686E00EE45ED /* CoreTelephony.framework */; };
 		C311C09323FF1A9600C456C4 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B839A322DE52B200FBED26 /* WebViewController.xib */; };
 		C311C09423FF1A9600C456C4 /* MCEInAppImageTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CF5BDD1C5803C50026ECC8 /* MCEInAppImageTemplate.xib */; };
 		C311C09523FF1A9600C456C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DC929B1C5958770006CF55 /* Assets.xcassets */; };
@@ -167,8 +163,6 @@
 		C378F52E234CF40800F2DBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C378F52C234CF40800F2DBFD /* Main.storyboard */; };
 		C37BB5A6241193200079587E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37BB5A3241193060079587E /* Interface.storyboard */; };
 		C37BB5B6241197440079587E /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F7004824115A7E009FC974 /* StateController.swift */; };
-		C3942CC31D70B1B20099BA1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CC21D70B1B20099BA1E /* MapKit.framework */; };
-		C3942CC51D70B1D00099BA1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CC41D70B1D00099BA1E /* CoreLocation.framework */; };
 		C3942CD01D70B39C0099BA1E /* GeofenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3942CCF1D70B39C0099BA1E /* GeofenceVC.swift */; };
 		C3962CE121E649EA00AEC152 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
 		C399FD7D2416D2FB0057C2E8 /* AcousticMobilePushNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C34975E522F212210048C956 /* AcousticMobilePushNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -176,8 +170,6 @@
 		C39CC1CC2347C1A300206E37 /* HandOffController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39CC1CA2347C1A200206E37 /* HandOffController.m */; };
 		C39D40241BE01521006D06C0 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D40231BE01521006D06C0 /* RegistrationVC.swift */; };
 		C39D40281BE02349006D06C0 /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D40271BE02349006D06C0 /* EditCell.swift */; };
-		C3A80AD81BA3686E00EE45ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD71BA3686E00EE45ED /* CoreTelephony.framework */; };
-		C3A80ADA1BA3687300EE45ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD91BA3687300EE45ED /* CoreData.framework */; };
 		C3AAC7EB24004652006C952B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAC7E824004607006C952B /* NotificationService.swift */; };
 		C3AAC7ED2400502C006C952B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311C0FC23FF1F0700C456C4 /* Config.swift */; };
 		C3B839A422DE52B200FBED26 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B839A322DE52B200FBED26 /* WebViewController.xib */; };
@@ -464,7 +456,6 @@
 		C361A9951D3576E800D4EA9B /* Notification Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notification Service.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C361A9971D3576E900D4EA9B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		C361A9991D3576E900D4EA9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C361A9A11D35772000D4EA9B /* NotificationService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationService-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3624A54203F64DA003B324C /* Carousel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Carousel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3624A5A203F64DA003B324C /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		C3624A5B203F64DA003B324C /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
@@ -532,11 +523,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C311C08D23FF1A9600C456C4 /* CoreLocation.framework in Frameworks */,
-				C311C08E23FF1A9600C456C4 /* MapKit.framework in Frameworks */,
-				C311C08F23FF1A9600C456C4 /* CoreData.framework in Frameworks */,
 				C311C09023FF1A9600C456C4 /* AcousticMobilePush.xcframework in Frameworks */,
-				C311C09123FF1A9600C456C4 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,11 +591,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3942CC51D70B1D00099BA1E /* CoreLocation.framework in Frameworks */,
-				C3942CC31D70B1B20099BA1E /* MapKit.framework in Frameworks */,
-				C3A80ADA1BA3687300EE45ED /* CoreData.framework in Frameworks */,
 				C31E82032304647E006F028C /* AcousticMobilePush.xcframework in Frameworks */,
-				C3A80AD81BA3686E00EE45ED /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,7 +811,6 @@
 				C3218C2923F45BC1006CC9F4 /* Notification Service.entitlements */,
 				C361A9971D3576E900D4EA9B /* NotificationService.swift */,
 				C361A9991D3576E900D4EA9B /* Info.plist */,
-				C361A9A11D35772000D4EA9B /* NotificationService-Bridging-Header.h */,
 			);
 			name = "Notification Service";
 			path = Notification;
@@ -1263,8 +1245,6 @@
 				Base,
 			);
 			mainGroup = C3D01E521A607F7E00C9A66C;
-			packageReferences = (
-			);
 			productRefGroup = C3D01E5C1A607F7E00C9A66C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1676,7 +1656,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1691,7 +1671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1724,7 +1704,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1735,7 +1715,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1768,7 +1748,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1780,7 +1760,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1794,7 +1774,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "Notification/NotificationService-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -1813,7 +1793,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1825,7 +1805,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1838,7 +1818,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "Notification/NotificationService-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -1857,7 +1837,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1869,7 +1849,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1893,7 +1873,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1905,7 +1885,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1931,7 +1911,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1942,7 +1922,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
@@ -1974,7 +1954,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1985,7 +1965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2013,7 +1993,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2024,7 +2004,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
@@ -2057,7 +2037,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2068,7 +2048,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2098,7 +2078,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2109,7 +2089,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
@@ -2142,7 +2122,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2153,7 +2133,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -2184,7 +2164,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2195,7 +2175,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
@@ -2227,7 +2207,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2238,7 +2218,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2263,7 +2243,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
@@ -2275,7 +2255,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2289,7 +2269,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "Notification/NotificationService-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -2308,7 +2288,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
@@ -2320,7 +2300,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2333,7 +2313,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "Notification/NotificationService-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -2352,7 +2332,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2364,7 +2344,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2388,7 +2368,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2400,7 +2380,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2441,7 +2421,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2460,7 +2440,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2498,7 +2478,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2510,7 +2490,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2531,7 +2511,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2546,7 +2526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2580,7 +2560,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 381;
+				CURRENT_PROJECT_VERSION = 382;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2591,7 +2571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.1;
+				MARKETING_VERSION = 3.8.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",

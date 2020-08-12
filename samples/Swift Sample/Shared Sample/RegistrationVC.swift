@@ -33,11 +33,11 @@ class RegistrationVC : UITableViewController
     override func viewWillAppear(_ animated: Bool) {
         registrationCounter = 0
         super.viewWillAppear(animated)
-        registrationObserver = NotificationCenter.default.addObserver(forName: Notification.Name("MCERegisteredNotification"), object: nil, queue: OperationQueue.main, using: { (notification: Notification) -> Void in
+        registrationObserver = NotificationCenter.default.addObserver(forName: MCENotificationName.MCERegistered.rawValue, object: nil, queue: OperationQueue.main, using: { (notification: Notification) -> Void in
             self.refresh(sender: nil)
             self.registrationCounter = self.registrationCounter + 1
         })
-        registrationUpdatedObserver = NotificationCenter.default.addObserver(forName: Notification.Name("MCERegisteredNotification"), object: nil, queue: OperationQueue.main, using: { (notification: Notification) -> Void in
+        registrationUpdatedObserver = NotificationCenter.default.addObserver(forName: MCENotificationName.MCERegistrationChanged.rawValue, object: nil, queue: OperationQueue.main, using: { (notification: Notification) -> Void in
             self.refresh(sender: nil)
             self.registrationCounter = self.registrationCounter + 1
         })
@@ -52,7 +52,7 @@ class RegistrationVC : UITableViewController
         if let registrationUpdatedObserver = registrationUpdatedObserver {
             NotificationCenter.default.removeObserver(registrationUpdatedObserver)
             self.registrationUpdatedObserver = nil
-        }        
+        }
     }
     
     @IBAction func refresh(sender: AnyObject?) {

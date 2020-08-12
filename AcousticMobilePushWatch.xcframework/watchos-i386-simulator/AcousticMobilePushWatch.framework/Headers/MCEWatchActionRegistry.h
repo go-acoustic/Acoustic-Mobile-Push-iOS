@@ -18,7 +18,7 @@
 @interface MCEWatchActionRegistry : NSObject
 
 /** This method returns the singleton object of this class. */
-@property(class, nonatomic, readonly) MCEWatchActionRegistry * sharedInstance NS_SWIFT_NAME(shared);
+@property(class, nonatomic, readonly) MCEWatchActionRegistry * _Nonnull sharedInstance NS_SWIFT_NAME(shared);
 
 /** This method is used to register an object to receive action messages for a specified action type name.
  
@@ -29,7 +29,7 @@
  @return TRUE or FALSE depending if the registration was successful or not.
  
  */
--(BOOL)registerTarget:(id)target withSelector:(SEL)selector forAction:(NSString*)type;
+- (BOOL) registerTarget: (id _Nonnull) target withSelector: (SEL _Nonnull) selector forAction:( NSString * _Nonnull) type;
 
 /** This method performs the registered specified action for the APNS payload.
  
@@ -40,7 +40,7 @@
  
  */
 
--(void)performAction:(NSDictionary*)action forPayload:(NSDictionary*)payload source: (NSString*) source attributes: (NSDictionary*)attributes;
+-(void)performAction:(NSDictionary * _Nonnull)action forPayload:(NSDictionary * _Nonnull)payload source: (NSString * _Nonnull) source attributes: (NSDictionary * _Nullable) attributes;
 
 @end
 

@@ -18,7 +18,7 @@
 @interface MCERegistrationDetails : NSObject
 
 /** This method returns the singleton object of this class. */
-@property(class, nonatomic, readonly) MCERegistrationDetails * sharedInstance NS_SWIFT_NAME(shared);
+@property(class, nonatomic, readonly) MCERegistrationDetails * _Nonnull sharedInstance NS_SWIFT_NAME(shared);
 
 /** When a user has been invalidated and the autoReinitialize flag is false in the MceConfig.json file, this value will be set to true. Applications must check this value if they want to manually reinitialize the registration and when this value is true, applications should execute MceSdk.sharedInstance's manualInitialization method.  */
 @property BOOL userInvalidated;
@@ -27,18 +27,18 @@
  
  @return userId a string value assigned to the user (potentially multiple devices)
  */
-@property NSString * userId;
+@property NSString * _Nullable userId;
 
 /** Retrieve channelId
  
  @return channelId a string value assigned to the channel (device)
  */
-@property NSString * channelId;
+@property NSString * _Nullable channelId;
 
 /** Push Token for APNS registration
  @return pushToken an NSData value representing the push token for the app installation on the device from APNS.
  */
-@property NSData * pushToken;
+@property NSData * _Nullable pushToken;
 
 /** Is registered with Apple Push Service
  @return TRUE or FALSE
@@ -50,19 +50,7 @@
  */
 @property (readonly) BOOL mceRegistered;
 
-/** Method is deprecated, please use instance method instead. */
-+ (BOOL) mceRegistered __attribute__((deprecated));
-
-/** Method is deprecated, please use instance method instead. */
-+ (NSString*) channelId __attribute__((deprecated));
-
-/** Method is deprecated, please use instance method instead. */
-+ (NSString*) userId __attribute__((deprecated));
-
-/** Method is deprecated, please use instance method instead. */
-+ (NSData *) pushToken __attribute__((deprecated));
-
-@property NSString * appKey;
+@property NSString * _Nullable appKey;
 
 @end
 

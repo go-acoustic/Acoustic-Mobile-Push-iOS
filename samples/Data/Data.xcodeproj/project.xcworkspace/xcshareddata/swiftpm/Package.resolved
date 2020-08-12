@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CSV.swift",
+        "repositoryURL": "https://github.com/yaslab/CSV.swift",
+        "state": {
+          "branch": null,
+          "revision": "81d2874c51db364d7e1d71b0d99018a294c87ac1",
+          "version": "2.4.3"
+        }
+      },
+      {
+        "package": "ZIPFoundation",
+        "repositoryURL": "https://github.com/weichsel/ZIPFoundation",
+        "state": {
+          "branch": null,
+          "revision": "ec32d62d412578542c0ffb7a6ce34d3e64b43b94",
+          "version": "0.9.11"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

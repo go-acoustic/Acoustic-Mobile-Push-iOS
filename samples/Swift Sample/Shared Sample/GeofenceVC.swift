@@ -34,7 +34,7 @@ class GeofenceVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
     func updateStatus()
     {
         let config = MCESdk.shared.config;
-        if(config!.geofenceEnabled)
+        if(config.geofenceEnabled)
         {
             switch(CLLocationManager.authorizationStatus())
             {

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "AcousticMobilePushWatch"
-  s.version          = "3.8.1"
+  s.version          = "3.8.2"
   s.summary          = "Integration for Acoustic Mobile Push Watch"
   s.description      = <<-DESC
                        Marketers use customer data and individual behaviors collected from a variety of sources to inform and drive real-time personalized customer interactions with Acoustic Campaign. You can use Acoustic Mobile Push Notification with Acoustic Campaign to allow marketers to send mobile app push notifications along with their customer interactions. By implementing the SDKs into your mobile app, you can send push notifications to your users based on criteria such as location, date, events, and more.

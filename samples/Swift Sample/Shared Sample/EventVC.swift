@@ -328,8 +328,9 @@ class EventVC: UIViewController {
         }
         
         if let name = name, let type = type {
-            let event = MCEEvent(name: name, type: type, timestamp: nil, attributes: attributes, attribution: attribution, mailingId: mailingId)
-            MCEEventService.shared.add(event, immediate: true)
+            if let event = MCEEvent(name: name, type: type, timestamp: nil, attributes: attributes, attribution: attribution, mailingId: mailingId) {
+                MCEEventService.shared.add(event, immediate: true)
+            }
             DispatchQueue.main.async {
                 self.updateStatus(text: "Queued Event with name: \(name), type: \(type)", color: .warning)
             }

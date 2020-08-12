@@ -55,9 +55,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <RemoteRunnable
-         runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SwiftSample">
+         runnableDebuggingMode = "2">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C35A58D323479FA500C3E859"
@@ -73,18 +72,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SwiftSample">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C35A58D323479FA500C3E859"
-            BuildableName = "Watch.app"
-            BlueprintName = "Watch"
-            ReferencedContainer = "container:SwiftSample.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"

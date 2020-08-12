@@ -5,11 +5,10 @@
     "Please note": "you will need to update your baseUrl to the one supplied to you",
     "baseUrl": "https://mobile-sdk-lib-XX-Y.brilliantcollector.com",
 
-    "appKey": {
-        "dev": "INSERT YOUR DEV APPKEY HERE",
-        "prod": "INSERT YOUR PROD APPKEY HERE"
+    "appKey" : {
+      "dev": "INSERT YOUR DEV APPKEY HERE",
+      "prod": "INSERT YOUR PROD APPKEY HERE"
     },
-    
     "Please note, this option can be used to assign a device a different UserId on reinstallation, the default is to use the same UserId on reinstallation if possible (false). If you want a different UserId on reinstallation set invalidateExistingUser to": true,
     "invalidateExistingUser": false,
     

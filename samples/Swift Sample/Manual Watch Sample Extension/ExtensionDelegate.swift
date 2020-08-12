@@ -25,7 +25,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }()
 
         UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, error) in
-            
+            if let error = error {
+                print("Not granted user notifications due to error: \(error)")
+                return
+            }
+            if granted {
+                print("User notifications granted")
+            } else {
+                print("User notifications not granted")
+            }
         }
     }
     

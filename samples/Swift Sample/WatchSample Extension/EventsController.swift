@@ -18,15 +18,17 @@ class EventsController: WKInterfaceController {
     @IBAction func sendEvent() {
         sendEventStatus.setText("Sending")
         sendEventStatus.setTextColor(.white)
-        let event = MCEEvent(name: "watch", type: "watch", timestamp: nil, attributes: ["immediate": true])
-        MCEEventService.shared.add(event, immediate: true)
+        if let event = MCEEvent(name: "watch", type: "watch", timestamp: nil, attributes: ["immediate": true]) {
+            MCEEventService.shared.add(event, immediate: true)
+        }
     }
     
     @IBAction func queueEvent() {
         queueEventStatus.setText("Queued")
         queueEventStatus.setTextColor(.white)
-        let event = MCEEvent(name: "watch", type: "watch", timestamp: nil, attributes: ["immediate": false])
-        MCEEventService.shared.add(event, immediate: false)
+        if let event = MCEEvent(name: "watch", type: "watch", timestamp: nil, attributes: ["immediate": false]) {
+            MCEEventService.shared.add(event, immediate: false)
+        }
     }
     
     @IBAction func sendQueue() {
