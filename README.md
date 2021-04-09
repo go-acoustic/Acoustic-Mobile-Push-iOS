@@ -1,1 +1,1 @@
-Additional documentation is available [online](https://developer.ibm.com/customer-engagement/mobile-app-messaging/) including the [Getting Started Guide](https://developer.ibm.com/customer-engagement/tutorials/getting-started-mobile-app-messaging-ios-apps/)
+Additional documentation is available [online](https://developer.goacoustic.com/acoustic-campaign/docs/mobile-campaign-overview) including the [Getting Started Guide](https://developer.goacoustic.com/acoustic-campaign/docs/add-the-ios-sdk-to-your-app)

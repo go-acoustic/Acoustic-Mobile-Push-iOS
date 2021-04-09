@@ -46,6 +46,10 @@ import AcousticMobilePush
         
         TextInputActionPlugin.register()
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        MCESdk.shared.registerDeviceToken(deviceToken)
+    }
         
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         if let data = try? JSONSerialization.data(withJSONObject: userInfo, options: .prettyPrinted), let string = String(data: data, encoding: .utf8) {

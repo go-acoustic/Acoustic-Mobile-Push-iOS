@@ -9,6 +9,28 @@
 /* Begin PBXBuildFile section */
 		C30252821BE168D600CA5D5D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30252811BE168D600CA5D5D /* main.swift */; };
 		C30252851BE16B3F00CA5D5D /* MailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30252841BE16B3F00CA5D5D /* MailDelegate.swift */; };
+		C303A34C24213C90005B0FE4 /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33324213C90005B0FE4 /* Data+Gzip.swift */; };
+		C303A34D24213C90005B0FE4 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33524213C90005B0FE4 /* Scopes.swift */; };
+		C303A34E24213C90005B0FE4 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33624213C90005B0FE4 /* WebSockets.swift */; };
+		C303A34F24213C90005B0FE4 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33724213C90005B0FE4 /* HttpServerIO.swift */; };
+		C303A35024213C90005B0FE4 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33824213C90005B0FE4 /* Process.swift */; };
+		C303A35124213C90005B0FE4 /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33924213C90005B0FE4 /* Socket+Server.swift */; };
+		C303A35224213C90005B0FE4 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33A24213C90005B0FE4 /* String+SHA1.swift */; };
+		C303A35324213C90005B0FE4 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33B24213C90005B0FE4 /* String+File.swift */; };
+		C303A35424213C90005B0FE4 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33C24213C90005B0FE4 /* Files.swift */; };
+		C303A35524213C90005B0FE4 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33D24213C90005B0FE4 /* HttpRequest.swift */; };
+		C303A35624213C90005B0FE4 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33E24213C90005B0FE4 /* HttpResponse.swift */; };
+		C303A35724213C90005B0FE4 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A33F24213C90005B0FE4 /* HttpServer.swift */; };
+		C303A35824213C90005B0FE4 /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34024213C90005B0FE4 /* Errno.swift */; };
+		C303A35924213C90005B0FE4 /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34124213C90005B0FE4 /* Socket+File.swift */; };
+		C303A35A24213C90005B0FE4 /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34224213C90005B0FE4 /* String+BASE64.swift */; };
+		C303A35B24213C90005B0FE4 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34324213C90005B0FE4 /* String+Misc.swift */; };
+		C303A35C24213C90005B0FE4 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34424213C90005B0FE4 /* HttpRouter.swift */; };
+		C303A35D24213C90005B0FE4 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34524213C90005B0FE4 /* HttpParser.swift */; };
+		C303A35E24213C90005B0FE4 /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34624213C90005B0FE4 /* MimeTypes.swift */; };
+		C303A35F24213C90005B0FE4 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C303A34724213C90005B0FE4 /* Socket.swift */; };
+		C303A36024213C90005B0FE4 /* anchor.c in Sources */ = {isa = PBXBuildFile; fileRef = C303A34B24213C90005B0FE4 /* anchor.c */; };
+		C30F578024203E9300D84383 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C30F577F24203E9300D84383; };
 		C311C05E23FF1A9600C456C4 /* MCEInboxDefaultTemplateDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = C35F70951C654EB000070DB6 /* MCEInboxDefaultTemplateDisplay.m */; };
 		C311C05F23FF1A9600C456C4 /* MCEInAppImageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF5BDC1C5803C50026ECC8 /* MCEInAppImageTemplate.m */; };
 		C311C06023FF1A9600C456C4 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34975EB22F225560048C956 /* NavigationVC.swift */; };
@@ -113,6 +135,16 @@
 		C3466A042347BC2F00D7EF02 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
 		C3466A052347BC3000D7EF02 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
 		C34975EC22F225560048C956 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34975EB22F225560048C956 /* NavigationVC.swift */; };
+		C349F7532458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F7492458ADEA0074120D; };
+		C349F7542458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74A2458ADEA0074120D; };
+		C349F7552458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74B2458ADEA0074120D; };
+		C349F7562458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74C2458ADEA0074120D; };
+		C349F7572458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74D2458ADEA0074120D; };
+		C349F7582458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74E2458ADEA0074120D; };
+		C349F7592458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F74F2458ADEA0074120D; };
+		C349F75A2458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F7502458ADEA0074120D; };
+		C349F75B2458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F7512458ADEA0074120D; };
+		C349F75C2458ADEB0074120D /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C349F7522458ADEB0074120D; };
 		C34C41102268FF7F009DE60C /* CustomActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C410F2268FF7F009DE60C /* CustomActionVC.swift */; };
 		C34E052B1B740D4500376671 /* MCEInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34E052A1B740D4500376671 /* MCEInboxTableViewController.m */; };
 		C35134CB1DEF58F700261B85 /* Notification Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C361A9951D3576E800D4EA9B /* Notification Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -148,6 +180,7 @@
 		C35F70B71C654EB000070DB6 /* MCEInboxPostTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35F70A71C654EB000070DB6 /* MCEInboxPostTemplateView.xib */; };
 		C35F70B81C654EB000070DB6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35F70A81C654EB000070DB6 /* Media.xcassets */; };
 		C361A9981D3576E900D4EA9B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C361A9971D3576E900D4EA9B /* NotificationService.swift */; };
+		C362020D2421410E00505DEB /* (null) in Resources */ = {isa = PBXBuildFile; fileRef = C362020C2421410E00505DEB; };
 		C3624A5C203F64DA003B324C /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3624A5B203F64DA003B324C /* NotificationViewController.m */; };
 		C3624A5F203F64DA003B324C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3624A5D203F64DA003B324C /* MainInterface.storyboard */; };
 		C3624A63203F64DA003B324C /* Carousel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3624A54203F64DA003B324C /* Carousel.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -170,6 +203,19 @@
 		C39CC1CC2347C1A300206E37 /* HandOffController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39CC1CA2347C1A200206E37 /* HandOffController.m */; };
 		C39D40241BE01521006D06C0 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D40231BE01521006D06C0 /* RegistrationVC.swift */; };
 		C39D40281BE02349006D06C0 /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D40271BE02349006D06C0 /* EditCell.swift */; };
+		C3A0CB852268F3F8009EEB8A /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A0CB812268F3BD009EEB8A; };
+		C3A75F592224A226007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F582224A226007A5E19; };
+		C3A75F882224A3F3007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F662224A26A007A5E19; };
+		C3A75F892224A3F7007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F6B2224A26A007A5E19; };
+		C3A75F8A2224A3FA007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F652224A26A007A5E19; };
+		C3A75F8B2224A3FD007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F622224A26A007A5E19; };
+		C3A75F8C2224A401007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F682224A26A007A5E19; };
+		C3A75F8D2224A404007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F692224A26A007A5E19; };
+		C3A75F8F2224A40B007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F6A2224A26A007A5E19; };
+		C3A75F902224A40E007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F612224A26A007A5E19; };
+		C3A75F912224A413007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F602224A26A007A5E19; };
+		C3A75F932224A419007A5E19 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3A75F632224A26A007A5E19; };
+		C3A75F942224A447007A5E19 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
 		C3AAC7EB24004652006C952B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAC7E824004607006C952B /* NotificationService.swift */; };
 		C3AAC7ED2400502C006C952B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311C0FC23FF1F0700C456C4 /* Config.swift */; };
 		C3B839A422DE52B200FBED26 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B839A322DE52B200FBED26 /* WebViewController.xib */; };
@@ -251,6 +297,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C3624A53203F64DA003B324C;
 			remoteInfo = Carousel;
+		};
+		C3A75F5B2224A226007A5E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D01E531A607F7E00C9A66C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D01E5A1A607F7E00C9A66C;
+			remoteInfo = SwiftSample;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -374,6 +427,28 @@
 /* Begin PBXFileReference section */
 		C30252811BE168D600CA5D5D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C30252841BE16B3F00CA5D5D /* MailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailDelegate.swift; sourceTree = "<group>"; };
+		C303A33324213C90005B0FE4 /* Data+Gzip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Gzip.swift"; sourceTree = "<group>"; };
+		C303A33524213C90005B0FE4 /* Scopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		C303A33624213C90005B0FE4 /* WebSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+		C303A33724213C90005B0FE4 /* HttpServerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		C303A33824213C90005B0FE4 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		C303A33924213C90005B0FE4 /* Socket+Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		C303A33A24213C90005B0FE4 /* String+SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		C303A33B24213C90005B0FE4 /* String+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		C303A33C24213C90005B0FE4 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		C303A33D24213C90005B0FE4 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		C303A33E24213C90005B0FE4 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		C303A33F24213C90005B0FE4 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		C303A34024213C90005B0FE4 /* Errno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		C303A34124213C90005B0FE4 /* Socket+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		C303A34224213C90005B0FE4 /* String+BASE64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		C303A34324213C90005B0FE4 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		C303A34424213C90005B0FE4 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		C303A34524213C90005B0FE4 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		C303A34624213C90005B0FE4 /* MimeTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
+		C303A34724213C90005B0FE4 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		C303A34A24213C90005B0FE4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		C303A34B24213C90005B0FE4 /* anchor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anchor.c; sourceTree = "<group>"; };
 		C311C0B023FF1A9600C456C4 /* Manual Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manual Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C311C0BE23FF1AA600C456C4 /* Manual Notification Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Manual Notification Service.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C311C0C923FF1AAE00C456C4 /* Manual Carousel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Manual Carousel.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -477,6 +552,7 @@
 		C39D40221BE01520006D06C0 /* SwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		C39D40231BE01521006D06C0 /* RegistrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		C39D40271BE02349006D06C0 /* EditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCell.swift; sourceTree = "<group>"; };
+		C3A75F562224A226007A5E19 /* GenericUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A80AD71BA3686E00EE45ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C3A80AD91BA3687300EE45ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C3AAC7E724002D6F006C952B /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -587,6 +663,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3A75F532224A226007A5E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D01E581A607F7E00C9A66C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,6 +681,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C303A34924213C90005B0FE4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C303A34A24213C90005B0FE4 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		C311C0F323FF1B5D00C456C4 /* Automatic Swift Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -909,6 +1000,7 @@
 				C3AAC7EA2400460E006C952B /* Manual Notification Service */,
 				C361A9961D3576E900D4EA9B /* Notification Service */,
 				C3624A59203F64DA003B324C /* Carousel */,
+				C3A75F572224A226007A5E19,
 				C35A58D523479FA500C3E859 /* WatchSample */,
 				C311C10223FF226000C456C4 /* Manual Watch Sample Extension */,
 				C35A58E423479FA800C3E859 /* WatchSample Extension */,
@@ -926,6 +1018,7 @@
 				C3D01E5B1A607F7E00C9A66C /* SwiftSample.app */,
 				C361A9951D3576E800D4EA9B /* Notification Service.appex */,
 				C3624A54203F64DA003B324C /* Carousel.appex */,
+				C3A75F562224A226007A5E19 /* GenericUITest.xctest */,
 				C35A58D423479FA500C3E859 /* Watch.app */,
 				C35A58E023479FA800C3E859 /* Watch Extension.appex */,
 				C311C0B023FF1A9600C456C4 /* Manual Sample.app */,
@@ -1152,6 +1245,24 @@
 			productReference = C3624A54203F64DA003B324C /* Carousel.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		C3A75F552224A226007A5E19 /* GenericUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A75F5F2224A226007A5E19 /* Build configuration list for PBXNativeTarget "GenericUITest" */;
+			buildPhases = (
+				C3A75F522224A226007A5E19 /* Sources */,
+				C3A75F532224A226007A5E19 /* Frameworks */,
+				C3A75F542224A226007A5E19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3A75F5C2224A226007A5E19 /* PBXTargetDependency */,
+			);
+			name = GenericUITest;
+			productName = GenericUITest;
+			productReference = C3A75F562224A226007A5E19 /* GenericUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		C3D01E5A1A607F7E00C9A66C /* Sample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D01E7E1A607F7F00C9A66C /* Build configuration list for PBXNativeTarget "Sample" */;
@@ -1212,6 +1323,11 @@
 								enabled = 0;
 							};
 						};
+					};
+					C3A75F552224A226007A5E19 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3D01E5A1A607F7E00C9A66C;
 					};
 					C3D01E5A1A607F7E00C9A66C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -1353,6 +1469,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3624A5F203F64DA003B324C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A75F542224A226007A5E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A75F942224A447007A5E19 /* MceConfig.json in Resources */,
+				C362020D2421410E00505DEB /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1505,6 +1630,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3A75F522224A226007A5E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C349F7592458ADEB0074120D /* (null) in Sources */,
+				C3A75F892224A3F7007A5E19 /* (null) in Sources */,
+				C303A34D24213C90005B0FE4 /* Scopes.swift in Sources */,
+				C303A35924213C90005B0FE4 /* Socket+File.swift in Sources */,
+				C3A75F8D2224A404007A5E19 /* (null) in Sources */,
+				C303A35D24213C90005B0FE4 /* HttpParser.swift in Sources */,
+				C3A0CB852268F3F8009EEB8A /* (null) in Sources */,
+				C3A75F912224A413007A5E19 /* (null) in Sources */,
+				C303A35724213C90005B0FE4 /* HttpServer.swift in Sources */,
+				C349F7532458ADEB0074120D /* (null) in Sources */,
+				C303A36024213C90005B0FE4 /* anchor.c in Sources */,
+				C303A35324213C90005B0FE4 /* String+File.swift in Sources */,
+				C349F7542458ADEB0074120D /* (null) in Sources */,
+				C303A35524213C90005B0FE4 /* HttpRequest.swift in Sources */,
+				C303A35824213C90005B0FE4 /* Errno.swift in Sources */,
+				C3A75F592224A226007A5E19 /* (null) in Sources */,
+				C3A75F932224A419007A5E19 /* (null) in Sources */,
+				C303A35C24213C90005B0FE4 /* HttpRouter.swift in Sources */,
+				C349F75B2458ADEB0074120D /* (null) in Sources */,
+				C3A75F902224A40E007A5E19 /* (null) in Sources */,
+				C303A34F24213C90005B0FE4 /* HttpServerIO.swift in Sources */,
+				C349F7572458ADEB0074120D /* (null) in Sources */,
+				C3A75F8C2224A401007A5E19 /* (null) in Sources */,
+				C349F7562458ADEB0074120D /* (null) in Sources */,
+				C3A75F8B2224A3FD007A5E19 /* (null) in Sources */,
+				C303A35124213C90005B0FE4 /* Socket+Server.swift in Sources */,
+				C349F75A2458ADEB0074120D /* (null) in Sources */,
+				C303A35024213C90005B0FE4 /* Process.swift in Sources */,
+				C303A35224213C90005B0FE4 /* String+SHA1.swift in Sources */,
+				C303A35E24213C90005B0FE4 /* MimeTypes.swift in Sources */,
+				C303A35F24213C90005B0FE4 /* Socket.swift in Sources */,
+				C303A35A24213C90005B0FE4 /* String+BASE64.swift in Sources */,
+				C303A35624213C90005B0FE4 /* HttpResponse.swift in Sources */,
+				C349F7582458ADEB0074120D /* (null) in Sources */,
+				C303A34C24213C90005B0FE4 /* Data+Gzip.swift in Sources */,
+				C30F578024203E9300D84383 /* (null) in Sources */,
+				C303A35424213C90005B0FE4 /* Files.swift in Sources */,
+				C349F75C2458ADEB0074120D /* (null) in Sources */,
+				C3A75F8F2224A40B007A5E19 /* (null) in Sources */,
+				C303A34E24213C90005B0FE4 /* WebSockets.swift in Sources */,
+				C303A35B24213C90005B0FE4 /* String+Misc.swift in Sources */,
+				C349F7552458ADEB0074120D /* (null) in Sources */,
+				C3A75F8A2224A3FA007A5E19 /* (null) in Sources */,
+				C3A75F882224A3F3007A5E19 /* (null) in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3D01E571A607F7E00C9A66C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1606,6 +1782,11 @@
 			target = C3624A53203F64DA003B324C /* Carousel */;
 			targetProxy = C3624A61203F64DA003B324C /* PBXContainerItemProxy */;
 		};
+		C3A75F5C2224A226007A5E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D01E5A1A607F7E00C9A66C /* Sample */;
+			targetProxy = C3A75F5B2224A226007A5E19 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1656,7 +1837,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1666,12 +1847,12 @@
 					"SWIFT=1",
 				);
 				INFOPLIST_FILE = "Shared Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1704,18 +1885,18 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "MANUAL_SWIFT=1";
 				INFOPLIST_FILE = "Shared Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1748,19 +1929,19 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Notification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1793,19 +1974,19 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Notification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -1837,24 +2018,24 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_UIKITFORMAC = NO;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
@@ -1873,24 +2054,24 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_UIKITFORMAC = NO;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
@@ -1911,7 +2092,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1922,7 +2103,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
@@ -1954,7 +2135,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1965,7 +2146,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1993,7 +2174,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2004,7 +2185,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
@@ -2037,7 +2218,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2048,7 +2229,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2078,7 +2259,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Watch Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2089,7 +2270,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
@@ -2122,7 +2303,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2133,7 +2314,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -2164,7 +2345,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2175,7 +2356,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
@@ -2207,7 +2388,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2218,7 +2399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2243,19 +2424,19 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Notification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2288,19 +2469,19 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Notification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2332,24 +2513,24 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_UIKITFORMAC = NO;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
@@ -2368,25 +2549,62 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_UIKITFORMAC = NO;
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		C372DE9B23DB488400B4631D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 383;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MARKETING_VERSION = 3.8.3;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.genericuitest;
+				PRODUCT_NAME = GenericUITest;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		C372DE9C23DB488400B4631D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 383;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MARKETING_VERSION = 3.8.3;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.genericuitest;
+				PRODUCT_NAME = GenericUITest;
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
@@ -2421,7 +2639,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2439,8 +2657,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MARKETING_VERSION = 3.8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2478,7 +2696,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2489,8 +2707,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MARKETING_VERSION = 3.8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 3.8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2511,7 +2729,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2521,12 +2739,12 @@
 					"AUTOMATIC_SWIFT=1",
 				);
 				INFOPLIST_FILE = "Shared Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2560,18 +2778,18 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 382;
+				CURRENT_PROJECT_VERSION = 383;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = "AUTOMATIC_SWIFT=1";
 				INFOPLIST_FILE = "Shared Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.2;
+				MARKETING_VERSION = 3.8.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
@@ -2674,6 +2892,15 @@
 			buildConfigurations = (
 				C3624A64203F64DA003B324C /* Debug */,
 				C3624A65203F64DA003B324C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A75F5F2224A226007A5E19 /* Build configuration list for PBXNativeTarget "GenericUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C372DE9B23DB488400B4631D /* Debug */,
+				C372DE9C23DB488400B4631D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
