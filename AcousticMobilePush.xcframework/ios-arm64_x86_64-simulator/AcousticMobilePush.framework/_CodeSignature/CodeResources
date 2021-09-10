@@ -64,10 +64,6 @@
 		<data>
 		kELpXVwTvk8AofCg+U2N1kWhysM=
 		</data>
-		<key>Headers/MCEGeofenceManager.h</key>
-		<data>
-		IL7fMmMVcMtWEeNA7XqpV6JAhNo=
-		</data>
 		<key>Headers/MCEInAppManager.h</key>
 		<data>
 		uKs6lEQJ1ulOAvYlOMwo9JDswB0=
@@ -146,7 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J5Ty8mZnMB0wH21eNSINfXqysJo=
+		Gr+a7MWcx8uyyQmXVV8LI3g0sOk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -258,13 +254,6 @@
 			<key>hash2</key>
 			<data>
 			pKKduD7C+5cMg6o2V+4ZPdBfFPj9Of8behvO5BYWINk=
-			</data>
-		</dict>
-		<key>Headers/MCEGeofenceManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			N5w2OrYBxf4kfCRR113u/KoSOlf0KTP3+vxR4ca0RCY=
 			</data>
 		</dict>
 		<key>Headers/MCEInAppManager.h</key>

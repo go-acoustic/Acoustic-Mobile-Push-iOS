@@ -327,18 +327,13 @@ class AttributesVC: UIViewController {
 
 extension AttributesVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let startText = textField.text else {
-            return false
-        }
-        let text = startText as NSString
-        textField.text = text.replacingCharacters(in: range, with: string)
 
         if #available(iOS 13.0, *) {
             userActivity?.needsSave = true
         }
 
         UserDefaults.standard.set(interfaceState, forKey: String(describing: type(of: self)))
-        return false
+        return true
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
