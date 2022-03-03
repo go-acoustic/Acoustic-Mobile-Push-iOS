@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/MCEEventService.h</key>
 		<data>
-		kRLb9S8jhk8we6lnsO+SKjsKCSo=
+		7nd7QZ/4ke7RU4CbIbL6NyyXmW4=
 		</data>
 		<key>Headers/MCENotificationDelegate.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KeqaaB2Jbqbqpxdpi37aay45uoM=
+		LL5QrDuf59KZte1/9jLFYrgC/50=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kRLb9S8jhk8we6lnsO+SKjsKCSo=
+			7nd7QZ/4ke7RU4CbIbL6NyyXmW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			EWDKMJdWCCZbHcwpTqi4QghBlhPcd3iv5NTXfkI6B+Y=
+			1JQuT08OkRvhmu9AoqWPZt/fVWkxCDnbSPlBJ+esgpM=
 			</data>
 		</dict>
 		<key>Headers/MCENotificationDelegate.h</key>

@@ -55,8 +55,9 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <RemoteRunnable
+         runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         runnableDebuggingMode = "2">
+         RemotePath = "/SwiftSample">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C35A58D323479FA500C3E859"
