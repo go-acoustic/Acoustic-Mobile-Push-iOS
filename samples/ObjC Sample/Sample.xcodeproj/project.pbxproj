@@ -16,6 +16,16 @@
 		C392A1342437B8CC00C16933 /* AcousticMobilePush.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D28F232437A09C00B8F979 /* AcousticMobilePush.xcframework */; };
 		C392A1352437B8CC00C16933 /* AcousticMobilePush.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3D28F232437A09C00B8F979 /* AcousticMobilePush.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		C392A1372437B8CC00C16933 /* AcousticMobilePushNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3D28F242437A09C00B8F979 /* AcousticMobilePushNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C3C42D572458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D4D2458B5BB00D0C9DF; };
+		C3C42D582458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D4E2458B5BB00D0C9DF; };
+		C3C42D592458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D4F2458B5BB00D0C9DF; };
+		C3C42D5A2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D502458B5BB00D0C9DF; };
+		C3C42D5B2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D512458B5BB00D0C9DF; };
+		C3C42D5C2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D522458B5BB00D0C9DF; };
+		C3C42D5D2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D532458B5BB00D0C9DF; };
+		C3C42D5E2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D542458B5BB00D0C9DF; };
+		C3C42D5F2458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D552458B5BB00D0C9DF; };
+		C3C42D602458B5BB00D0C9DF /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3C42D562458B5BB00D0C9DF; };
 		C3D28EE824379F7D00B8F979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28EB924379F7D00B8F979 /* main.m */; };
 		C3D28EEC24379F7D00B8F979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D28EC224379F7D00B8F979 /* LaunchScreen.storyboard */; };
 		C3D28EED24379F7D00B8F979 /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28EC324379F7D00B8F979 /* EventVC.m */; };
@@ -176,7 +186,17 @@
 		C3FF3B722437CBA700B6B412 /* HandOffController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F7B2437A0EA00B8F979 /* HandOffController.m */; };
 		C3FF3B732437CBA800B6B412 /* HandOffController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F7B2437A0EA00B8F979 /* HandOffController.m */; };
 		C3FF3B772437CD1400B6B412 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3FF3B762437CD1400B6B412 /* README.md */; };
+		C3FF3C182437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BEB2437E05200B6B412; };
 		C3FF3C192437E05300B6B412 /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BED2437E05300B6B412 /* Data+Gzip.swift */; };
+		C3FF3C1A2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BEE2437E05300B6B412; };
+		C3FF3C1B2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BEF2437E05300B6B412; };
+		C3FF3C1C2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF02437E05300B6B412; };
+		C3FF3C1D2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF12437E05300B6B412; };
+		C3FF3C1E2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF22437E05300B6B412; };
+		C3FF3C1F2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF32437E05300B6B412; };
+		C3FF3C202437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF42437E05300B6B412; };
+		C3FF3C212437E05300B6B412 /* (null) in Resources */ = {isa = PBXBuildFile; fileRef = C3FF3BF62437E05300B6B412; };
+		C3FF3C242437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BF92437E05300B6B412; };
 		C3FF3C252437E05300B6B412 /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BFB2437E05300B6B412 /* Scopes.swift */; };
 		C3FF3C262437E05300B6B412 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BFC2437E05300B6B412 /* WebSockets.swift */; };
 		C3FF3C272437E05300B6B412 /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3BFD2437E05300B6B412 /* HttpServerIO.swift */; };
@@ -196,7 +216,12 @@
 		C3FF3C352437E05300B6B412 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C0B2437E05300B6B412 /* HttpParser.swift */; };
 		C3FF3C362437E05300B6B412 /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C0C2437E05300B6B412 /* MimeTypes.swift */; };
 		C3FF3C372437E05300B6B412 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C0D2437E05300B6B412 /* Socket.swift */; };
+		C3FF3C382437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C0E2437E05300B6B412; };
 		C3FF3C392437E05300B6B412 /* anchor.c in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C122437E05300B6B412 /* anchor.c */; };
+		C3FF3C3B2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C142437E05300B6B412; };
+		C3FF3C3C2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C152437E05300B6B412; };
+		C3FF3C3D2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C162437E05300B6B412; };
+		C3FF3C3E2437E05300B6B412 /* (null) in Sources */ = {isa = PBXBuildFile; fileRef = C3FF3C172437E05300B6B412; };
 		C3FF3C402437E8A600B6B412 /* MceConfig.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3D28F2A2437A0C900B8F979 /* MceConfig.json */; };
 /* End PBXBuildFile section */
 
@@ -363,6 +388,16 @@
 				C3FF3B6E2437CA9900B6B412 /* AcousticMobilePushWatch.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FF3C3F2437E89E00B6B412 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				C3FF3C402437E8A600B6B412 /* MceConfig.json in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -601,6 +636,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3FF3B8B2437DB4400B6B412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -635,6 +677,7 @@
 				C3D28E9E2437927100B8F979 /* iOS App */,
 				C3FF3B112437C6D500B6B412 /* Watch */,
 				C3FF3B202437C6D500B6B412 /* Watch Extension */,
+				C3FF3B8F2437DB4400B6B412,
 				C3D28E9D2437927100B8F979 /* Products */,
 				C3D28F222437A09C00B8F979 /* Frameworks */,
 			);
@@ -1037,6 +1080,14 @@
 			path = Manual;
 			sourceTree = "<group>";
 		};
+		C3FF3C102437E05300B6B412 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF3C112437E05300B6B412 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1187,6 +1238,25 @@
 			productName = "Watch Extension";
 			productReference = C3FF3B1C2437C6D500B6B412 /* Manual Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C3FF3B8D2437DB4400B6B412 /* GenericUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FF3B972437DB4400B6B412 /* Build configuration list for PBXNativeTarget "GenericUITest" */;
+			buildPhases = (
+				C3FF3B8A2437DB4400B6B412 /* Sources */,
+				C3FF3B8B2437DB4400B6B412 /* Frameworks */,
+				C3FF3B8C2437DB4400B6B412 /* Resources */,
+				C3FF3C3F2437E89E00B6B412 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3FCF4F7245A337900FD47B4 /* PBXTargetDependency */,
+			);
+			name = GenericUITest;
+			productName = GenericUITest;
+			productReference = C3FF3B8E2437DB4400B6B412 /* GenericUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -1356,6 +1426,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3FF3B8C2437DB4400B6B412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FF3C212437E05300B6B412 /* (null) in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1505,6 +1583,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3FF3B8A2437DB4400B6B412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C42D602458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C3D2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C2A2437E05300B6B412 /* String+SHA1.swift in Sources */,
+				C3C42D5E2458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C2D2437E05300B6B412 /* HttpRequest.swift in Sources */,
+				C3FF3C372437E05300B6B412 /* Socket.swift in Sources */,
+				C3FF3C362437E05300B6B412 /* MimeTypes.swift in Sources */,
+				C3FF3C252437E05300B6B412 /* Scopes.swift in Sources */,
+				C3FF3C1F2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C352437E05300B6B412 /* HttpParser.swift in Sources */,
+				C3C42D572458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C242437E05300B6B412 /* (null) in Sources */,
+				C3FF3C3C2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C182437E05300B6B412 /* (null) in Sources */,
+				C3FF3C2F2437E05300B6B412 /* HttpServer.swift in Sources */,
+				C3FF3C272437E05300B6B412 /* HttpServerIO.swift in Sources */,
+				C3C42D5B2458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C262437E05300B6B412 /* WebSockets.swift in Sources */,
+				C3FF3C202437E05300B6B412 /* (null) in Sources */,
+				C3C42D5F2458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C1A2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C2C2437E05300B6B412 /* Files.swift in Sources */,
+				C3FF3C1C2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C2E2437E05300B6B412 /* HttpResponse.swift in Sources */,
+				C3FF3C382437E05300B6B412 /* (null) in Sources */,
+				C3FF3C332437E05300B6B412 /* String+Misc.swift in Sources */,
+				C3FF3C292437E05300B6B412 /* Socket+Server.swift in Sources */,
+				C3FF3C392437E05300B6B412 /* anchor.c in Sources */,
+				C3C42D5D2458B5BB00D0C9DF /* (null) in Sources */,
+				C3C42D582458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C302437E05300B6B412 /* Errno.swift in Sources */,
+				C3FF3C312437E05300B6B412 /* Socket+File.swift in Sources */,
+				C3FF3C3E2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C192437E05300B6B412 /* Data+Gzip.swift in Sources */,
+				C3C42D592458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C2B2437E05300B6B412 /* String+File.swift in Sources */,
+				C3FF3C1B2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C282437E05300B6B412 /* Process.swift in Sources */,
+				C3FF3C1E2437E05300B6B412 /* (null) in Sources */,
+				C3C42D5A2458B5BB00D0C9DF /* (null) in Sources */,
+				C3FF3C1D2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C322437E05300B6B412 /* String+BASE64.swift in Sources */,
+				C3FF3C3B2437E05300B6B412 /* (null) in Sources */,
+				C3FF3C342437E05300B6B412 /* HttpRouter.swift in Sources */,
+				C3C42D5C2458B5BB00D0C9DF /* (null) in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1517,6 +1647,11 @@
 			isa = PBXTargetDependency;
 			target = C392A1202437B73700C16933 /* Manual Notification Service */;
 			targetProxy = C392A1272437B73700C16933 /* PBXContainerItemProxy */;
+		};
+		C3FCF4F7245A337900FD47B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D28E9B2437927100B8F979 /* Auto Sample */;
+			targetProxy = C3FCF4F6245A337900FD47B4 /* PBXContainerItemProxy */;
 		};
 		C3FF3AF42437C6B100B6B412 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1584,7 +1719,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1593,7 +1728,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1610,7 +1745,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1619,7 +1754,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1636,7 +1771,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1645,7 +1780,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1662,7 +1797,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1671,7 +1806,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1715,7 +1850,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1734,7 +1869,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1775,7 +1910,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1788,7 +1923,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1803,7 +1938,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1811,7 +1946,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1830,7 +1965,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1838,7 +1973,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1856,7 +1991,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1864,7 +1999,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1881,7 +2016,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1889,7 +2024,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1905,7 +2040,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1913,7 +2048,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1929,7 +2064,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1937,7 +2072,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1952,11 +2087,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1971,11 +2106,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1991,7 +2126,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1999,7 +2134,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2015,7 +2150,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2023,7 +2158,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2038,11 +2173,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2057,11 +2192,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2076,7 +2211,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2085,7 +2220,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2102,7 +2237,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 384;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2111,7 +2246,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2203,6 +2338,15 @@
 			buildConfigurations = (
 				C3FF3B362437C6D600B6B412 /* Debug */,
 				C3FF3B372437C6D600B6B412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FF3B972437DB4400B6B412 /* Build configuration list for PBXNativeTarget "GenericUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FF3B952437DB4400B6B412 /* Debug */,
+				C3FF3B962437DB4400B6B412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

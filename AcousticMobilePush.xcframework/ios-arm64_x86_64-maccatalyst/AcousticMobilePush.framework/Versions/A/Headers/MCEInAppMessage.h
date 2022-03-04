@@ -23,10 +23,7 @@
 /** The inAppMessageId property is a unique identifier for in app messages. */
 @property NSString * inAppMessageId;
 
-/** The inAppContentId property is a unique identifier for the actual inApp content message. */
-@property NSString * inAppContentId;
-
-/** The maxViews property defines the maximum number of times a message can be viewed, after which it is deleted. */
+/** The maxViews property defines the maxiumum number of times a message can be viewed, after which it is deleted. */
 @property NSInteger maxViews;
 
 /** The numViews property defines the current view count for a message. */

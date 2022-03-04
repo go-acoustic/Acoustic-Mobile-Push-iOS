@@ -43,7 +43,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            useTestSelectionWhitelist = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3FF3B8D2437DB4400B6B412"
@@ -65,9 +66,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <RemoteRunnable
-         runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SampleWatch">
+         runnableDebuggingMode = "2">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C3FF3AE42437C6B100B6B412"
@@ -83,18 +83,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/SampleWatch">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3FF3AE42437C6B100B6B412"
-            BuildableName = "Auto Watch.app"
-            BlueprintName = "Auto Watch"
-            ReferencedContainer = "container:Sample.xcodeproj">
-         </BuildableReference>
-      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"

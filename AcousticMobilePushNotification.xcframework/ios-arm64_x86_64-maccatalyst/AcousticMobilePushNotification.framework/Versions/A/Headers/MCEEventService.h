@@ -18,7 +18,6 @@
 @class MCETaskQueue;
 @class MCEEvent;
 @class MCEInboxMessage;
-@class MCEInAppMessage;
 
 /** The MCEEventService class allows the developer to queue events to the server. If errors occur the update will retry automatically and back-off as needed. */
 
@@ -51,21 +50,6 @@
  @param mailingId A string representing the mailing id of the push message associated with the view event.
  */
 -(void)recordViewForInboxMessage:(MCEInboxMessage * _Nonnull)inboxMessage attribution: (NSString * _Nullable)attribution mailingId: (NSNumber * _Nullable)mailingId;
-
-/** Record a view of an inApp message
- @param inboxMessage An MCEInAppMessage object to record view for
- @param attribution A string representing the campaign name or attribution of the push message associated with the view event.
- 
- Please note that recordViewForInboxMessage:attribution: is deprecated, please use recordViewForInboxMessage:attribution:mailingId: instaed.
- */
--(void)recordViewForInAppMessage:(MCEInAppMessage * _Nonnull)inAppMessage attribution: (NSString * _Nullable)attribution __attribute__ ((deprecated));
-
-/** Record a view of an inApp message including a mailing id
- @param inAppMessage An MCEInAppMessage object to record view for
- @param attribution A string representing the campaign name or attribution of the push message associated with the view event.
- @param mailingId A string representing the mailing id of the push message associated with the view event.
- */
--(void)recordViewForInAppMessage:(MCEInAppMessage * _Nonnull)inAppMessage attribution: (NSString * _Nullable)attribution mailingId: (NSNumber * _Nullable)mailingId;
 
 #if TARGET_OS_WATCH == 0
 /** Record if push is enabled or disabled */
