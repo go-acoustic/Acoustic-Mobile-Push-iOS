@@ -58,11 +58,15 @@
 		</data>
 		<key>Headers/MCEEventService.h</key>
 		<data>
-		kRLb9S8jhk8we6lnsO+SKjsKCSo=
+		7nd7QZ/4ke7RU4CbIbL6NyyXmW4=
 		</data>
 		<key>Headers/MCEGeofence.h</key>
 		<data>
 		kELpXVwTvk8AofCg+U2N1kWhysM=
+		</data>
+		<key>Headers/MCEGeofenceManager.h</key>
+		<data>
+		IL7fMmMVcMtWEeNA7XqpV6JAhNo=
 		</data>
 		<key>Headers/MCEInAppManager.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/MCEInAppMessage.h</key>
 		<data>
-		RKIzG3Vj+mv+npKLooaLjLHApPw=
+		1hE1qeqj1+D8h5vfSwNpYaCtpOc=
 		</data>
 		<key>Headers/MCEInAppTemplate.h</key>
 		<data>
@@ -142,7 +146,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gr+a7MWcx8uyyQmXVV8LI3g0sOk=
+		LJXNRUax/6CExf3FwVZyz6cx/mY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -246,7 +250,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EWDKMJdWCCZbHcwpTqi4QghBlhPcd3iv5NTXfkI6B+Y=
+			1JQuT08OkRvhmu9AoqWPZt/fVWkxCDnbSPlBJ+esgpM=
 			</data>
 		</dict>
 		<key>Headers/MCEGeofence.h</key>
@@ -254,6 +258,13 @@
 			<key>hash2</key>
 			<data>
 			pKKduD7C+5cMg6o2V+4ZPdBfFPj9Of8behvO5BYWINk=
+			</data>
+		</dict>
+		<key>Headers/MCEGeofenceManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N5w2OrYBxf4kfCRR113u/KoSOlf0KTP3+vxR4ca0RCY=
 			</data>
 		</dict>
 		<key>Headers/MCEInAppManager.h</key>
@@ -267,7 +278,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kg0RzLFQfNdyWv97l2m39bJXjnh1Gpc+o9evWeqINJ0=
+			kgAHoBAQ3KcxgEQYVb2Tqvn5l+gWRmPF+wJzDwLqC0s=
 			</data>
 		</dict>
 		<key>Headers/MCEInAppTemplate.h</key>

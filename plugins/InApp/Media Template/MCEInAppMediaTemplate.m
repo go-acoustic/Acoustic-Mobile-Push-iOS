@@ -105,6 +105,8 @@
     
     self.textLabel.titleLabel.numberOfLines = 2;
     self.titleLabel.titleLabel.numberOfLines = 1;
+    
+    [[MCEEventService sharedInstance] recordViewForInAppMessage:self.inAppMessage attribution:self.inAppMessage.attribution mailingId:self.inAppMessage.mailingId];
 }
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
