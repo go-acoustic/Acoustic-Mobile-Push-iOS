@@ -303,8 +303,11 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
     self.view.alpha = 0;
     self.view.frame = self.hiddenFrame;
     [window addSubview:self.view];
-    
-    [[MCEEventService sharedInstance] recordViewForInAppMessage:self.inAppMessage attribution:self.inAppMessage.attribution mailingId:self.inAppMessage.mailingId];
+
+    // Preventing from recording views for canned inApp messages.
+    if (self.inAppMessage.attribution != nil) {
+        [[MCEEventService sharedInstance] recordViewForInAppMessage:self.inAppMessage attribution:self.inAppMessage.attribution mailingId:self.inAppMessage.mailingId];
+    }
     
     [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^(){
         self.view.frame=self.visibleFrame;

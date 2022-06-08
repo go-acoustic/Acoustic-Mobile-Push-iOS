@@ -86,7 +86,7 @@
                             </constraints>
                         </view>
                         <sections>
-                            <tableViewSection footerTitle="Copyright (c) 2021 Acoustic. All rights reserved." id="Vjf-XU-trH">
+                            <tableViewSection footerTitle="Copyright (c) 2022 Acoustic. All rights reserved." id="Vjf-XU-trH">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Registration Details" textLabel="EVa-vC-qM3" rowHeight="44" style="IBUITableViewCellStyleDefault" id="vgo-7H-N8J">
                                         <rect key="frame" x="0.0" y="180" width="375" height="44"/>

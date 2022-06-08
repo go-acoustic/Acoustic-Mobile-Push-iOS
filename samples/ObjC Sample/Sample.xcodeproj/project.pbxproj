@@ -1584,7 +1584,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1593,7 +1593,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1610,7 +1610,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1619,7 +1619,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1636,7 +1636,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1645,7 +1645,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1662,7 +1662,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1671,7 +1671,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1715,7 +1715,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1734,7 +1734,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1775,7 +1775,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1788,7 +1788,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1803,7 +1803,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1811,7 +1811,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1830,7 +1830,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1838,7 +1838,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1856,7 +1856,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1864,7 +1864,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1881,7 +1881,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1889,7 +1889,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1905,7 +1905,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1913,7 +1913,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1929,7 +1929,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1937,7 +1937,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1952,11 +1952,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1971,11 +1971,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1991,7 +1991,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1999,7 +1999,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2015,7 +2015,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2023,7 +2023,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2038,11 +2038,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2057,11 +2057,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2076,7 +2076,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2085,7 +2085,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2102,7 +2102,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 000;
+				CURRENT_PROJECT_VERSION = 386;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2111,7 +2111,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.5;
+				MARKETING_VERSION = 3.8.6;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
