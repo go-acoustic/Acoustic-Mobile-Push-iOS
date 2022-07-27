@@ -46,7 +46,7 @@ This extension target provides the ability to send push messages with multiple a
 There are two main paths to integrate the Mobile Push SDK with your notification service extension. Both require the `AcousticMobilePushNotification.xcframework` to be included in the `Frameworks, Libraries, and Embedded Content` of the target with the  `Embed and sign` option selected.
  
 ## Automatic Integration Flow
-To use the automatic integration flow in the notification service extension target, simply change the supperclass of your Notification Service class to the `MCENotificationService` class and verify that the `MceConfig.json` file has been added to this target.  
+To use the automatic integration flow in the notification service extension target, simply change the superclass of your Notification Service class to the `MCENotificationService` class and verify that the `MceConfig.json` file has been added to this target.  
 
 ## Manual Integration Flow
 To manually configure the notification service extension when using the NSDictionary based configuration, be sure to initialize the MCEConfig object via `sharedInstanceWithDictionary` before creating the `MCENotificationService` object. Then in the `didReceive(_:withContentHandler:)` method call the mobile push method of the same name if the userInfo of the request contains a `notification-action`. Finally, in the `serviceExtensionTimeWillExpire()` method, be sure to call the mobile push method of the same name. See `NotificationService.swift` for an example of how to do this. 
