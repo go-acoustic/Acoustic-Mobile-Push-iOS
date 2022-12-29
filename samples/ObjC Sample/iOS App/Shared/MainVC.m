@@ -16,6 +16,8 @@
 #endif
 
 @interface MainVC ()
+@property NSTimer * syncTimer;
+@property int syncSecondsRemaining;
 @end
 
 @implementation MainVC
@@ -24,6 +26,7 @@
 {
     [super viewWillAppear:animated];
     [self inboxUpdate];
+    [self checkSyncTimer];
 }
 
 // Hide iBeacons when on Mac
@@ -89,6 +92,44 @@
         self.altInboxCell.detailTextLabel.text = subtitle;
         [self.tableView reloadData];
     });
+}
+
+-(void)checkSyncTimer
+{
+    NSDate * lastSync = MCESdk.sharedInstance.lastInboxSync == nil ? [NSDate date] : MCESdk.sharedInstance.lastInboxSync;
+    if(self.syncTimer == nil && lastSync != nil){
+        int secondsElapsed = [[NSDate date] timeIntervalSinceDate:lastSync];
+        int maxTimeout = MCESdk.sharedInstance.config.locationSyncTimeout;
+        int timeRemaining = maxTimeout - secondsElapsed;
+        self.syncSecondsRemaining = timeRemaining;
+        [self startSyncTimer];
+    }
+}
+
+// Start the sync timer
+-(void)startSyncTimer
+{
+    self.syncTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                                     target:self
+                                                   selector:@selector(updateSyncLabel:)
+                                                   userInfo:nil
+                                                    repeats:YES];
+    
+}
+
+
+- (void)updateSyncLabel:(NSTimer *)timer {
+    if (self.syncSecondsRemaining > 0) {
+        self.syncLabel.text = [NSString stringWithFormat:@"%s %@%s","Sync Available In:", [NSString stringWithFormat:@"%ld",(long)self.syncSecondsRemaining], "s"];
+        self.syncLabel.textColor = [UIColor blackColor];
+    }else{
+        self.syncLabel.text = @"Sync Available";
+        self.syncLabel.textColor = [UIColor greenColor];
+        [self.syncTimer invalidate];
+        self.syncTimer = nil;
+    }
+    // decrement the number of seconds
+    self.syncSecondsRemaining -= 1;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

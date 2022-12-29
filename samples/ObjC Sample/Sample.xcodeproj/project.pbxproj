@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3437CCC528D91D7900F897D7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3437CCAE28D919D300F897D7 /* UserNotifications.framework */; };
+		3437CCC628D91D7900F897D7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3437CCB028D919D300F897D7 /* UserNotificationsUI.framework */; };
+		3437CCD128D91D7900F897D7 /* Carousel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3437CCC428D91D7900F897D7 /* Carousel.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3437CCEB28DB6B8000F897D7 /* CarouselAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437CCEA28DB6B8000F897D7 /* CarouselAction.m */; };
+		3437CCEC28DB6B8000F897D7 /* CarouselAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437CCEA28DB6B8000F897D7 /* CarouselAction.m */; };
+		3437CCEF28DB6B9F00F897D7 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3437CCEE28DB6B9F00F897D7 /* NotificationViewController.m */; };
+		3437CCF228DB6BB400F897D7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3437CCF028DB6BB400F897D7 /* MainInterface.storyboard */; };
 		C392A1142437B70500C16933 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C392A1132437B70500C16933 /* NotificationService.m */; };
 		C392A1182437B70500C16933 /* Auto Notification Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C392A1102437B70500C16933 /* Auto Notification Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C392A1252437B73700C16933 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C392A1242437B73700C16933 /* NotificationService.m */; };
@@ -101,8 +108,8 @@
 		C3D28FB02437A0EA00B8F979 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D28F762437A0EA00B8F979 /* WebViewController.xib */; };
 		C3D28FB12437A0EA00B8F979 /* DisplayWebViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F782437A0EA00B8F979 /* DisplayWebViewPlugin.m */; };
 		C3D28FB42437A0EA00B8F979 /* TextInputActionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F7E2437A0EA00B8F979 /* TextInputActionPlugin.m */; };
-		C3D28FB52437A0EA00B8F979 /* AddToPassbookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F832437A0EA00B8F979 /* AddToPassbookPlugin.m */; };
-		C3D28FB62437A0EA00B8F979 /* AddToPassbookClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F842437A0EA00B8F979 /* AddToPassbookClient.m */; };
+		C3D28FB52437A0EA00B8F979 /* AddToWalletPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F832437A0EA00B8F979 /* AddToWalletPlugin.m */; };
+		C3D28FB62437A0EA00B8F979 /* AddToWalletClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F842437A0EA00B8F979 /* AddToWalletClient.m */; };
 		C3D28FB72437A0EA00B8F979 /* ExamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F862437A0EA00B8F979 /* ExamplePlugin.m */; };
 		C3D28FB82437A0EA00B8F979 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D28F872437A0EA00B8F979 /* ExampleViewController.xib */; };
 		C3D28FB92437A0EA00B8F979 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F8A2437A0EA00B8F979 /* ExampleViewController.m */; };
@@ -142,8 +149,8 @@
 		C3D28FDB2437A1A200B8F979 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D28F762437A0EA00B8F979 /* WebViewController.xib */; };
 		C3D28FDC2437A1A700B8F979 /* DisplayWebViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F782437A0EA00B8F979 /* DisplayWebViewPlugin.m */; };
 		C3D28FDF2437A1B200B8F979 /* TextInputActionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F7E2437A0EA00B8F979 /* TextInputActionPlugin.m */; };
-		C3D28FE02437A1B900B8F979 /* AddToPassbookPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F832437A0EA00B8F979 /* AddToPassbookPlugin.m */; };
-		C3D28FE12437A1BB00B8F979 /* AddToPassbookClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F842437A0EA00B8F979 /* AddToPassbookClient.m */; };
+		C3D28FE02437A1B900B8F979 /* AddToWalletPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F832437A0EA00B8F979 /* AddToWalletPlugin.m */; };
+		C3D28FE12437A1BB00B8F979 /* AddToWalletClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F842437A0EA00B8F979 /* AddToWalletClient.m */; };
 		C3D28FE22437A1BE00B8F979 /* ExamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F862437A0EA00B8F979 /* ExamplePlugin.m */; };
 		C3D28FE32437A1C200B8F979 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D28F872437A0EA00B8F979 /* ExampleViewController.xib */; };
 		C3D28FE42437A1C900B8F979 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F8A2437A0EA00B8F979 /* ExampleViewController.m */; };
@@ -201,6 +208,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3437CCCF28D91D7900F897D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D28E942437927100B8F979 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3437CCC328D91D7900F897D7;
+			remoteInfo = Carousel;
+		};
+		3437CCE428DB65DA00F897D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D28E942437927100B8F979 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3437CCC328D91D7900F897D7;
+			remoteInfo = Carousel;
+		};
 		C392A1162437B70500C16933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3D28E942437927100B8F979 /* Project object */;
@@ -259,6 +280,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				3437CCD128D91D7900F897D7 /* Carousel.appex in Embed App Extensions */,
 				C392A1182437B70500C16933 /* Auto Notification Service.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -368,6 +390,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3437CCAE28D919D300F897D7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		3437CCB028D919D300F897D7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		3437CCC428D91D7900F897D7 /* Carousel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Carousel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3437CCE828DB6B5B00F897D7 /* Carousel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Carousel.entitlements; sourceTree = SOURCE_ROOT; };
+		3437CCE928DB6B7000F897D7 /* CarouselAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CarouselAction.h; path = "../../../plugins/Image Carousel Plugin/CarouselAction.h"; sourceTree = "<group>"; };
+		3437CCEA28DB6B8000F897D7 /* CarouselAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarouselAction.m; path = "../../../plugins/Image Carousel Plugin/CarouselAction.m"; sourceTree = "<group>"; };
+		3437CCED28DB6B9300F897D7 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = "../../../plugins/Image Carousel Plugin/NotificationViewController.h"; sourceTree = "<group>"; };
+		3437CCEE28DB6B9F00F897D7 /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationViewController.m; path = "../../../plugins/Image Carousel Plugin/NotificationViewController.m"; sourceTree = "<group>"; };
+		3437CCF128DB6BB400F897D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../plugins/Image Carousel Plugin/Base.lproj/MainInterface.storyboard"; sourceTree = "<group>"; };
+		3437CCF328DB6BC200F897D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../plugins/Image Carousel Plugin/Info.plist"; sourceTree = "<group>"; };
 		C360F5DD24ABF92200573174 /* Auto Notification Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Auto Notification Service.entitlements"; sourceTree = "<group>"; };
 		C360F5DE24ABF93F00573174 /* Manual Notification Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Manual Notification Service.entitlements"; sourceTree = "<group>"; };
 		C360F5DF24ABF96D00573174 /* Auto Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Auto Watch Extension.entitlements"; sourceTree = "<group>"; };
@@ -493,10 +525,10 @@
 		C3D28F7C2437A0EA00B8F979 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		C3D28F7E2437A0EA00B8F979 /* TextInputActionPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputActionPlugin.m; sourceTree = "<group>"; };
 		C3D28F7F2437A0EA00B8F979 /* TextInputActionPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputActionPlugin.h; sourceTree = "<group>"; };
-		C3D28F812437A0EA00B8F979 /* AddToPassbookPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToPassbookPlugin.h; sourceTree = "<group>"; };
-		C3D28F822437A0EA00B8F979 /* AddToPassbookClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToPassbookClient.h; sourceTree = "<group>"; };
-		C3D28F832437A0EA00B8F979 /* AddToPassbookPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToPassbookPlugin.m; sourceTree = "<group>"; };
-		C3D28F842437A0EA00B8F979 /* AddToPassbookClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToPassbookClient.m; sourceTree = "<group>"; };
+		C3D28F812437A0EA00B8F979 /* AddToWalletPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToWalletPlugin.h; sourceTree = "<group>"; };
+		C3D28F822437A0EA00B8F979 /* AddToWalletClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToWalletClient.h; sourceTree = "<group>"; };
+		C3D28F832437A0EA00B8F979 /* AddToWalletPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToWalletPlugin.m; sourceTree = "<group>"; };
+		C3D28F842437A0EA00B8F979 /* AddToWalletClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToWalletClient.m; sourceTree = "<group>"; };
 		C3D28F862437A0EA00B8F979 /* ExamplePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplePlugin.m; sourceTree = "<group>"; };
 		C3D28F872437A0EA00B8F979 /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
 		C3D28F882437A0EA00B8F979 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
@@ -553,6 +585,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3437CCC128D91D7900F897D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3437CCC628D91D7900F897D7 /* UserNotificationsUI.framework in Frameworks */,
+				3437CCC528D91D7900F897D7 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C392A10D2437B70500C16933 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,6 +645,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3437CCE728DB6B2D00F897D7 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				3437CCE828DB6B5B00F897D7 /* Carousel.entitlements */,
+				3437CCE928DB6B7000F897D7 /* CarouselAction.h */,
+				3437CCEA28DB6B8000F897D7 /* CarouselAction.m */,
+				3437CCED28DB6B9300F897D7 /* NotificationViewController.h */,
+				3437CCEE28DB6B9F00F897D7 /* NotificationViewController.m */,
+				3437CCF028DB6BB400F897D7 /* MainInterface.storyboard */,
+				3437CCF328DB6BC200F897D7 /* Info.plist */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
 		C392A1112437B70500C16933 /* Auto */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +687,7 @@
 				C3FF3B762437CD1400B6B412 /* README.md */,
 				C3D28F2C2437A0EA00B8F979 /* plugins */,
 				C3FF3AAA2437C48200B6B412 /* Notification Service */,
+				3437CCE728DB6B2D00F897D7 /* Carousel */,
 				C3D28E9E2437927100B8F979 /* iOS App */,
 				C3FF3B112437C6D500B6B412 /* Watch */,
 				C3FF3B202437C6D500B6B412 /* Watch Extension */,
@@ -652,6 +708,7 @@
 				C3FF3B102437C6D500B6B412 /* Manual Watch.app */,
 				C3FF3B1C2437C6D500B6B412 /* Manual Watch Extension.appex */,
 				C3FF3B8E2437DB4400B6B412 /* GenericUITest.xctest */,
+				3437CCC428D91D7900F897D7 /* Carousel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -737,6 +794,8 @@
 				C3FF3B692437CA9300B6B412 /* AcousticMobilePushWatch.xcframework */,
 				C3D28F232437A09C00B8F979 /* AcousticMobilePush.xcframework */,
 				C3D28F242437A09C00B8F979 /* AcousticMobilePushNotification.xcframework */,
+				3437CCAE28D919D300F897D7 /* UserNotifications.framework */,
+				3437CCB028D919D300F897D7 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -941,10 +1000,10 @@
 		C3D28F802437A0EA00B8F979 /* passbook-action */ = {
 			isa = PBXGroup;
 			children = (
-				C3D28F812437A0EA00B8F979 /* AddToPassbookPlugin.h */,
-				C3D28F822437A0EA00B8F979 /* AddToPassbookClient.h */,
-				C3D28F832437A0EA00B8F979 /* AddToPassbookPlugin.m */,
-				C3D28F842437A0EA00B8F979 /* AddToPassbookClient.m */,
+				C3D28F812437A0EA00B8F979 /* AddToWalletPlugin.h */,
+				C3D28F822437A0EA00B8F979 /* AddToWalletClient.h */,
+				C3D28F832437A0EA00B8F979 /* AddToWalletPlugin.m */,
+				C3D28F842437A0EA00B8F979 /* AddToWalletClient.m */,
 			);
 			path = "passbook-action";
 			sourceTree = "<group>";
@@ -1040,6 +1099,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3437CCC328D91D7900F897D7 /* Carousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3437CCD328D91D7A00F897D7 /* Build configuration list for PBXNativeTarget "Carousel" */;
+			buildPhases = (
+				3437CCC028D91D7900F897D7 /* Sources */,
+				3437CCC128D91D7900F897D7 /* Frameworks */,
+				3437CCC228D91D7900F897D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carousel;
+			productName = Carousel;
+			productReference = 3437CCC428D91D7900F897D7 /* Carousel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C392A10F2437B70500C16933 /* Auto Notification Service */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C392A1192437B70500C16933 /* Build configuration list for PBXNativeTarget "Auto Notification Service" */;
@@ -1090,6 +1166,7 @@
 			dependencies = (
 				C392A1172437B70500C16933 /* PBXTargetDependency */,
 				C3FF3B042437C6B200B6B412 /* PBXTargetDependency */,
+				3437CCD028D91D7900F897D7 /* PBXTargetDependency */,
 			);
 			name = "Auto Sample";
 			productName = Sample;
@@ -1110,6 +1187,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3437CCE528DB65DA00F897D7 /* PBXTargetDependency */,
 				C392A1282437B73700C16933 /* PBXTargetDependency */,
 				C3FF3B2F2437C6D600B6B412 /* PBXTargetDependency */,
 			);
@@ -1194,10 +1272,13 @@
 		C3D28E942437927100B8F979 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Acoustic;
 				TargetAttributes = {
+					3437CCC328D91D7900F897D7 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					C392A10F2437B70500C16933 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -1243,6 +1324,7 @@
 				C3D28E9B2437927100B8F979 /* Auto Sample */,
 				C3D28F0124379F8F00B8F979 /* Manual Sample */,
 				C392A10F2437B70500C16933 /* Auto Notification Service */,
+				3437CCC328D91D7900F897D7 /* Carousel */,
 				C392A1202437B73700C16933 /* Manual Notification Service */,
 				C3FF3AE42437C6B100B6B412 /* Auto Watch */,
 				C3FF3AF02437C6B100B6B412 /* Auto Watch Extension */,
@@ -1253,6 +1335,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3437CCC228D91D7900F897D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3437CCF228DB6BB400F897D7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C392A10E2437B70500C16933 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1359,6 +1449,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3437CCC028D91D7900F897D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3437CCEF28DB6B9F00F897D7 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C392A10C2437B70500C16933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1380,12 +1478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D28FAB2437A0EA00B8F979 /* CarouselAction.m in Sources */,
 				C3D28FB42437A0EA00B8F979 /* TextInputActionPlugin.m in Sources */,
 				C3D28FA42437A0EA00B8F979 /* MCEInAppVideoPlayerView.m in Sources */,
 				C3D28F8E2437A0EA00B8F979 /* MCEInboxTableViewController.m in Sources */,
 				C3D28F8F2437A0EA00B8F979 /* MCEInboxDefaultTemplate.m in Sources */,
 				C3D28FA72437A0EA00B8F979 /* MCEInAppMediaTemplate.m in Sources */,
-				C3D28FB52437A0EA00B8F979 /* AddToPassbookPlugin.m in Sources */,
+				3437CCEB28DB6B8000F897D7 /* CarouselAction.m in Sources */,
+				C3D28FB52437A0EA00B8F979 /* AddToWalletPlugin.m in Sources */,
 				C3D28F9E2437A0EA00B8F979 /* MCEInboxPostTemplate.m in Sources */,
 				C3D28EF124379F7D00B8F979 /* UIColor+data.m in Sources */,
 				C3D28EF524379F7D00B8F979 /* EditCell.m in Sources */,
@@ -1398,7 +1498,6 @@
 				C3D28EF324379F7D00B8F979 /* iBeaconVC.m in Sources */,
 				C3D28F992437A0EA00B8F979 /* MCEInboxPostTemplateImage.m in Sources */,
 				C3D28FB92437A0EA00B8F979 /* ExampleViewController.m in Sources */,
-				C3D28FAB2437A0EA00B8F979 /* CarouselAction.m in Sources */,
 				C3D28F922437A0EA00B8F979 /* MCEInboxDefaultTemplateDisplay.m in Sources */,
 				C3D28FAD2437A0EA00B8F979 /* AddToCalendarPlugin.m in Sources */,
 				C3D28EFA24379F7D00B8F979 /* NavigationController.m in Sources */,
@@ -1411,7 +1510,7 @@
 				C3D28EFD24379F7D00B8F979 /* StateController.m in Sources */,
 				C3D28EF424379F7D00B8F979 /* SceneDelegate.m in Sources */,
 				C3D28EEE24379F7D00B8F979 /* AttributesVC.m in Sources */,
-				C3D28FB62437A0EA00B8F979 /* AddToPassbookClient.m in Sources */,
+				C3D28FB62437A0EA00B8F979 /* AddToWalletClient.m in Sources */,
 				C3D28FAE2437A0EA00B8F979 /* SnoozeActionPlugin.m in Sources */,
 				C3D28EED24379F7D00B8F979 /* EventVC.m in Sources */,
 				C3D28EFC24379F7D00B8F979 /* AppDelegate.m in Sources */,
@@ -1440,7 +1539,7 @@
 				C3D28FBD2437A10200B8F979 /* MCEInboxDefaultTemplate.m in Sources */,
 				C3D28F0824379F8F00B8F979 /* iBeaconVC.m in Sources */,
 				C3D28FE22437A1BE00B8F979 /* ExamplePlugin.m in Sources */,
-				C3D28FE02437A1B900B8F979 /* AddToPassbookPlugin.m in Sources */,
+				C3D28FE02437A1B900B8F979 /* AddToWalletPlugin.m in Sources */,
 				C3D28FD92437A19900B8F979 /* SnoozeActionPlugin.m in Sources */,
 				C3D28FD32437A15E00B8F979 /* MCEInAppVideoTemplate.m in Sources */,
 				C3D28F0924379F8F00B8F979 /* NavigationController.m in Sources */,
@@ -1465,12 +1564,13 @@
 				C3D28F1224379F8F00B8F979 /* EventVC.m in Sources */,
 				C3D28FCC2437A14000B8F979 /* MCEInboxPostTemplate.m in Sources */,
 				C3D28FDC2437A1A700B8F979 /* DisplayWebViewPlugin.m in Sources */,
+				3437CCEC28DB6B8000F897D7 /* CarouselAction.m in Sources */,
 				C3D28FCB2437A13C00B8F979 /* MCEInboxPostTemplateCell.m in Sources */,
 				C3D28F1324379F8F00B8F979 /* AppDelegate.m in Sources */,
 				C3D28FBC2437A0FB00B8F979 /* MCEInboxTableViewController.m in Sources */,
 				C3D28FD12437A15500B8F979 /* MCEInAppImageTemplate.m in Sources */,
 				C3D28F1424379F8F00B8F979 /* NotificationDelegate.m in Sources */,
-				C3D28FE12437A1BB00B8F979 /* AddToPassbookClient.m in Sources */,
+				C3D28FE12437A1BB00B8F979 /* AddToWalletClient.m in Sources */,
 				C3D28F1524379F8F00B8F979 /* UIColor+Sample.m in Sources */,
 				C3D28FBE2437A10500B8F979 /* MCEInboxDefaultTemplateCell.m in Sources */,
 				C3D28F1624379F8F00B8F979 /* RegistrationVC.m in Sources */,
@@ -1508,6 +1608,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3437CCD028D91D7900F897D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 3437CCC328D91D7900F897D7 /* Carousel */;
+			targetProxy = 3437CCCF28D91D7900F897D7 /* PBXContainerItemProxy */;
+		};
+		3437CCE528DB65DA00F897D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3437CCC328D91D7900F897D7 /* Carousel */;
+			targetProxy = 3437CCE428DB65DA00F897D7 /* PBXContainerItemProxy */;
+		};
 		C392A1172437B70500C16933 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C392A10F2437B70500C16933 /* Auto Notification Service */;
@@ -1543,6 +1654,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3437CCF028DB6BB400F897D7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3437CCF128DB6BB400F897D7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C3D28ED224379F7D00B8F979 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1578,13 +1697,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3437CCD428D91D7A00F897D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Carousel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.8.7;
+				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3437CCD528D91D7A00F897D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Carousel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "../../plugins/Image Carousel Plugin/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.8.7;
+				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.carousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C392A11A2437B70500C16933 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1593,7 +1772,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1610,7 +1789,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Auto Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1619,7 +1798,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1636,7 +1815,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1645,7 +1824,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1662,7 +1841,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Manual Notification Service.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Notification Service/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1671,7 +1850,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1715,7 +1894,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1734,7 +1913,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1775,7 +1954,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1788,7 +1967,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1803,7 +1982,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1811,7 +1990,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1830,7 +2009,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1838,7 +2017,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1856,7 +2035,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1864,7 +2043,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1881,7 +2060,7 @@
 				CODE_SIGN_ENTITLEMENTS = "iOS App/Shared/Sample.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS App/Shared/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1889,7 +2068,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1905,15 +2084,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1929,15 +2108,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Auto Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1952,11 +2131,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1971,11 +2150,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1991,15 +2170,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2015,15 +2194,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Manual Watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Watch Extension/Shared/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -2038,11 +2217,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2057,11 +2236,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
-				DEVELOPMENT_TEAM = QXQ67VKX2B;
+				CURRENT_PROJECT_VERSION = 387;
+				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = "Watch App/Shared/Info.plist";
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -2076,7 +2255,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2085,7 +2264,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2102,7 +2281,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 386;
+				CURRENT_PROJECT_VERSION = 387;
 				DEVELOPMENT_TEAM = QXQ67VKX2B;
 				INFOPLIST_FILE = ../../../../Framework/AcousticMobilePush/GenericUITest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -2111,7 +2290,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.8.6;
+				MARKETING_VERSION = 3.8.7;
 				PRODUCT_BUNDLE_IDENTIFIER = co.acoustic.mobile.push.sample.ios.GenericUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -2126,6 +2305,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3437CCD328D91D7A00F897D7 /* Build configuration list for PBXNativeTarget "Carousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3437CCD428D91D7A00F897D7 /* Debug */,
+				3437CCD528D91D7A00F897D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C392A1192437B70500C16933 /* Build configuration list for PBXNativeTarget "Auto Notification Service" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

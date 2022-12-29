@@ -27,7 +27,7 @@
 // Action Plugins
 #import "ActionMenuPlugin.h"
 #import "AddToCalendarPlugin.h"
-#import "AddToPassbookPlugin.h"
+#import "AddToWalletPlugin.h"
 #import "SnoozeActionPlugin.h"
 #import "DisplayWebViewPlugin.h"
 #import "TextInputActionPlugin.h"
@@ -123,7 +123,7 @@
     [ActionMenuPlugin registerPlugin];
     [ExamplePlugin registerPlugin];
     [AddToCalendarPlugin registerPlugin];
-    [AddToPassbookPlugin registerPlugin];
+    [AddToWalletPlugin registerPlugin];
     [SnoozeActionPlugin registerPlugin];
     [DisplayWebViewPlugin registerPlugin];
     [TextInputActionPlugin registerPlugin];

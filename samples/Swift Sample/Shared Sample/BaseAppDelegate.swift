@@ -27,11 +27,11 @@ import AcousticMobilePush
         DisplayWebViewPlugin.register()
         ActionMenuPlugin.register()
         AddToCalendarPlugin.register()
-        AddToPassbookPlugin.register()
+        AddToWalletPlugin.register()
         SnoozeActionPlugin.register()
         ExamplePlugin.register()
         
-#if TARGET_OS_IOS
+#if os(iOS)
         CarouselAction.registerPlugin()
 #endif
         

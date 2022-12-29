@@ -25,7 +25,7 @@
 
 -(void)performAction:(NSDictionary*)action
 {
-    WebViewController * viewController = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil url: [NSURL URLWithString:action[@"value"]]];
+    WebViewController * viewController = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil url: [NSURL URLWithString:action[@"value"][@"url"]]];
     
     UIViewController * controller = MCESdk.sharedInstance.findCurrentViewController;
     if(controller) {

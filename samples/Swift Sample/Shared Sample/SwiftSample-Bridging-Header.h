@@ -11,7 +11,7 @@
 // MCE Action Plugins
 #import "ActionMenuPlugin.h"
 #import "AddToCalendarPlugin.h"
-#import "AddToPassbookPlugin.h"
+#import "AddToWalletPlugin.h"
 #import "SnoozeActionPlugin.h"
 #import "DisplayWebViewPlugin.h"
 #import "ExamplePlugin.h"

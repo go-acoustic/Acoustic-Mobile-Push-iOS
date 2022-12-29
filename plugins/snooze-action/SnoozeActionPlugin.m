@@ -29,7 +29,7 @@
 }
 
 -(void)performAction:(NSDictionary*)action payload:(NSDictionary*)payload {
-    NSNumber * value = action[@"value"];
+    NSNumber * value = action[@"value"][@"time"];
     if(![value respondsToSelector:@selector(isEqualToNumber:)]) {
         NSLog(@"Snooze value is not numeric");
         return;

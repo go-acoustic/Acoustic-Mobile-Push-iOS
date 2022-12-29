@@ -21,8 +21,8 @@
     UIApplication.sharedApplication.keyWindow.tintColor = UIColor.tintColor;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     [self updateColor];
 }
 

@@ -29,33 +29,33 @@
     EKEvent * event = [EKEvent eventWithEventStore: store];
     event.calendar=store.defaultCalendarForNewEvents;
     
-    if(action[@"title"]) {
-        event.title=action[@"title"];
+    if(action[@"value"][@"title"]) {
+        event.title=action[@"value"][@"title"];
     } else {
         NSLog(@"No title, could not add to calendar");
         return nil;
     }
     
-    if(action[@"timeZone"]) {
-        event.timeZone=[NSTimeZone timeZoneWithAbbreviation: action[@"timeZone"]];
+    if(action[@"value"][@"timeZone"]) {
+        event.timeZone=[NSTimeZone timeZoneWithAbbreviation: action[@"value"][@"timeZone"]];
     }
     
-    if(action[@"startDate"]) {
-        event.startDate = [MCEApiUtil iso8601ToDate: action[@"startDate"]];
+    if(action[@"value"][@"startDate"]) {
+        event.startDate = [MCEApiUtil iso8601ToDate: action[@"value"][@"startDate"]];
     } else {
         NSLog(@"No startDate, could not add to calendar");
         return nil;
     }
     
-    if(action[@"endDate"]) {
-        event.endDate = [MCEApiUtil iso8601ToDate: action[@"endDate"]];
+    if(action[@"value"][@"endDate"]) {
+        event.endDate = [MCEApiUtil iso8601ToDate: action[@"value"][@"endDate"]];
     } else {
         NSLog(@"No endDate, could not add to calendar");
         return nil;
     }
     
-    if(action[@"description"]) {
-        event.notes=action[@"description"];
+    if(action[@"value"][@"description"]) {
+        event.notes=action[@"value"][@"description"];
     }
     
     return event;
@@ -97,7 +97,7 @@
         
         EKEvent * event = [self generateEvent:action store:store];
         if(event) {
-            if([action[@"interactive"] boolValue]) {
+            if([action[@"value"][@"interactive"] boolValue]) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self interactivelyAddEvent: event store:store];
                 });

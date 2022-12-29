@@ -15,8 +15,8 @@
 
 @interface MainVC : UITableViewController 
 @property IBOutlet UILabel * version;
+@property IBOutlet UILabel * syncLabel;
 @property IBOutlet UITableViewCell * inboxCell;
 @property IBOutlet UITableViewCell * altInboxCell;
 @property NSString * selectedItem;
 @end
-
