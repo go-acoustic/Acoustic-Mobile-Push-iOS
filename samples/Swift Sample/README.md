@@ -31,11 +31,11 @@ You should also register with APNS for remote notifications in this same method 
 
 You can ask for authorization from the user to present notifications at this time as well, however this will prompt the user for permissions. We recommend waiting to do this until the user has reached a point in your application that they will need notifications for that feature. Otherwise a user may reject the request out of hand, not knowing the benefits that you provide with push messges. This is done with the `UNUserNotificationCenter.requestAuthorization(options:completionHandler:)` method. Note, even without notification permission, the user is not inaccessible, silent pushes, inbox pushes and inapp pushes can still be used in this state.  
 
-You can also override the user notification center delegate here if you need to respond to other types of push messages or need more control in the handing of push messages. An example of how to do that is provided in `NotificationDelegate.swift` 
+You can also override the user notification center delegate here if you need to respond to other types of push messages or need more control in the handling of push messages. An example of how to do that is provided in `NotificationDelegate.swift` 
 
 At this point in your code, you can also register to handle actions. Registering your code to execute when actions execute is the best way to respond to actions by the user in push messages, inbox messages and inapp messages. This is done by calling the `MCEActionRegistry.shared.registerTarget(,with:,forAction:)` method of the Mobile Push SDK. Examples of how to do this are provided in the `MailDelegate.swift` and `BaseAppDelegate.swift` files. 
 
-In the `application(_:didFailToRegisterForRemoteNotificationsWithError:)` method, of your Application Delegate, your code should also call `MCESdk.shared.deviceTokenRegistartionFailed()` to provide the Mobile Push SDK with the knowelge that something went wrong with the remote notification registration with APNS.
+In the `application(_:didFailToRegisterForRemoteNotificationsWithError:)` method, of your Application Delegate, your code should also call `MCESdk.shared.deviceTokenRegistartionFailed()` to provide the Mobile Push SDK with the knowledge that something went wrong with the remote notification registration with APNS.
 
 In the `application(_:didRegisterForRemoteNotificationsWithDeviceToken:)` method, of your Application Deleate, your code should also call `MCESdk.shared.registerDeviceToken(deviceToken)` to provide the Mobile Push SDK with the device token assigned to your device by APNS.
 
