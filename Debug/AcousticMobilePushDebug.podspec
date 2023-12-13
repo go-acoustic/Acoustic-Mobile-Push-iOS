@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name = 'AcousticMobilePushDebug'
-  s.version = '3.8.11'
+  s.version = '3.8.12'
   s.description = <<-DESC
                    Marketers use customer data and individual behaviors collected from a variety of sources to inform and drive real-time personalized customer interactions with Acoustic Campaign. You can use Acoustic Mobile Push Notification with Acoustic Campaign to allow marketers to send mobile app push notifications along with their customer interactions. By implementing the SDKs into your mobile app, you can send push notifications to your users based on criteria such as location, date, events, and more.
                    DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://developer.goacoustic.com/acoustic-campaign/docs/add-the-ios-sdk-to-your-app'
   s.summary = 'Integration for Acoustic Mobile Push Notification'
   s.cocoapods_version = '>= 1.10.0'
-  s.platform = { :ios, '12.1' }
+  s.platforms = { :ios => '12.1' }
   s.source = { :git => "git@github.com:Acoustic-Mobile-Push/iOS.git", :tag => s.version.to_s }
   s.vendored_frameworks = 'Debug/AcousticMobilePush.xcframework'
   s.requires_arc = true
