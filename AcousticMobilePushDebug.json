@@ -1,13 +1,13 @@
 {
-    "3.8.10": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.10/AcousticMobilePushDebug.zip",
-    "3.8.11": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.11/AcousticMobilePushDebug.zip",
-    "3.8.12": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.12/AcousticMobilePushDebug.zip",
-    "3.8.13": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.13/AcousticMobilePushDebug.zip",
-    "3.8.14": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.14/AcousticMobilePushDebug.zip",
-    "3.8.15": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.15/AcousticMobilePushDebug.zip",
-    "3.8.16": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.16/AcousticMobilePushDebug.zip",
-    "3.8.17": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.17/AcousticMobilePushDebug.zip",
+    "3.8.10": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.10/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.11": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.11/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.12": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.12/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.13": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.13/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.14": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.14/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.15": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.15/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.16": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.16/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.17": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.17/AcousticMobilePush_XCFramework_Debug.zip",
     "3.8.18": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.18/AcousticMobilePush_XCFramework_Debug.zip",
-    "3.8.8": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.8/AcousticMobilePushDebug.zip",
-    "3.8.9": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.9/AcousticMobilePushDebug.zip"
+    "3.8.8": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.8/AcousticMobilePush_XCFramework_Debug.zip",
+    "3.8.9": "https://github.com/Acoustic-Mobile-Push/iOS/releases/download/3.8.9/AcousticMobilePush_XCFramework_Debug.zip"
 }
