@@ -1,23 +1,23 @@
-/*
- * Copyright © 2014, 2019 Acoustic, L.P. All rights reserved.
- *
- * NOTICE: This file contains material that is confidential and proprietary to
- * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
- * industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
- * Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
- * prohibited.
- */
+//
+// Copyright (C) 2024 Acoustic, L.P. All rights reserved.
+//
+// NOTICE: This file contains material that is confidential and proprietary to
+// Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+// industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+// Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+// prohibited.
+//
 
 #import "MCEConfig.h"
 
-#if __has_feature(modules)
-@import UIKit;
-@import UserNotifications;
-#else
+//#if __has_feature(modules)
+//@import UIKit;
+//@import UserNotifications;
+//#else
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UserNotifications.h>
 #import <Foundation/Foundation.h>
-#endif
+//#endif
 
 typedef NS_ENUM(NSInteger, MCESdkState) {
     NotInitialized,
@@ -124,7 +124,7 @@ Please note, this method is deprecated, please use MCERegistrationDetails.shared
 - (enum MCESdkState) sdkState;
 
 /** This method notifies when the caller when the sdk state has been set to Running or Stopped. If the error variable in the completion handler is set to nil then the sdk is ready to be used. If the error is not nil, the sdk has errored.
- @param completionBlock
+ @param completionBlock A callback invoked on completion.
  */
 - (void)sdkStateIsRunning: (void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 

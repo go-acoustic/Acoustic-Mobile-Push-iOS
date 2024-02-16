@@ -1,7 +1,14 @@
-// Copyright (c) 2019. Acoustic, L.P. All rights reserved.
-// NOTICE: This file contains material that is confidential and proprietary to Acoustic, L.P. and/or other developers. No license is granted under any intellectual or industrial property rights of Acoustic, L.P. except as may be provided in an agreement with Acoustic, L.P. Any unauthorized copying or distribution of content from this file is prohibited.
+//
+// Copyright (C) 2024 Acoustic, L.P. All rights reserved.
+//
+// NOTICE: This file contains material that is confidential and proprietary to
+// Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+// industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+// Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+// prohibited.
+//
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for AcousticMobilePush.
 FOUNDATION_EXPORT double AcousticMobilePushVersionNumber;
@@ -9,38 +16,50 @@ FOUNDATION_EXPORT double AcousticMobilePushVersionNumber;
 //! Project version string for AcousticMobilePush.
 FOUNDATION_EXPORT const unsigned char AcousticMobilePushVersionString[];
 
-#import <AcousticMobilePush/MCEActionRegistry.h>
-#import <AcousticMobilePush/MCEApiUtil.h>
-#import <AcousticMobilePush/MCEAppDelegate.h>
-#import <AcousticMobilePush/MCEArea.h>
-#import <AcousticMobilePush/MCEAttributesQueueManager.h>
-#import <AcousticMobilePush/MCECallbackDatabaseManager.h>
-#import <AcousticMobilePush/MCECategoryActionPayload.h>
-#import <AcousticMobilePush/MCEClient.h>
-#import <AcousticMobilePush/MCEConfig.h>
-#import <AcousticMobilePush/MCEConstants.h>
-#import <AcousticMobilePush/MCEDeliveryActionPayload.h>
-#import <AcousticMobilePush/MCEEvent.h>
-#import <AcousticMobilePush/MCEEventService.h>
-#import <AcousticMobilePush/MCEGeofence.h>
-#import <AcousticMobilePush/MCEGeofenceManager.h>
-#import <AcousticMobilePush/MCEInAppManager.h>
-#import <AcousticMobilePush/MCEInAppMessage.h>
-#import <AcousticMobilePush/MCEInAppTemplate.h>
-#import <AcousticMobilePush/MCEInAppTemplateRegistry.h>
-#import <AcousticMobilePush/MCEInboxDatabase.h>
-#import <AcousticMobilePush/MCEInboxMessage.h>
-#import <AcousticMobilePush/MCEHelper.h>
-#import <AcousticMobilePush/MCEInboxQueueManager.h>
-#import <AcousticMobilePush/MCELocationClient.h>
-#import <AcousticMobilePush/MCELocationDatabase.h>
-#import <AcousticMobilePush/MCENotificationActionPayload.h>
-#import <AcousticMobilePush/MCENotificationDelegate.h>
-#import <AcousticMobilePush/MCENotificationPayload.h>
-#import <AcousticMobilePush/MCEPayload.h>
-#import <AcousticMobilePush/MCEPhoneHomeManager.h>
-#import <AcousticMobilePush/MCERegistrationDetails.h>
-#import <AcousticMobilePush/MCESdk.h>
-#import <AcousticMobilePush/MCETemplate.h>
-#import <AcousticMobilePush/MCETemplateRegistry.h>
-#import <AcousticMobilePush/UIColor+Hex.h>
+#import "MCEActionRegistry.h"
+#import "MCEApiUtil.h"
+#import "MCEAppDelegate.h"
+#import "MCEArea.h"
+#import "MCEAttributesQueueManager.h"
+#import "MCECallbackDatabaseManager.h"
+#import "MCECategoryActionPayload.h"
+#import "MCEClient.h"
+#import "MCEConfig.h"
+#import "MCEConstants.h"
+#import "MCEDeliveryActionPayload.h"
+#import "MCEDeliveryCertifyAction.h"
+#import "MCEEvent.h"
+#import "MCEEventService.h"
+#import "MCEGeofence.h"
+#import "MCEGeofenceManager.h"
+#import "MCEInAppManager.h"
+#import "MCEInAppMessage.h"
+#import "MCEInAppTemplate.h"
+#import "MCEInAppTemplateRegistry.h"
+#import "MCEInboxDatabase.h"
+#import "MCEInboxMessage.h"
+#import "MCEHelper.h"
+#import "MCEInboxQueueManager.h"
+#import "MCELocationClient.h"
+#import "MCELocationDatabase.h"
+#import "MCELog.h"
+#import "MCENotificationActionPayload.h"
+#import "MCENotificationDelegate.h"
+#import "MCENotificationPayload.h"
+#import "MCEPayload.h"
+#import "MCEPhoneHomeManager.h"
+#import "MCERegistrationDetails.h"
+#import "MCESdk.h"
+#import "MCETemplate.h"
+#import "MCETemplateRegistry.h"
+#import "UIColor+Hex.h"
+
+
+#import "MCENotificationPayload-Private.h"
+#import "MCEPayload-Private.h"
+#import "MCEProvisioning.h"
+#import "MCEDeliveryReportAction.h"
+#import "MCEDeliveryActionRegistry.h"
+#import "MCEPersistentStorage.h"
+#import "MCESdk-Private.h"
+#import "MCEConfig-Private.h"
