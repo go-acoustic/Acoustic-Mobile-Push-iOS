@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AcousticMobilePush.h</key>
 		<data>
-		0B+PL3RJZmnBfUgco+Ht2z7PAc4=
+		w7TcgsAksDDf8gy86JnUQyxVE3o=
 		</data>
 		<key>Headers/MCEActionRegistry.h</key>
 		<data>
@@ -40,10 +40,6 @@
 		<data>
 		I/R+OBVMzCDuB+7HbwG0xIrU5zo=
 		</data>
-		<key>Headers/MCEConfig-Private.h</key>
-		<data>
-		XWjM8TOKoY78h7TkHnCQq5t9nZE=
-		</data>
 		<key>Headers/MCEConfig.h</key>
 		<data>
 		ebCaoc2uk76ZLBkiK0FrSZvYPQI=
@@ -56,18 +52,6 @@
 		<data>
 		gCtQRtQGV+IWWnrHMq3JUwGrFQA=
 		</data>
-		<key>Headers/MCEDeliveryActionRegistry.h</key>
-		<data>
-		BHBTEFp5AsPm/1pD3BsS8T3++Wc=
-		</data>
-		<key>Headers/MCEDeliveryCertifyAction.h</key>
-		<data>
-		oVdPGzGT9+PAo72kPJWfqUI8FUk=
-		</data>
-		<key>Headers/MCEDeliveryReportAction.h</key>
-		<data>
-		k1yfITN4JFwSucLITKfZtlSV8NU=
-		</data>
 		<key>Headers/MCEEvent.h</key>
 		<data>
 		jxNNmgrnxJOhpGzDrmtqzhF86xA=
@@ -79,14 +63,6 @@
 		<key>Headers/MCEGeofence.h</key>
 		<data>
 		EdQ4CZ4SqMgv5wS0s2pRYI9ChEM=
-		</data>
-		<key>Headers/MCEGeofenceManager.h</key>
-		<data>
-		WmZKx4goQ2vEsMqEMFN8rEn7tSc=
-		</data>
-		<key>Headers/MCEHelper.h</key>
-		<data>
-		3FUpS5dmVM7ljnK9TJcJqZWZfYY=
 		</data>
 		<key>Headers/MCEInAppManager.h</key>
 		<data>
@@ -136,41 +112,21 @@
 		<data>
 		9R3/KIHN80+i7Z3779uvV5KeP+I=
 		</data>
-		<key>Headers/MCENotificationPayload-Private.h</key>
-		<data>
-		3ydIPMvl3X0d+ImL7vfmnqF2TAs=
-		</data>
 		<key>Headers/MCENotificationPayload.h</key>
 		<data>
 		sBAE2H8wTykL1pe/M8ydPReRt3s=
-		</data>
-		<key>Headers/MCEPayload-Private.h</key>
-		<data>
-		CtATLtovNORUyE8+Bgul1hdJn7U=
 		</data>
 		<key>Headers/MCEPayload.h</key>
 		<data>
 		WArgMIF5CX4FB5B0ag+PJssWivA=
 		</data>
-		<key>Headers/MCEPersistentStorage.h</key>
-		<data>
-		PBb6GbfLjlNk/pITPIwZ/pWTSPE=
-		</data>
 		<key>Headers/MCEPhoneHomeManager.h</key>
 		<data>
 		iUCg2c8Pp9gsAs3q9YdMX/e1NNE=
 		</data>
-		<key>Headers/MCEProvisioning.h</key>
-		<data>
-		5sx7BUmo8EqMX0/5qLMk7bEAZyM=
-		</data>
 		<key>Headers/MCERegistrationDetails.h</key>
 		<data>
 		d3NUuMxwfrIYyajXBI73QMRjyWk=
-		</data>
-		<key>Headers/MCESdk-Private.h</key>
-		<data>
-		Al0k6RTnpmvYmTBmEGpI3FXCOas=
 		</data>
 		<key>Headers/MCESdk.h</key>
 		<data>
@@ -190,7 +146,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j4fdcOH37jKuv3TPOwQGh+K/RQ8=
+		wCni+6QhSVi4h5Q7/B4pVKtcQ3s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -198,7 +154,123 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		iy2+b7BsfzTc7y1NswT837Pwdq0=
+		UIY4a18eVjCM0Hff9fyOj569L/A=
+		</data>
+		<key>PrivateHeaders/MCEApiUtil-Private.h</key>
+		<data>
+		lbOsrTSaRLO69Z3MZjXjGP1Fj1Y=
+		</data>
+		<key>PrivateHeaders/MCEArea-Private.h</key>
+		<data>
+		RaAwLwAcmtXdP/yUP816t7vDn3Y=
+		</data>
+		<key>PrivateHeaders/MCEAttributesQueueManager-Private.h</key>
+		<data>
+		bRBy8/Zzp5Z7KcBp7ZKdBN7rSs0=
+		</data>
+		<key>PrivateHeaders/MCEBeacon-Private.h</key>
+		<data>
+		CWbZgFVXjE+wVDieHR+b92RsUo8=
+		</data>
+		<key>PrivateHeaders/MCECallbackDatabaseManager-Private.h</key>
+		<data>
+		iqE3SQkGR1PcAAP2pEHHpOWDlJA=
+		</data>
+		<key>PrivateHeaders/MCECategoryActionPayload-Private.h</key>
+		<data>
+		YIHEPpLt1uhHY1h4t1jD9Wm7UK0=
+		</data>
+		<key>PrivateHeaders/MCEConfig-Private.h</key>
+		<data>
+		XWjM8TOKoY78h7TkHnCQq5t9nZE=
+		</data>
+		<key>PrivateHeaders/MCEConstants-Private.h</key>
+		<data>
+		4wGEiuOW8t0GY56tmBpBSBH+dxE=
+		</data>
+		<key>PrivateHeaders/MCEDeliveryActionPayload-Private.h</key>
+		<data>
+		3Cy4nNUycucvugtQQkEIKiZ16NA=
+		</data>
+		<key>PrivateHeaders/MCEDeliveryActionRegistry-Private.h</key>
+		<data>
+		spmBI55p7o2TcNihRYxAxpC0rqk=
+		</data>
+		<key>PrivateHeaders/MCEDeliveryActionRegistry.h</key>
+		<data>
+		BHBTEFp5AsPm/1pD3BsS8T3++Wc=
+		</data>
+		<key>PrivateHeaders/MCEDeliveryCertifyAction.h</key>
+		<data>
+		oVdPGzGT9+PAo72kPJWfqUI8FUk=
+		</data>
+		<key>PrivateHeaders/MCEDeliveryReportAction.h</key>
+		<data>
+		k1yfITN4JFwSucLITKfZtlSV8NU=
+		</data>
+		<key>PrivateHeaders/MCEEvent-Private.h</key>
+		<data>
+		vbaj3/cvYKAgy1oKIh5Qk6uTL80=
+		</data>
+		<key>PrivateHeaders/MCEEventService-Private.h</key>
+		<data>
+		r1oIUeKMwN1OxySs3NDv4lg27pA=
+		</data>
+		<key>PrivateHeaders/MCEGeofence-Private.h</key>
+		<data>
+		g/oADLQ7ovp6JN9xUo9yPB2ux6c=
+		</data>
+		<key>PrivateHeaders/MCEGeofenceManager.h</key>
+		<data>
+		WmZKx4goQ2vEsMqEMFN8rEn7tSc=
+		</data>
+		<key>PrivateHeaders/MCEInAppManager-Private.h</key>
+		<data>
+		ZC7j4lqYYHGcpK7kIqPmtmDDOSE=
+		</data>
+		<key>PrivateHeaders/MCEInAppMessage-Private.h</key>
+		<data>
+		DXE6x5AGV2p5GFCHrTY6+PXzUmE=
+		</data>
+		<key>PrivateHeaders/MCEInboxDatabase-Private.h</key>
+		<data>
+		cMg38npb1kYSQXqhDqbkYvTWdTU=
+		</data>
+		<key>PrivateHeaders/MCEInboxMessage-Private.h</key>
+		<data>
+		ix+DmgvXspwqtsL5j8swUlRjY20=
+		</data>
+		<key>PrivateHeaders/MCEInboxQueueManager-Private.h</key>
+		<data>
+		KS4PVxHe6BhvpPHVmgAAvRpeeTc=
+		</data>
+		<key>PrivateHeaders/MCENotificationActionPayload-Private.h</key>
+		<data>
+		3LCI0ldl5SSOqpuA//fLBain2JI=
+		</data>
+		<key>PrivateHeaders/MCENotificationPayload-Private.h</key>
+		<data>
+		3ydIPMvl3X0d+ImL7vfmnqF2TAs=
+		</data>
+		<key>PrivateHeaders/MCEPayload-Private.h</key>
+		<data>
+		CtATLtovNORUyE8+Bgul1hdJn7U=
+		</data>
+		<key>PrivateHeaders/MCEPersistentStorage.h</key>
+		<data>
+		PBb6GbfLjlNk/pITPIwZ/pWTSPE=
+		</data>
+		<key>PrivateHeaders/MCEProvisioning.h</key>
+		<data>
+		5sx7BUmo8EqMX0/5qLMk7bEAZyM=
+		</data>
+		<key>PrivateHeaders/MCERegistrationQueueManager-Private.h</key>
+		<data>
+		uD/8KOZYfkGMbkQsWPNAFz+K0IQ=
+		</data>
+		<key>PrivateHeaders/MCESdk-Private.h</key>
+		<data>
+		Al0k6RTnpmvYmTBmEGpI3FXCOas=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -207,7 +279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R88HJ4HNH17dnFBfOAlpm2yCBJrO9vI8+Zw4K2FUbzI=
+			69ZT21DN0H+GEavEXT2ytOEFqpUyoWxSsglhYQHEssg=
 			</data>
 		</dict>
 		<key>Headers/MCEActionRegistry.h</key>
@@ -266,13 +338,6 @@
 			SobZeti08WLs8qRceCut/AIhcJlewHZ/er+dONmUit0=
 			</data>
 		</dict>
-		<key>Headers/MCEConfig-Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HtSzOcB+XZgtfJhoeIpjAcCT21kYtuMGSi1UNYggiYo=
-			</data>
-		</dict>
 		<key>Headers/MCEConfig.h</key>
 		<dict>
 			<key>hash2</key>
@@ -294,27 +359,6 @@
 			EXzHFVrxt0DnQkVaN2g6q/2kMEr38a215HAQqzAWgUE=
 			</data>
 		</dict>
-		<key>Headers/MCEDeliveryActionRegistry.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5O/3jJh0wW1+EZ6QsvpMzeMz0Eiw54HoM/JypmuhrAU=
-			</data>
-		</dict>
-		<key>Headers/MCEDeliveryCertifyAction.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/+X45yaJTYMmQN0xgV3A1QJUcWClT7r8NzDu0y6bGTQ=
-			</data>
-		</dict>
-		<key>Headers/MCEDeliveryReportAction.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M5gT1NaZokUEsX4Fz1SgyFgSr6ac14Omxe6fuphc3sk=
-			</data>
-		</dict>
 		<key>Headers/MCEEvent.h</key>
 		<dict>
 			<key>hash2</key>
@@ -334,20 +378,6 @@
 			<key>hash2</key>
 			<data>
 			ETsIDWEAXCCAhP2FyJUFd4tjGXwunPMfst6nKvt8v4Y=
-			</data>
-		</dict>
-		<key>Headers/MCEGeofenceManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n84Jy9aXY7IGEhkWa/9wJnFto34gEEWhRFpA9DLAf1s=
-			</data>
-		</dict>
-		<key>Headers/MCEHelper.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JF9Dpk4MVZhw/PaPHKYXU8hwM+nG5L0KqMHz1Boc0LI=
 			</data>
 		</dict>
 		<key>Headers/MCEInAppManager.h</key>
@@ -434,25 +464,11 @@
 			sTI0FHcDJxUqdZbe78wmrpaKdRZ9/2ZewNN6rSdAvIs=
 			</data>
 		</dict>
-		<key>Headers/MCENotificationPayload-Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+TlYNtQb1ZEDfYaie+nP80Hc07o/dVdV3uRX0zzTBP8=
-			</data>
-		</dict>
 		<key>Headers/MCENotificationPayload.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			0AKKgCmosnrWyl5dMF1hQ/fOzxfEJl/svfc64JQrWf8=
-			</data>
-		</dict>
-		<key>Headers/MCEPayload-Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8rK/qXq3R+71tz5RlZ+fm8/3cf89nR9TNGYsj1KpSSE=
 			</data>
 		</dict>
 		<key>Headers/MCEPayload.h</key>
@@ -462,13 +478,6 @@
 			MS2dfCsd0EXpsJOlKJ7q0YEIxWjjpSXNOzYVrGzIGqw=
 			</data>
 		</dict>
-		<key>Headers/MCEPersistentStorage.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			70twlZS87pyVl2UJIEQAmyNu4LmzNc9gGL5IH9IXVms=
-			</data>
-		</dict>
 		<key>Headers/MCEPhoneHomeManager.h</key>
 		<dict>
 			<key>hash2</key>
@@ -476,25 +485,11 @@
 			GPgiZ26MqatDs47zT5dZ9RYFs77tOeFRpxvZGKiaNaQ=
 			</data>
 		</dict>
-		<key>Headers/MCEProvisioning.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7DEsGbx2Uu6a/sjSpUsqNSwIjAkJWQVkW9F1Zk6x2nE=
-			</data>
-		</dict>
 		<key>Headers/MCERegistrationDetails.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			5NtRD+VAlolbjC4vN6fg/bWd9eeDfUZw/Wj2POHUZoU=
-			</data>
-		</dict>
-		<key>Headers/MCESdk-Private.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Flz8vaG5nGTv3324Wcd5T4l6yTeM6B7rKf9PXiYPQGo=
 			</data>
 		</dict>
 		<key>Headers/MCESdk.h</key>
@@ -536,7 +531,210 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xUcjh3o/Cdwy7X3SwdqTyJ+i1kwEX+xCLuAoMZzx42Q=
+			NpZMug7qPwwcLHn23dTZuyrVc8lpB+/Knn7Nx+DotPc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEApiUtil-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zW0zjFCsElyoWX/t1vWEgTGcJDRdrABJGYhsSGpLE2g=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEArea-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qiHX5hAyhd6ehhVoDV47m+QbRabhhCdVJbNcKgFvCFk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEAttributesQueueManager-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WOEhWePkR7eKJZkfR0P2j9a7EKDb/MHjt0OW4unqRAc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEBeacon-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4FET4uujDciWMZ9kvsugDlj53gpb8qFWzHyZBsRWK2c=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCECallbackDatabaseManager-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dzM4vXwu19owVCsOTRuLsLAP/p81dpqRXGEyXWhxKx4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCECategoryActionPayload-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nq/F3UgFRd2rGqW3isS5MUW78Nb9bi7eh4aDmGU/mNQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEConfig-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HtSzOcB+XZgtfJhoeIpjAcCT21kYtuMGSi1UNYggiYo=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEConstants-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ok+hyxU80xC3WGBrJHAurOcWzWixeHEmaQdlxiIY7ws=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEDeliveryActionPayload-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G3MhlJ14ACde0p6Sn6mZ+6FrqGdMVaxfe9fJd80ZKtY=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEDeliveryActionRegistry-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ci7LmISU7/4K24Sd0qzj8vFpmCkKOefQQ+sU7ekO4ks=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEDeliveryActionRegistry.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5O/3jJh0wW1+EZ6QsvpMzeMz0Eiw54HoM/JypmuhrAU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEDeliveryCertifyAction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/+X45yaJTYMmQN0xgV3A1QJUcWClT7r8NzDu0y6bGTQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEDeliveryReportAction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M5gT1NaZokUEsX4Fz1SgyFgSr6ac14Omxe6fuphc3sk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEEvent-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xy1YCpzUksXaPM3YNVlmM3ZSDNjmK7FCv0FBZ8WxiIY=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEEventService-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wTjnmInYFHdLVdrN4eVMisZEWhAH1RGaefr5wuNe12E=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEGeofence-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MOLMvZjYmAeJnV42g6qTE/4vTcxxxpZJoMfzT0Ua4gc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEGeofenceManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n84Jy9aXY7IGEhkWa/9wJnFto34gEEWhRFpA9DLAf1s=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEInAppManager-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			foSUKN4J/My/RMcJuXWEZ2LUxmpGEfJagIl/ADPE38E=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEInAppMessage-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3K/sGoFx21tVzEUFqCY8TBE67D6HFpnq4G8iL0dIeog=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEInboxDatabase-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wNh06WZPsNFR0wAN0vt+1fF1GcmTypKpx3TakBVgor0=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEInboxMessage-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wpHC7w0CpFWcKjs1X0pT85eZUhBwO8qc/u/ueBGmDZI=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEInboxQueueManager-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VhjWIL4GZ3AFEofOyHQDz1YVllTaNczK/m6+gsCG5AQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCENotificationActionPayload-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5oEsyWK1T+7oI0IHTfgUwwNqFpMyTCHXiZRmI0CSqro=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCENotificationPayload-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+TlYNtQb1ZEDfYaie+nP80Hc07o/dVdV3uRX0zzTBP8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEPayload-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8rK/qXq3R+71tz5RlZ+fm8/3cf89nR9TNGYsj1KpSSE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEPersistentStorage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			70twlZS87pyVl2UJIEQAmyNu4LmzNc9gGL5IH9IXVms=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCEProvisioning.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7DEsGbx2Uu6a/sjSpUsqNSwIjAkJWQVkW9F1Zk6x2nE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCERegistrationQueueManager-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LT43QSE8v+D8tZojffmj+hAUDredoe09QzU4I7om9tU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/MCESdk-Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Flz8vaG5nGTv3324Wcd5T4l6yTeM6B7rKf9PXiYPQGo=
 			</data>
 		</dict>
 	</dict>

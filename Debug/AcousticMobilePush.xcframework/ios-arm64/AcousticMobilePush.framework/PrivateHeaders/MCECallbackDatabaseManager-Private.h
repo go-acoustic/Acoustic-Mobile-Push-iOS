@@ -8,11 +8,8 @@
 // prohibited.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "MCECallbackDatabaseManager.h"
 
-@interface MCEHelper : NSObject
-
-+ (UIWindow *) keyWindow;
-
+@interface MCECallbackDatabaseManager (Private)
+- (BOOL) clearDatabase;
 @end
