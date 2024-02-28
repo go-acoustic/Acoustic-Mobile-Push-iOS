@@ -50,3 +50,8 @@ FOUNDATION_EXPORT const unsigned char AcousticMobilePushVersionString[];
 #import <AcousticMobilePush/MCETemplate.h>
 #import <AcousticMobilePush/MCETemplateRegistry.h>
 #import <AcousticMobilePush/UIColor+Hex.h>
+
+// Cordova
+#import <AcousticMobilePush/MCEInAppTemplateRegistry.h>
+#import <AcousticMobilePush/MCEGeofenceManager.h>
+#import <AcousticMobilePush/MCEHelper.h>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AcousticMobilePush.h</key>
 		<data>
-		w7TcgsAksDDf8gy86JnUQyxVE3o=
+		7IA+I+MMN6749PpXxHhBfOPlpUw=
 		</data>
 		<key>Headers/MCEActionRegistry.h</key>
 		<data>
@@ -63,6 +63,14 @@
 		<key>Headers/MCEGeofence.h</key>
 		<data>
 		EdQ4CZ4SqMgv5wS0s2pRYI9ChEM=
+		</data>
+		<key>Headers/MCEGeofenceManager.h</key>
+		<data>
+		WmZKx4goQ2vEsMqEMFN8rEn7tSc=
+		</data>
+		<key>Headers/MCEHelper.h</key>
+		<data>
+		3FUpS5dmVM7ljnK9TJcJqZWZfYY=
 		</data>
 		<key>Headers/MCEInAppManager.h</key>
 		<data>
@@ -146,7 +154,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l2LsLn0GXCcI0cqkmyn2BEA1xTM=
+		LYT4nm8ZvZ+Nq0sp68FDmkk6G8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -220,10 +228,6 @@
 		<data>
 		g/oADLQ7ovp6JN9xUo9yPB2ux6c=
 		</data>
-		<key>PrivateHeaders/MCEGeofenceManager.h</key>
-		<data>
-		WmZKx4goQ2vEsMqEMFN8rEn7tSc=
-		</data>
 		<key>PrivateHeaders/MCEInAppManager-Private.h</key>
 		<data>
 		ZC7j4lqYYHGcpK7kIqPmtmDDOSE=
@@ -279,7 +283,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			69ZT21DN0H+GEavEXT2ytOEFqpUyoWxSsglhYQHEssg=
+			ryNtfcCbe0TMLFYRrgvD/E1KEA7JSYYhhsnyAZUnCks=
 			</data>
 		</dict>
 		<key>Headers/MCEActionRegistry.h</key>
@@ -378,6 +382,20 @@
 			<key>hash2</key>
 			<data>
 			ETsIDWEAXCCAhP2FyJUFd4tjGXwunPMfst6nKvt8v4Y=
+			</data>
+		</dict>
+		<key>Headers/MCEGeofenceManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n84Jy9aXY7IGEhkWa/9wJnFto34gEEWhRFpA9DLAf1s=
+			</data>
+		</dict>
+		<key>Headers/MCEHelper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JF9Dpk4MVZhw/PaPHKYXU8hwM+nG5L0KqMHz1Boc0LI=
 			</data>
 		</dict>
 		<key>Headers/MCEInAppManager.h</key>
@@ -644,13 +662,6 @@
 			<key>hash2</key>
 			<data>
 			MOLMvZjYmAeJnV42g6qTE/4vTcxxxpZJoMfzT0Ua4gc=
-			</data>
-		</dict>
-		<key>PrivateHeaders/MCEGeofenceManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n84Jy9aXY7IGEhkWa/9wJnFto34gEEWhRFpA9DLAf1s=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MCEInAppManager-Private.h</key>
