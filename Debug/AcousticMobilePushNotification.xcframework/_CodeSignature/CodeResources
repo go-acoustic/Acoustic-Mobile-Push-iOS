@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/AcousticMobilePushNotification</key>
 		<data>
-		jMZJM3xUTtjmZf/da+8Hq8OG814=
+		3oFIkUyy6qgWlTPCe+CeacvEMgs=
 		</data>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/Headers/AcousticMobilePushNotification.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/Info.plist</key>
 		<data>
-		Bh0K4XO5xD0QN2vBaJTJDvCJzRA=
+		XkXjvPps3XRtcH4E8/j7xL4VY/M=
 		</data>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/Modules/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/AcousticMobilePushNotification</key>
 		<data>
-		FdkqbXwKCIekvi54BRWNcDcaoi4=
+		sN00dHcjUva0H8Nq4iZmA32xG38=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/Headers/AcousticMobilePushNotification.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/Info.plist</key>
 		<data>
-		mGncSv4dxHdHAftP6yBqxbUAcQ4=
+		c4zudde4nbbvyFbzQmVEECh1Ax0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/_CodeSignature/CodeResources</key>
 		<data>
-		XP0K3+23vAcT/4yJgacXqk7w/c0=
+		fa4r5lT5V7TRtAatDMcrIssLr4c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jMZJM3xUTtjmZf/da+8Hq8OG814=
+			3oFIkUyy6qgWlTPCe+CeacvEMgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			RjA/M7fUITAKOTvRNv1+RPpJB8Or6361yXQHT/JHXYo=
+			iubzsYnNu1d/igSsg3z/xzOZXF3IlmHJs726CoDb+sk=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/Headers/AcousticMobilePushNotification.h</key>
@@ -96,11 +96,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bh0K4XO5xD0QN2vBaJTJDvCJzRA=
+			XkXjvPps3XRtcH4E8/j7xL4VY/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			WAllIB769SxU6j/bQVcgzfWSwgciy2yJVBsvJgYWROs=
+			DAnCvs+WLZji3X/xctOGvX9J1J/T2GxeXcenpBz3Pqo=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePushNotification.framework/Modules/module.modulemap</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FdkqbXwKCIekvi54BRWNcDcaoi4=
+			sN00dHcjUva0H8Nq4iZmA32xG38=
 			</data>
 			<key>hash2</key>
 			<data>
-			SS4eu71D7+wNotZrNAFvyTnMUYt9JSCKhYFgq9z65jM=
+			WJ3rW38hzflDxtTCPEAdMef7MLEzwxg/zbaUluZ5/fw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/Headers/AcousticMobilePushNotification.h</key>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mGncSv4dxHdHAftP6yBqxbUAcQ4=
+			c4zudde4nbbvyFbzQmVEECh1Ax0=
 			</data>
 			<key>hash2</key>
 			<data>
-			tADpRM5P6ZvR+AWuRsEf9FNnw5R13X1sUsiebqHFIrk=
+			XN5zPsHF+P7SLuIjsQO/Mw657Yzlv5+FrxIW0txyHmY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePushNotification.framework/Modules/module.modulemap</key>
@@ -195,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XP0K3+23vAcT/4yJgacXqk7w/c0=
+			fa4r5lT5V7TRtAatDMcrIssLr4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			tQDt55aXOV7vL2KitlEi+peYu/KMIVSURkfQV0TGXUI=
+			RkHK/gNAn/FcI/LDXRNdva6G39D2H8quqVKhPi4judM=
 			</data>
 		</dict>
 	</dict>
