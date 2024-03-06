@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/AcousticMobilePush.framework/AcousticMobilePush</key>
 		<data>
-		NfY10Kj8qeFlW3GMJrtkM3E+2BU=
+		mWUb69nFWWjfGzE1j+YExDSLcyQ=
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<data>
-		7IA+I+MMN6749PpXxHhBfOPlpUw=
+		rhzS7cBJYmaIzky8/kU8vwdXAh8=
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/MCEActionRegistry.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Info.plist</key>
 		<data>
-		qIJtHgyck8bkdgTUW5z8hTlnFqM=
+		EnnQT8oe1wPoIL4qYE30Nk9WVIY=
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Modules/module.modulemap</key>
 		<data>
@@ -282,11 +282,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/AcousticMobilePush</key>
 		<data>
-		YZTbLNGVXs8T1btzAGmYtmILwPE=
+		8h+66XsghC7W+RayfdIIy7nAmyo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<data>
-		7IA+I+MMN6749PpXxHhBfOPlpUw=
+		rhzS7cBJYmaIzky8/kU8vwdXAh8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/MCEActionRegistry.h</key>
 		<data>
@@ -434,7 +434,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Info.plist</key>
 		<data>
-		izVyrWsdw/B9xdDEeG37AmjC18c=
+		fReMRIYUWfxNwC6EB3spvVAkohU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Modules/module.modulemap</key>
 		<data>
@@ -558,7 +558,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/_CodeSignature/CodeResources</key>
 		<data>
-		AegWEi6UmXLkw8Ln+md1F00tAU0=
+		oVy/k3n9KZm1GOMKYEmA8FlZXmc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -567,22 +567,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NfY10Kj8qeFlW3GMJrtkM3E+2BU=
+			mWUb69nFWWjfGzE1j+YExDSLcyQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fiB9dCGjTDxvER636WFAzVqKJnCSDx6T5RPk+7JwiZE=
+			wR9gI4tzoYOS6kiTnqi1pOCH5g1IN4YhUNGvTCZWWN8=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7IA+I+MMN6749PpXxHhBfOPlpUw=
+			rhzS7cBJYmaIzky8/kU8vwdXAh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ryNtfcCbe0TMLFYRrgvD/E1KEA7JSYYhhsnyAZUnCks=
+			n3HeM0zwPG2jWnjw0bm51gOWnnDAHg7GhMjyKBq3uPA=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/MCEActionRegistry.h</key>
@@ -985,11 +985,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qIJtHgyck8bkdgTUW5z8hTlnFqM=
+			EnnQT8oe1wPoIL4qYE30Nk9WVIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			R90+r9XbA89F3Mg98OqhYSR3KyCOco6JruZ7yxMEiks=
+			pC+KZj1d7uOIJPkDvwYs4NCzHs+NEJc8yBOwz6hIkd4=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePush.framework/Modules/module.modulemap</key>
@@ -1326,22 +1326,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YZTbLNGVXs8T1btzAGmYtmILwPE=
+			8h+66XsghC7W+RayfdIIy7nAmyo=
 			</data>
 			<key>hash2</key>
 			<data>
-			NX2kPEoarV4a+YDsMNshgX+5EXM+kK5/d41hhPcVW2I=
+			SRWEoif9NuPaU/gXfb9uYtTzjhqaSKKJd1U1f9d7NrU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7IA+I+MMN6749PpXxHhBfOPlpUw=
+			rhzS7cBJYmaIzky8/kU8vwdXAh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ryNtfcCbe0TMLFYRrgvD/E1KEA7JSYYhhsnyAZUnCks=
+			n3HeM0zwPG2jWnjw0bm51gOWnnDAHg7GhMjyKBq3uPA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/MCEActionRegistry.h</key>
@@ -1744,11 +1744,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			izVyrWsdw/B9xdDEeG37AmjC18c=
+			fReMRIYUWfxNwC6EB3spvVAkohU=
 			</data>
 			<key>hash2</key>
 			<data>
-			mSrTP+LPU4fdRqz+Q9whMroKYbQo1x1Em1uIM9Gx5Jc=
+			9lnCL5jUQefVa+BIlC9mVKbQ5gp3mU0F5ByfLTYeLsU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Modules/module.modulemap</key>
@@ -2085,11 +2085,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AegWEi6UmXLkw8Ln+md1F00tAU0=
+			oVy/k3n9KZm1GOMKYEmA8FlZXmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			bZdTDIter9Uu/WZoN1yJ0A3GWaUHAKx7GyLjtNshnqQ=
+			1nqsMITPKk02vcs2Ect/JULiW4MidvdRBWugNu/W2eg=
 			</data>
 		</dict>
 	</dict>

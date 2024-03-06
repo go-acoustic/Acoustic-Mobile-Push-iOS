@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AcousticMobilePushWatch.h</key>
 		<data>
-		4FWqNE4WuJ9GBsTqjTd2vQM7RC4=
+		A9Ds2bYaiuuChpRsSlpy32IQ+Uo=
 		</data>
 		<key>Headers/MCEAttributesQueueManager.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VLliiJi846GrgDG/4+qY5t0TSOM=
+		A5zSDatH1EajZhzzBbyElAdfq5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FWqNE4WuJ9GBsTqjTd2vQM7RC4=
+			A9Ds2bYaiuuChpRsSlpy32IQ+Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			pumJqwIAbzdxWmQwueIidssSpHgFCRD8Yykc2HT6mhg=
+			rt9Fe2GWKUOEWMC6qK1JfieZe9kyNKWCGJCCRUxJQTQ=
 			</data>
 		</dict>
 		<key>Headers/MCEAttributesQueueManager.h</key>

@@ -16,16 +16,16 @@ FOUNDATION_EXPORT double AcousticMobilePushWatchVersionNumber;
 //! Project version string for AcousticMobilePushWatch.
 FOUNDATION_EXPORT const unsigned char AcousticMobilePushWatchVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <AcousticMobilePushWatch/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h"
 
-#import <AcousticMobilePushWatch/MCEAttributesQueueManager.h>
-#import <AcousticMobilePushWatch/MCEConfig.h>
-#import <AcousticMobilePushWatch/MCEConstants.h>
-#import <AcousticMobilePushWatch/MCEEvent.h>
-#import <AcousticMobilePushWatch/MCEEventService.h>
-#import <AcousticMobilePushWatch/MCENotificationDelegate.h>
-#import <AcousticMobilePushWatch/MCENotificationInterfaceController.h>
-#import <AcousticMobilePushWatch/MCERegistrationDetails.h>
-#import <AcousticMobilePushWatch/MCEWatchActionRegistry.h>
-#import <AcousticMobilePushWatch/MCEWatchSdk.h>
-#import <AcousticMobilePushWatch/UIColor+Hex.h>
+#import "MCEAttributesQueueManager.h"
+#import "MCEConfig.h"
+#import "MCEConstants.h"
+#import "MCEEvent.h"
+#import "MCEEventService.h"
+#import "MCENotificationDelegate.h"
+#import "MCENotificationInterfaceController.h"
+#import "MCERegistrationDetails.h"
+#import "MCEWatchActionRegistry.h"
+#import "MCEWatchSdk.h"
+#import "UIColor+Hex.h"

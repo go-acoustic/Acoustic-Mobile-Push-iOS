@@ -17,4 +17,4 @@ FOUNDATION_EXPORT double AcousticMobilePushNotificationVersionNumber;
 FOUNDATION_EXPORT const unsigned char AcousticMobilePushNotificationVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AcousticMobilePushNotification/PublicHeader.h>
-#import <AcousticMobilePushNotification/MCENotificationService.h>
+#import "MCENotificationService.h"
