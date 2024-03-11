@@ -6,7 +6,7 @@
 	<dict>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/AcousticMobilePushWatch</key>
 		<data>
-		vX6kpN2qWN4OTkeSRkSVA/bxMdA=
+		jR50x+XimPCJzLf7g2el0/P+jys=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/Headers/AcousticMobilePushWatch.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/Info.plist</key>
 		<data>
-		mmjK7MGSdLYMI0wl04fWGwRT2p8=
+		SEiv/mPPf9PL/bUSpye7NfXKEz4=
 		</data>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/AcousticMobilePushWatch</key>
 		<data>
-		4IX81AFslIbFCoYTjB9IGNOyudU=
+		nIY+ZMXk8K+dtvUGkTXye4SDSEc=
 		</data>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/Headers/AcousticMobilePushWatch.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/Info.plist</key>
 		<data>
-		mbR4+X0PoAHJR3C0mGS3y15nOoA=
+		NCVkhnHP13g8LXWJO6hdwFmNbj8=
 		</data>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/Modules/module.modulemap</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ySXps2oWFWz6XqvYgBBIFSPZeWU=
+		x7ZzOWJlulZbXoqKHFLdNCR52mE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vX6kpN2qWN4OTkeSRkSVA/bxMdA=
+			jR50x+XimPCJzLf7g2el0/P+jys=
 			</data>
 			<key>hash2</key>
 			<data>
-			vgqxiC7qtK2oJpt2wFi9H1SIisEt3gLSmnamEfJjv+8=
+			TKjQILDoDx90vxSik4eijYPFNtBONrdBc1alz/ZJHEc=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/Headers/AcousticMobilePushWatch.h</key>
@@ -286,11 +286,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mmjK7MGSdLYMI0wl04fWGwRT2p8=
+			SEiv/mPPf9PL/bUSpye7NfXKEz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6kjY2n6vp69tl6xYhqJRvKQm22hyAzWyK4Fr6yXwdro=
+			OddCj28FA+ORPjSpCnT8LS2cZMLoUIJpPxJw76xxwd8=
 			</data>
 		</dict>
 		<key>watchos-arm64_arm64_32_armv7k/AcousticMobilePushWatch.framework/Modules/module.modulemap</key>
@@ -319,11 +319,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4IX81AFslIbFCoYTjB9IGNOyudU=
+			nIY+ZMXk8K+dtvUGkTXye4SDSEc=
 			</data>
 			<key>hash2</key>
 			<data>
-			t870rechAEVTCW0NYAw3EttxKftzt5jbOm0lKr5c5zo=
+			bvs3lCiKmdJOqebOPb9v429kpbErrazt8v8MwquF/Fw=
 			</data>
 		</dict>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/Headers/AcousticMobilePushWatch.h</key>
@@ -462,11 +462,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mbR4+X0PoAHJR3C0mGS3y15nOoA=
+			NCVkhnHP13g8LXWJO6hdwFmNbj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			/DGj9+JmEh6gZA4tQbciYmrLozFi0wSTxTaPgB+n7Lo=
+			oGYR7yF46zw/hybilf2xGIlahfzMfR7LdJQ7/M99uYE=
 			</data>
 		</dict>
 		<key>watchos-arm64_i386_x86_64-simulator/AcousticMobilePushWatch.framework/Modules/module.modulemap</key>
@@ -495,11 +495,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ySXps2oWFWz6XqvYgBBIFSPZeWU=
+			x7ZzOWJlulZbXoqKHFLdNCR52mE=
 			</data>
 			<key>hash2</key>
 			<data>
-			VStq97wvAoPjIEHic9tELTjTkifsI1WgyofoqwRasiM=
+			ooQ/AXkZHshTmHPr6fepiX8lAFl+xrTiFYxDoNMy3FI=
 			</data>
 		</dict>
 	</dict>
