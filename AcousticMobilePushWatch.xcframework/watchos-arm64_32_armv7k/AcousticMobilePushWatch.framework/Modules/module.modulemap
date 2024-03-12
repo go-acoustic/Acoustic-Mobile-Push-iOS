@@ -1,6 +1,0 @@
-framework module AcousticMobilePushWatch {
-  umbrella header "AcousticMobilePushWatch.h"
-
-  export *
-  module * { export * }
-}
