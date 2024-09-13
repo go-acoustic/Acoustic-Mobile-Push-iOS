@@ -97,7 +97,7 @@
 
 +(void) registerTemplate
 {
-    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"image" hander:[[self alloc] initWithNibName: @"MCEInAppImageTemplate" bundle: nil]];
+    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"image" handler:[[self alloc] initWithNibName: @"MCEInAppImageTemplate" bundle: nil]];
 }
 
 

@@ -158,7 +158,7 @@
 
 +(void) registerTemplate
 {
-    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"video" hander:[[self alloc] initWithNibName: @"MCEInAppVideoTemplate" bundle: nil]];
+    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"video" handler:[[self alloc] initWithNibName: @"MCEInAppVideoTemplate" bundle: nil]];
 }
 
 

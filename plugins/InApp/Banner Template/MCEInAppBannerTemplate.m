@@ -145,7 +145,7 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
 // Register with MCEInAppRegistry for displaying "default" InApp messages
 +(void) registerTemplate
 {
-    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"default" hander:[[self alloc] initWithNibName: @"MCEInAppBannerTemplate" bundle: nil]];
+    [[MCEInAppTemplateRegistry sharedInstance] registerTemplate:@"default" handler:[[self alloc] initWithNibName: @"MCEInAppBannerTemplate" bundle: nil]];
 }
 
 - (CGFloat) determineIconHeight

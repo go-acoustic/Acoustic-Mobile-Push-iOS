@@ -34,7 +34,7 @@
 /* This method is used to register this template with the template registry system so we can display default template messages */
 +(void)registerTemplate
 {
-    [[MCETemplateRegistry sharedInstance] registerTemplate:@"default" hander:[[self alloc]init]];
+    [[MCETemplateRegistry sharedInstance] registerTemplate:@"default" handler:[[self alloc]init]];
 }
 
 /* This method will give the inbox system a view controller to display full messages in. */

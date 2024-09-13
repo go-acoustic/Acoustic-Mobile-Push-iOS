@@ -58,7 +58,7 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
 /* This method is used to register this template with the template registry system so we can display default template messages */
 +(void)registerTemplate
 {
-    [[MCETemplateRegistry sharedInstance] registerTemplate:@"post" hander:[self sharedInstance]];
+    [[MCETemplateRegistry sharedInstance] registerTemplate:@"post" handler:[self sharedInstance]];
 }
 
 /* This method will give the inbox system a view controller to display full messages in. */
