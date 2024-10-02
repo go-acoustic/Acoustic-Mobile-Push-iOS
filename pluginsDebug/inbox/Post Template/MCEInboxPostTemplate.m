@@ -48,7 +48,7 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
         self.fakeContentView = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.fakeContentView setFont:[UIFont systemFontOfSize:17]];
         self.fakeContentView.lineBreakMode = NSLineBreakByWordWrapping;
-        [[NSNotificationCenter defaultCenter] addObserverForName: UIApplicationDidChangeStatusBarOrientationNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        [[NSNotificationCenter defaultCenter] addObserverForName: UIDeviceOrientationDidChangeNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
             [self.postHeightCache removeAllObjects];
         }];
     }

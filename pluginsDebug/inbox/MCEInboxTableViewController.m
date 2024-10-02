@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -156,7 +156,7 @@
     self.richContents = [NSMutableDictionary dictionary];
     
     // Initially, grab contents of database, then start a background server sync
-    UIActivityIndicatorView * activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    UIActivityIndicatorView * activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
     [activity startAnimating];
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:activity];
     
@@ -218,23 +218,30 @@
     return cell;
 }
 
-- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView  trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     MCEInboxMessage * inboxMessage = self.inboxMessages[indexPath.item];
-    return @[
-             [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"Delete" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-                 NSLog(@"Delete message %@", inboxMessage.inboxMessageId);
-                 inboxMessage.isDeleted=TRUE;
-                 
-                 [self syncDatabase:nil];
-             }],
-             [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:inboxMessage.isRead ? @"Mark as Unread" : @"Mark as Read" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-                 inboxMessage.isRead = !inboxMessage.isRead;
-                 NSLog(@"Set message %@ to %@!", inboxMessage.inboxMessageId, inboxMessage.isRead ? @"Read" : @"Unread");
-                 [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-             }]
-             ];
+    UIContextualAction *deleteAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:nil handler:^(UIContextualAction * _Nonnull action, UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        // delete the item here
+        NSLog(@"Delete message %@", inboxMessage.inboxMessageId);
+        inboxMessage.isDeleted = TRUE;
+        [self syncDatabase:nil];
+        completionHandler(YES);
+    }];
+    deleteAction.image = [UIImage systemImageNamed:@"trash"];
+    deleteAction.backgroundColor = [UIColor systemRedColor];
     
+    UIContextualAction *unreadAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:nil handler:^(UIContextualAction * _Nonnull action, UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        // unread the item here
+        inboxMessage.isRead = !inboxMessage.isRead;
+        NSLog(@"Set message %@ to %@!", inboxMessage.inboxMessageId, inboxMessage.isRead ? @"Read" : @"Unread");
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        completionHandler(YES);
+    }];
+    unreadAction.title =  inboxMessage.isRead ? @"Mark as Unread" : @"Mark as Read";
+    unreadAction.backgroundColor = [UIColor grayColor];
+    
+    UISwipeActionsConfiguration *configuration = [UISwipeActionsConfiguration configurationWithActions:@[deleteAction, unreadAction]];
+    return configuration;
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
@@ -245,6 +252,27 @@
         [self.tableView reloadData];
     }];
 }
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    [super preferredContentSizeDidChangeForChildContentContainer:container];
+}
+
+
+- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
+    return [super sizeForChildContentContainer:container withParentContainerSize:parentSize];
+}
+
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    [super systemLayoutFittingSizeDidChangeForChildContentContainer:container];
+}
+
+
+- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
+}
+
+
 
 -(UIViewController*)viewControllerForIndexPath:(NSIndexPath*)indexPath
 {
@@ -302,7 +330,7 @@
     } else {
         previousButton.enabled=FALSE;
     }
-        
+    
     UIBarButtonItem * nextButton = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"chevron-down"] style:UIBarButtonItemStylePlain target:self action:@selector(openMessage:)];
     nextButton.accessibilityLabel = @"next";
     
@@ -313,12 +341,12 @@
     } else {
         nextButton.enabled=FALSE;
     }
-
+    
     UIBarButtonItem * deleteButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(delete:)];
     deleteButton.accessibilityLabel = @"trash";
     deleteButton.associatedObject = displayViewController;
     vc.navigationItem.rightBarButtonItems = @[deleteButton, spaceButton, nextButton, previousButton];
-
+    
     return vc;
 }
 
@@ -435,11 +463,11 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [[MCEInboxQueueManager sharedInstance] syncInbox];
     });
-
+    
     // State Restoration and Multiple Window Support iOS ≥13
     if(@available(macCatalyst 13.0, iOS 13.0, *)) {
         NSUserActivity * userActivity = self.view.window.windowScene.userActivity;
@@ -470,5 +498,34 @@
         self.view.window.windowScene.userActivity = nil;
     }
 }
+
+- (nonnull NSArray<UIDragItem *> *)dragInteraction:(nonnull UIDragInteraction *)interaction itemsForBeginningSession:(nonnull id<UIDragSession>)session {
+    return [[NSArray alloc] init];
+}
+
+- (void)encodeWithCoder:(nonnull NSCoder *)coder {
+    [super encodeWithCoder:coder];
+}
+
+- (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+}
+
+- (void)didUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context withAnimationCoordinator:(nonnull UIFocusAnimationCoordinator *)coordinator {
+    [super didUpdateFocusInContext:context withAnimationCoordinator:coordinator];
+}
+
+- (void)setNeedsFocusUpdate {
+    [super setNeedsFocusUpdate];
+}
+
+- (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
+    return [super shouldUpdateFocusInContext:context];
+}
+
+- (void)updateFocusIfNeeded {
+    [super updateFocusIfNeeded];
+}
+
 
 @end

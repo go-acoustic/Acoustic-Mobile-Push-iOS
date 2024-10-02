@@ -62,8 +62,7 @@
                 duration = [self.inAppMessage.content[@"duration"] floatValue];
             }
             
-            if(duration>0)
-                self.timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(autoDismiss:) userInfo:nil repeats:NO];
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(autoDismiss:) userInfo:nil repeats:NO];
             
             UIImage * image = [UIImage imageWithData:self.data];
             if(image.size.width < self.contentView.imageView.frame.size.width && image.size.height < self.contentView.imageView.frame.size.height) {

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -117,7 +117,8 @@
         self.boxView.layer.borderColor = [UIColor colorWithHexString:@"e0e0e0"].CGColor;
     }
     
-    CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    CGSize statusBarSize = window.windowScene.statusBarManager.statusBarFrame.size;
     CGFloat statusBarHeight = MIN(statusBarSize.width, statusBarSize.height);
     CGFloat toolbarHeight = self.toolbar.frame.size.height;
     
@@ -126,8 +127,6 @@
     {
         self.topConstraint.constant = 0;
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
-        
-        UIWindow * window = UIApplication.sharedApplication.keyWindow;
         if (@available(macCatalyst 13.0, iOS 11.0, *)) {
             if(window.safeAreaInsets.top > statusBarHeight) {
                 self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
