@@ -210,10 +210,8 @@
     }
     
     // Enable drag to create new window on iPadOS ≥ 13
-    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
-        cell.userInteractionEnabled = true;
-        [cell addInteraction: [[UIDragInteraction alloc] initWithDelegate: self]];
-    }
+    cell.userInteractionEnabled = true;
+    [cell addInteraction: [[UIDragInteraction alloc] initWithDelegate: self]];
 
     return cell;
 }
@@ -469,17 +467,15 @@
     });
     
     // State Restoration and Multiple Window Support iOS ≥13
-    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
-        NSUserActivity * userActivity = self.view.window.windowScene.userActivity;
-        if(userActivity && [userActivity respondsToSelector:@selector(initWithActivityType:)]) {
-            self.userActivity = userActivity;
-        } else {
-            self.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
-            self.view.window.windowScene.userActivity = self.userActivity;
-        }
-        
-        self.userActivity.title = NSStringFromClass(self.class);
+    NSUserActivity * userActivity = self.view.window.windowScene.userActivity;
+    if(userActivity && [userActivity respondsToSelector:@selector(initWithActivityType:)]) {
+        self.userActivity = userActivity;
+    } else {
+        self.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+        self.view.window.windowScene.userActivity = self.userActivity;
     }
+    
+    self.userActivity.title = NSStringFromClass(self.class);
     
     [self restoreInterfaceStateIfAvailable];
 }
@@ -493,13 +489,10 @@
 // State Restoration and Multiple Window Support iOS ≥13
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear: animated];
-    
-    if(@available(macCatalyst 13.0, iOS 13.0, *)) {
-        self.view.window.windowScene.userActivity = nil;
-    }
+    self.view.window.windowScene.userActivity = nil;
 }
 
-- (nonnull NSArray<UIDragItem *> *)dragInteraction:(nonnull UIDragInteraction *)interaction itemsForBeginningSession:(nonnull id<UIDragSession>)session {
+- (nonnull NSArray<UIDragItem *> *)dragInteraction:(nonnull UIDragInteraction *)interaction itemsForBeginningSession:(nonnull id<UIDragSession>)session { 
     return [[NSArray alloc] init];
 }
 

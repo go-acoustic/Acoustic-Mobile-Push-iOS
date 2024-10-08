@@ -91,12 +91,11 @@
     {
         self.topConstraint.constant = 0;
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
-        if (@available(macCatalyst 13.0, iOS 11.0, *)) {
-            if(window.safeAreaInsets.top > statusBarHeight) {
-                self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
-            } else {
-                self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
-            }
+        
+        if(window.safeAreaInsets.top > statusBarHeight) {
+            self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
+        } else {
+            self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         }
     }
     else if(self.navigationController.navigationBar.translucent)
@@ -142,19 +141,14 @@
     [super viewDidAppear:animated];
     
     // iOS 13 Multiple Window Support
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
-        self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
-        self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
-    }
+    self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+    self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
+    self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = nil;
-    }
+    self.view.window.windowScene.userActivity = nil;
 }
 
 @end
