@@ -240,6 +240,9 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
     self.label.textColor = self.foregroundColor;
     self.close.tintColor = self.foregroundColor;
     [self setIconImage: self.iconImage andWidth: [self determineIconHeight]];
+    // Reset Constraints
+    self.bottomConstraint.active = NO;
+    self.topConstraint.active = NO;
 }
 
 -(bool)isTopBanner
