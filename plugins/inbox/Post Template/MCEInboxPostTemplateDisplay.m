@@ -1,5 +1,5 @@
 /*
- * Copyright © 2016, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -81,7 +81,8 @@
         self.inboxMessage.isRead = TRUE;
     }
     
-    CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    CGSize statusBarSize = window.windowScene.statusBarManager.statusBarFrame.size;
     CGFloat statusBarHeight = MIN(statusBarSize.width, statusBarSize.height);
     CGFloat toolbarHeight = self.toolbar.frame.size.height;
     
@@ -91,13 +92,10 @@
         self.topConstraint.constant = 0;
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         
-        UIWindow * window = UIApplication.sharedApplication.keyWindow;
-        if (@available(macCatalyst 13.0, iOS 11.0, *)) {
-            if(window.safeAreaInsets.top > statusBarHeight) {
-                self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
-            } else {
-                self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
-            }
+        if(window.safeAreaInsets.top > statusBarHeight) {
+            self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
+        } else {
+            self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         }
     }
     else if(self.navigationController.navigationBar.translucent)
@@ -143,19 +141,14 @@
     [super viewDidAppear:animated];
     
     // iOS 13 Multiple Window Support
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
-        self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
-        self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
-    }
+    self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+    self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
+    self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = nil;
-    }
+    self.view.window.windowScene.userActivity = nil;
 }
 
 @end

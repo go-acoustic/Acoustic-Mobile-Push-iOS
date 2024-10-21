@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -14,6 +14,12 @@
 #else
 #import <AcousticMobilePush/AcousticMobilePush.h>
 #endif
+
+@interface MCEInboxDefaultTemplateDisplay()
+@property (nonatomic, assign) CGFloat topConstraintOld;
+@property (nonatomic, assign) CGFloat toolbarHeightConstraintOld;
+@end
+
 
 @implementation MCEInboxDefaultTemplateDisplay
 
@@ -111,36 +117,40 @@
     [self updateContent];
     
     self.boxView.layer.borderWidth=1;
-    if (@available(macCatalyst 13.0, iOS 13.0, *)) {
+    if (UIColor.separatorColor != nil) {
         self.boxView.layer.borderColor = UIColor.separatorColor.CGColor;
     } else {
         self.boxView.layer.borderColor = [UIColor colorWithHexString:@"e0e0e0"].CGColor;
     }
     
-    CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    CGSize statusBarSize = window.windowScene.statusBarManager.statusBarFrame.size;
     CGFloat statusBarHeight = MIN(statusBarSize.width, statusBarSize.height);
     CGFloat toolbarHeight = self.toolbar.frame.size.height;
+    // Fix top statusbar color to match appearance
+    self.view.backgroundColor = [UIColor systemBackgroundColor];
     
+    // Save old values
+    self.topConstraintOld = self.topConstraint.constant;
+    self.toolbarHeightConstraintOld = self.toolbarHeightConstraint.constant;
+    // Adjust constraints
+    self.toolbar.hidden = true;
+    self.toolbarHeightConstraint.active = NO;
     // Adjust spacing between toolbar and top when translucent toolbar or when popup
     if([self isModal])
     {
         self.topConstraint.constant = 0;
         self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         
-        UIWindow * window = UIApplication.sharedApplication.keyWindow;
-        if (@available(macCatalyst 13.0, iOS 11.0, *)) {
-            if(window.safeAreaInsets.top > statusBarHeight) {
-                self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
-            } else {
-                self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
-            }
+        if(window.safeAreaInsets.top > statusBarHeight) {
+            self.toolbarHeightConstraint.constant = toolbarHeight + window.safeAreaInsets.top;
         } else {
             self.toolbarHeightConstraint.constant = toolbarHeight + statusBarHeight;
         }
     }
     else if(self.navigationController.navigationBar.translucent)
     {
-        self.topConstraint.constant = statusBarHeight + toolbarHeight;
+        self.topConstraint.constant = toolbarHeight;
         self.toolbarHeightConstraint.constant = 0;
     }
     else
@@ -276,9 +286,7 @@
     } else {
         self.date.textColor = [UIColor lightThemeColor:[UIColor colorWithHexString:@"005CFF"] darkThemeColor:[UIColor colorWithHexString:@"7FADFF"]];
     }
-    if (@available(macCatalyst 13.0, iOS 13.0, *)) {
-        self.boxView.backgroundColor = [UIColor systemBackgroundColor];
-    }
+    self.boxView.backgroundColor = [UIColor systemBackgroundColor];
 }
 
 - (void)viewDidLoad {
@@ -306,19 +314,20 @@
     [super viewDidAppear:animated];
 
     // iOS 13 Multiple Window Support
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
-        self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
-        self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
-    }
+    self.view.window.windowScene.userActivity = [[NSUserActivity alloc] initWithActivityType:@"co.acoustic.mobilepush"];
+    self.view.window.windowScene.userActivity.title = NSStringFromClass(self.class);
+    self.view.window.windowScene.userActivity.userInfo = @{ @"inboxMessageId": self.inboxMessage.inboxMessageId };
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    self.view.window.windowScene.userActivity = nil;
     
-    if (@available(macCatalyst 13.0, iOS 13, *)) {
-        self.view.window.windowScene.userActivity = nil;
-    }
+    // reset values
+    self.topConstraint.constant = self.topConstraintOld;
+    self.toolbar.hidden = false;
+    self.toolbarHeightConstraint.active = YES;
+    self.toolbarHeightConstraint.constant = self.toolbarHeightConstraintOld;
 }
 
 @end

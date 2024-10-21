@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -143,34 +143,32 @@ const int TEXT_HEIGHT = 40;
 
 -(void)setSelected:(NSInteger)selected {
     _selected = selected;
-    if(@available(iOS 12.0, *)) {
-        NSMutableArray * actions = [NSMutableArray array];
-        for(UNNotificationAction * action in self.extensionContext.notificationActions) {
-            NSData * data = [action.identifier dataUsingEncoding: NSUTF8StringEncoding];
-            NSError * error = nil;
-            NSDictionary * actionDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    NSMutableArray * actions = [NSMutableArray array];
+    for(UNNotificationAction * action in self.extensionContext.notificationActions) {
+        NSData * data = [action.identifier dataUsingEncoding: NSUTF8StringEncoding];
+        NSError * error = nil;
+        NSDictionary * actionDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        if(error) {
+            NSLog(@"couldn't decode action identifier %@", error.localizedDescription);
+            return;
+        }
+        if([actionDict[@"type"] isEqual: @"carousel"]) {
+            NSMutableDictionary * mutableActionDict = [actionDict mutableCopy];
+            mutableActionDict[@"value"] = @(selected);
+            data = [NSJSONSerialization dataWithJSONObject:mutableActionDict options:0 error:&error];
             if(error) {
-                NSLog(@"couldn't decode action identifier %@", error.localizedDescription);
+                NSLog(@"couldn't encode action %@", error.localizedDescription);
                 return;
             }
-            if([actionDict[@"type"] isEqual: @"carousel"]) {
-                NSMutableDictionary * mutableActionDict = [actionDict mutableCopy];
-                mutableActionDict[@"value"] = @(selected);
-                data = [NSJSONSerialization dataWithJSONObject:mutableActionDict options:0 error:&error];
-                if(error) {
-                    NSLog(@"couldn't encode action %@", error.localizedDescription);
-                    return;
-                }
-                NSString * identifier = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                UNNotificationAction * newAction = [UNNotificationAction actionWithIdentifier:identifier title:action.title options:UNNotificationActionOptionForeground];
-                [actions addObject: newAction];
-            } else {
-                [actions addObject: action];
-            }
+            NSString * identifier = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            UNNotificationAction * newAction = [UNNotificationAction actionWithIdentifier:identifier title:action.title options:UNNotificationActionOptionForeground];
+            [actions addObject: newAction];
+        } else {
+            [actions addObject: action];
         }
-        
-        self.extensionContext.notificationActions = actions;
     }
+    
+    self.extensionContext.notificationActions = actions;
 }
 #endif
 

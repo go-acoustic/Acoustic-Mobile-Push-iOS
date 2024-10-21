@@ -1,5 +1,5 @@
 /*
- * Copyright © 2016, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -14,7 +14,7 @@
 
 extern CGFloat UNKNOWN_IMAGE_HEIGHT;
 
-@interface MCEInboxPostTemplate ()
+@interface MCEInboxPostTemplate () 
 @property UILabel * fakeContentView;
 @end
 
@@ -48,11 +48,40 @@ extern CGFloat UNKNOWN_IMAGE_HEIGHT;
         self.fakeContentView = [[UILabel alloc]initWithFrame:CGRectZero];
         [self.fakeContentView setFont:[UIFont systemFontOfSize:17]];
         self.fakeContentView.lineBreakMode = NSLineBreakByWordWrapping;
-        [[NSNotificationCenter defaultCenter] addObserverForName: UIApplicationDidChangeStatusBarOrientationNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
-            [self.postHeightCache removeAllObjects];
-        }];
     }
     return self;
+}
+
+@synthesize preferredContentSize;
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    [container preferredContentSizeDidChangeForChildContentContainer:container];
+}
+
+- (CGSize)sizeForChildContentContainer:(nonnull id<UIContentContainer>)container withParentContainerSize:(CGSize)parentSize {
+    return [container sizeForChildContentContainer:container withParentContainerSize:parentSize];
+}
+
+- (void)systemLayoutFittingSizeDidChangeForChildContentContainer:(nonnull id<UIContentContainer>)container {
+    [container systemLayoutFittingSizeDidChangeForChildContentContainer:container];
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    [[window rootViewController] viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    UIInterfaceOrientation before = window.windowScene.interfaceOrientation;
+    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        UIInterfaceOrientation after = window.windowScene.interfaceOrientation;
+        if (before != after) {
+            [self.postHeightCache removeAllObjects];
+        }
+    }];
+}
+
+- (void)willTransitionToTraitCollection:(nonnull UITraitCollection *)newCollection withTransitionCoordinator:(nonnull id<UIViewControllerTransitionCoordinator>)coordinator {
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    [[window rootViewController] willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
 }
 
 /* This method is used to register this template with the template registry system so we can display default template messages */

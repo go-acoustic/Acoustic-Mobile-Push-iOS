@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014, 2019 Acoustic, L.P. All rights reserved.
+ * Copyright (C) 2024 Acoustic, L.P. All rights reserved.
  *
  * NOTICE: This file contains material that is confidential and proprietary to
  * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -68,7 +68,7 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
         if([animate boolValue]==FALSE)
         {
             // We don't know the final statusbar frame until after it's animated, so rerun this after it's animated
-            [self performSelector:@selector(interfaceRotation:) withObject:@TRUE afterDelay:[UIApplication sharedApplication].statusBarOrientationAnimationDuration];
+            [self performSelector:@selector(interfaceRotation:) withObject:@TRUE afterDelay:0.3f];
         }
     }
     else
@@ -240,6 +240,9 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
     self.label.textColor = self.foregroundColor;
     self.close.tintColor = self.foregroundColor;
     [self setIconImage: self.iconImage andWidth: [self determineIconHeight]];
+    // Reset Constraints
+    self.bottomConstraint.active = NO;
+    self.topConstraint.active = NO;
 }
 
 -(bool)isTopBanner
@@ -251,10 +254,9 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
 {
     self.bottomConstraint.active = true;
     self.topConstraint.active = false;
-
-    CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
     
-    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
+    CGRect statusBarFrame = window.windowScene.statusBarManager.statusBarFrame;
     
     CGRect frame = self.view.frame;
     frame.origin.x = 0;
@@ -273,17 +275,13 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
 {
     self.bottomConstraint.active = false;
     self.topConstraint.active = true;
-    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
     
     CGRect frame = self.view.frame;
     frame.origin.x = 0;
     frame.size.width = window.frame.size.width;
     frame.size.height = self.bannerHeight;
-    
-    if (@available(macCatalyst 13.0, iOS 11.0, *)) {
-        frame.size.height += window.safeAreaInsets.bottom;
-    }
-
+    frame.size.height += window.safeAreaInsets.bottom;
     frame.origin.y = window.bounds.size.height - frame.size.height;
     
     self.visibleFrame = frame;
@@ -298,8 +296,7 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
     self.view.layer.contents = (__bridge id _Nullable)(background_image.CGImage);
     self.view.layer.contentsGravity = kCAGravityResizeAspect;
 
-    UIWindow * window = [UIApplication sharedApplication].keyWindow;
-    
+    UIWindow *window = [[MCESdk sharedInstance] getAppWindow];
     self.view.alpha = 0;
     self.view.frame = self.hiddenFrame;
     [window addSubview:self.view];

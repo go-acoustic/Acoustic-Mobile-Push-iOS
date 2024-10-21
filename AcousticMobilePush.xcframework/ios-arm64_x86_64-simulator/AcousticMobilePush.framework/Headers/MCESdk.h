@@ -128,5 +128,8 @@ Please note, this method is deprecated, please use MCERegistrationDetails.shared
  */
 - (void)sdkStateIsRunning: (void (^_Nonnull)(NSError * _Nullable error))completionBlock;
 
+/** Get main window on application */
+- (UIWindow* _Nullable) getAppWindow;
+
 typedef void (^SdkStateCompletionHandler)(NSError* _Nullable error);
 @end
