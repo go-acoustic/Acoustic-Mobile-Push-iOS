@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/MCECategoryActionPayload.h</key>
 		<data>
-		O+q31BQrv3tfzqaYheas0ICKSoc=
+		VV/coVMYS6DVgj6LBHtc95skNx0=
 		</data>
 		<key>Headers/MCEClient.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yx4mIZVRUKvssIOxqCTkCXlHHTo=
+		bCUo6L33BqQw4s8dneGDtRbF6KM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>PrivateHeaders/MCECategoryActionPayload-Private.h</key>
 		<data>
-		YIHEPpLt1uhHY1h4t1jD9Wm7UK0=
+		FEev5BgYLdXtA0vlEhFkL2k5bBk=
 		</data>
 		<key>PrivateHeaders/MCEConfig-Private.h</key>
 		<data>
@@ -332,7 +332,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N0WHGmjVx+I50aQpXmCtaUC0A/7TYq7Otbp0fs1KwIU=
+			xs4MMzz8p0LACt5m3wYmxBBK6QLo2VTe2kIZ60q2cKc=
 			</data>
 		</dict>
 		<key>Headers/MCEClient.h</key>
@@ -591,7 +591,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nq/F3UgFRd2rGqW3isS5MUW78Nb9bi7eh4aDmGU/mNQ=
+			iE0Y0d7fpawLeU/R43ErRWwCw15wj4Wop6S9DwjZ+ks=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MCEConfig-Private.h</key>

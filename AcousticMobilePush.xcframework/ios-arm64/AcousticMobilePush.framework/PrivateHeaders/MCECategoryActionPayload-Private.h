@@ -9,7 +9,12 @@
 //
 
 #import "MCECategoryActionPayload.h"
+
+#if __has_feature(modules)
 @import UserNotifications;
+#else
+#import <UserNotifications/UserNotifications.h>
+#endif
 
 @interface MCECategoryActionPayload (Private)
 @property (readonly) BOOL destructive;
