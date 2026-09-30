@@ -301,11 +301,6 @@ const CGFloat DEFAULT_BANNER_DISPLAY_DURATION = 5;
     self.view.frame = self.hiddenFrame;
     [window addSubview:self.view];
 
-    // Preventing from recording views for canned inApp messages.
-    if (self.inAppMessage.attribution != nil) {
-        [[MCEEventService sharedInstance] recordViewForInAppMessage:self.inAppMessage attribution:self.inAppMessage.attribution mailingId:self.inAppMessage.mailingId];
-    }
-    
     [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^(){
         self.view.frame=self.visibleFrame;
         self.view.alpha = 1;
