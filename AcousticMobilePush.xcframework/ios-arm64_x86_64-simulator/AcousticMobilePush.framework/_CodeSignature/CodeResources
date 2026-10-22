@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/MCEConfig.h</key>
 		<data>
-		ebCaoc2uk76ZLBkiK0FrSZvYPQI=
+		2EDXDBzwO6kUerANSvbiKknRUFs=
 		</data>
 		<key>Headers/MCEConstants.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bCUo6L33BqQw4s8dneGDtRbF6KM=
+		RN5HJiXptG6NB8eMAiDWy8t3bu8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>PrivateHeaders/MCEInAppMessage-Private.h</key>
 		<data>
-		DXE6x5AGV2p5GFCHrTY6+PXzUmE=
+		B50eb7pVa6TPlFhGWmBRktYXM7Q=
 		</data>
 		<key>PrivateHeaders/MCEInboxDatabase-Private.h</key>
 		<data>
@@ -346,7 +346,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3/dhZVuBEjEBorP5aS/XPL16fLJJNQNkxD4aMMTrosg=
+			8Z80Mf4LcBVGOJbYtlJG4SoMIJqB1Nyx2pI94diakl8=
 			</data>
 		</dict>
 		<key>Headers/MCEConstants.h</key>
@@ -675,7 +675,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3K/sGoFx21tVzEUFqCY8TBE67D6HFpnq4G8iL0dIeog=
+			9OD638V9oC0+O97DAMxTU3KzeO5HFWqylTlc//FdI90=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MCEInboxDatabase-Private.h</key>

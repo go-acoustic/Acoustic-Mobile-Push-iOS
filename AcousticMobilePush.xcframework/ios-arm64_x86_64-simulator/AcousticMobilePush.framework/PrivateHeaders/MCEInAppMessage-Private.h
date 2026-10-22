@@ -8,11 +8,28 @@
 // prohibited.
 //
 
+#import <Foundation/Foundation.h>
+#import "MCEInAppMessage.h"
+
 @class MCEResultSet;
 @class MCEDatabase;
 
+/** Tracks whether a view event has already been recorded for the display the SDK
+ is currently driving, so that a template which records the view itself and the
+ SDK do not both report the same display.
+
+ MCEInAppMessageViewRecordNone means no SDK driven display is in progress; a view
+ recorded in that state is reported as-is, which keeps recordViewForInAppMessage:
+ working for apps that render in-app messages themselves. */
+typedef NS_ENUM(NSInteger, MCEInAppMessageViewRecordState) {
+    MCEInAppMessageViewRecordNone = 0,
+    MCEInAppMessageViewRecordPending,
+    MCEInAppMessageViewRecordDone
+};
+
 @interface MCEInAppMessage (private)
 @property BOOL onServer;
+@property MCEInAppMessageViewRecordState viewRecordState;
 - (instancetype _Nonnull) initWithDictionary: (NSDictionary * _Nonnull) dictionary;
 + (BOOL) createTableWithDatabase: (MCEDatabase * _Nonnull) db;
 + (NSMutableArray * _Nonnull) inAppMessagesForIds: (NSSet * _Nonnull) inAppMessageIds withDatabase: (MCEDatabase * _Nonnull) db;

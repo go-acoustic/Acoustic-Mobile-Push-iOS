@@ -89,5 +89,8 @@
 /** This configuration flag allows jailbroken devices to continue to initialize the SDK. If it is set to false, jailbroken devices will not be allowed. The default value is true. */
 @property BOOL allowJailbrokenDevices;
 
+/** The app group the SDK shares with its notification service extension: the first app group of the app's provisioning profile, otherwise the "appGroup" value of MceConfig.json. A build without a provisioning profile, such as a simulator build, needs the config value, and the app's and the extension's MceConfig.json must both carry it. Nil when neither is available, in which case the SDK keeps its data in the app's own container. */
+@property (readonly) NSString * _Nullable appGroup;
+
 @end
 
