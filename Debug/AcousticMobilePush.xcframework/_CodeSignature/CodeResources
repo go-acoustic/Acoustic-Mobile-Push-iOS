@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AcousticMobilePush.framework/AcousticMobilePush</key>
 		<data>
-		pA7CpgLouztNrGd24Kj+nClxN24=
+		T/6H0jZtzZWFiuonsW68S/jZCFs=
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Info.plist</key>
 		<data>
-		zIGJaenh47V3i98DcKCh0mOyXc8=
+		nbVjrSbDn+0ru6F0Cu/dkXMVS40=
 		</data>
 		<key>ios-arm64/AcousticMobilePush.framework/Modules/module.modulemap</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/AcousticMobilePush</key>
 		<data>
-		PCkW4jX7egkvZt7sslgUtF3r7mQ=
+		Y1aSjNC+HKTlbznJxfnoq3aFcFM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
 		<data>
@@ -434,7 +434,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Info.plist</key>
 		<data>
-		ncL6N7VmPoa8ch4JOLPeXTIB9+k=
+		KstiA+2sKHT3cKNPizMgo4kkpOw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Modules/module.modulemap</key>
 		<data>
@@ -558,7 +558,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/_CodeSignature/CodeResources</key>
 		<data>
-		r2lcblKF9mmNXLlj0EFUOF3wz5Q=
+		RFIKarG+aUZzbkPpLUaedXE+XTU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -567,7 +567,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y24E52GCnlwESuVXjlkhJbNKwKDDWIMjM0uMgbTH6OQ=
+			t3EJ08djuXQhNjmWNEBIrMSzTf/lshUUE2xGldKgSXg=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
@@ -833,7 +833,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZfUzDko+pxp7QiLcRdPHczJIclrNAUTfGa63JF+D6Uw=
+			8uHQudDistHqdbNX3R1yEE8szL7UjIAuT07+RDkkx24=
 			</data>
 		</dict>
 		<key>ios-arm64/AcousticMobilePush.framework/Modules/module.modulemap</key>
@@ -1050,7 +1050,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aIAlxpauxzyXJ9pDZjuh4HFHrqVu75bzJqTkXzJFEkg=
+			t7mWLSBEy53oiZlCtLArv6SiLnDkSohSQd2AJhyQIVc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Headers/AcousticMobilePush.h</key>
@@ -1316,7 +1316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WP/AgskWRtwqSJjPy5QkSOEVA5ecVN9teUj75xPknJI=
+			2S0h4ZgR5hSpWi8K6n/VJ0vNq5oedmBIdR6H0FgRthY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AcousticMobilePush.framework/Modules/module.modulemap</key>
@@ -1533,7 +1533,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Eh/Wp13o3KfgNJEtFE1iXGP7XR7d6HogT0AccQUiRk=
+			OnrataRuZ7HLvN6rS2MhaKlMFDfTRJVKp2/h9ot/UZA=
 			</data>
 		</dict>
 	</dict>
